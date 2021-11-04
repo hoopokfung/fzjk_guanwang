@@ -1,0 +1,306 @@
+
+/**************************************
+    SECTIONS
+**************************************/
+
+.section {
+    /*padding: 4rem 0;*/
+    display: block;
+    position: relative;
+    background-color: #ffffff;
+}
+
+
+.center-side,
+.left-side,
+.right-side {
+    float: left;
+    width: 33.33333%;
+}
+
+.post-media img,
+.masonry-box img {
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.post-media:hover img,
+.masonry-box:hover img {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+
+/*********************************
+   news-list的样式
+**********************************/
+.news-list .news-banner {
+    background-color: #ffffff;
+    margin: 1rem 0;
+    height: auto;
+}
+.news-list .news-banner .news-pic .post-media img{
+    height: 150px;
+}
+
+.news-meta{
+    position: relative;
+    height: 150px;
+}
+
+.news-meta.big-meta h4 {
+    background-color: #ffffff;
+    padding: 1rem 0 0.6rem;
+    margin: 0;
+    font-size: 28px;
+    max-height: 72px;
+    overflow: hidden;
+
+}
+.news-meta.big-meta h4 a{
+    color: #333333;
+    text-decoration: none;
+}
+.news-meta.big-meta h4 a:hover{
+    color: #0076ab;
+}
+.news-meta.big-meta p {
+    height: 72px;
+    margin-top: 0.6rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0;
+    overflow: hidden;
+}
+.news-meta .bg-orange {
+    color: #ffffff !important;
+    padding: 0 0.8rem;
+    border-radius: 3px;
+}
+
+.bg-orange {
+    background-color: #FF6347 !important;
+}
+
+.news-log{
+    position: absolute;
+    bottom: 0;
+}
+
+.news-meta small a,
+.news-meta small {
+    font-weight: 500;
+    color: #999 !important;
+}
+.news-meta small {
+    font-size: 11px;
+    display: inline-block;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 0.5rem;
+}
+
+.news-meta small:after {
+    content: "/";
+    padding-left: 1rem;
+}
+
+.news-meta small:last-child:after {
+    content: ""
+}
+
+.fa-star {
+    font-size: 12px;
+    margin: 0 -2px 0 0;
+}
+.news-meta small.firstsmall:after {
+    content: "" !important;
+    padding-left: 0;
+}
+.news-meta .rating {
+    display: block;
+    margin-top: 1rem;
+}
+/*1rem等于html根（默认或者全局)字体大小*/
+
+
+
+
+.news-time{
+    position: relative;
+    box-sizing: border-box;
+    height: 90px;
+
+}
+.news-time a{
+    position: relative;
+    left: 30%;
+}
+.news-time a:hover{
+    text-decoration: none;
+}
+.news-time em{
+    display: block;
+    color: #0076ab;
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 1rem;
+    margin-bottom: 5px;
+    font-family: "HELVETI1";
+
+}
+.news-time span{
+    display: block;
+    color: #0076ab;
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 5px;
+    font-family: "HELVETI1";
+    text-decoration: none;
+}
+
+
+
+
+/************************************
+    page
+************************************/
+.page-box{
+    position: relative;
+}
+.page{
+    text-align: center;
+}
+
+.page-link {
+    background-color: #edeff2 !important;
+    border: 0 dashed #e2e2e2;
+    border-radius: 0;
+    color: #a3a5a8 !important;
+    display: block;
+    font-size: 14px;
+    line-height: 1;
+    margin-left: 6px;
+    padding: 0.8rem 0.8rem;
+    position: relative;
+    text-transform: capitalize;
+}
+
+.page-link:hover,
+.page-link:focus {
+    color: #111 !important;
+}
+
+.page-item:first-child .page-link {
+    margin-left: 0;
+    border-radius: 0;
+}
+
+.page-item:last-child .page-link {
+    border-radius: 0;
+}
+.page-title {
+    padding: 3rem 0;
+    background-color: #edeff2;
+}
+
+.page-title small {
+    color: #a3a5a8;
+    display: inline-block;
+    font-size: 13px;
+    font-style: italic;
+    letter-spacing: 1px;
+    line-height: 1;
+    margin-bottom: 0;
+    margin-top: -1px;
+    padding-bottom: 0;
+    padding-left: 0.5rem;
+    vertical-align: middle;
+}
+
+.page-title i {
+    border-radius: 40px;
+    display: inline-block;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 0.3rem;
+    margin-top: -0.4rem;
+    text-align: center;
+    vertical-align: middle;
+    width: 40px;
+}
+
+.page-title h2 {
+    font-size: 24px;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+}
+
+/************************************
+    btn
+************************************/
+.btn,
+.page-link:hover,
+.page-link:focus,
+.btn:hover,
+.btn:focus {
+    color: #ffffff !important;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #0076ab 0px, #00b7e5 100%) repeat scroll 0 0 !important
+}
+
+/************************************
+    news-card style
+************************************/
+.news-card{
+
+}
+.news-card .caption{
+    height: 100px;
+}
+.caption .news-title{
+    margin-top: 20px;
+    padding-left: 1rem;
+    height: 60px;
+}
+.caption .news-title a{
+    color: #333333;
+    text-decoration: none;
+}
+.card-log p{
+    padding-bottom: 20px;
+}
+.p-left,.p-left a{
+    float: left;
+    font-size: 16px;
+    color: red;
+    padding-left: 0.2rem;
+}
+.p-left a:hover{
+    color: orange;
+}
+.p-right{
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+    color: #8c8c8c;
+    padding-right: 1rem;
+    font-family: "HELVETI1";
+}
+.news-card .border:hover{
+    box-shadow: 0 0 10px 0 #8c8c8c;
+}
