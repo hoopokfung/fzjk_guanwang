@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../statics/images/logo2.png" type="image/png">
+    <link rel="icon" href="../../static/images/logo2.png" type="image/png">
     <title>文章编辑</title>
-    <link href="../../statics/lib/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../statics/lib/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="../../statics/lib/bootstrap-wysihtml5/bootstrap-wysihtml5.css" rel="stylesheet" type="text/css" />
-    <link href="../../statics/lib/summernote-master/summernote.css" rel="stylesheet" type="text/css" />
-    <link href="../../statics/lib/summernote-master/summernote-bs2.css" rel="stylesheet" type="text/css" />
-    <link href="../../statics/lib/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" type="text/css" />
-    <link href="../../statics/css/backstage.css" rel="stylesheet">
-    <link href="../../statics/css/responsive.css" rel="stylesheet">
+    <link href="../../static/lib/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet" th:href="@{lib/bootstrap-3.4.1/css/bootstrap.min.css}">
+    <link href="../../static/lib/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../static/lib/bootstrap-wysihtml5/bootstrap-wysihtml5.css" rel="stylesheet" type="text/css" />
+    <link href="../../static/lib/summernote-master/summernote.css" rel="stylesheet" type="text/css" />
+    <link href="../../static/lib/summernote-master/summernote-bs2.css" rel="stylesheet" type="text/css" />
+    <link href="../../static/lib/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../static/css/backstage.css" rel="stylesheet">
+    <link href="../../static/css/responsive.css" rel="stylesheet">
 
 </head>
 <body class="sticky-header">
@@ -23,10 +23,10 @@
     <!--左边菜单开始-->
     <div class="left-side sticky-left-side">
         <div class="logo">
-            <a href="adminIndex.html"><img src="../../statics/images/logo.png" alt=""></a>
+            <a href="adminIndex.html"><img src="../../static/images/logo.png" alt=""></a>
         </div>
         <div class="logo-icon text-center">
-            <a href="adminIndex.html"><img src="../../statics/images/logo2.png" alt=""></a>
+            <a href="adminIndex.html"><img src="../../static/images/logo2.png" alt=""></a>
         </div>
 
         <div class="left-side-inner">
@@ -186,19 +186,19 @@
                             <ul class="dropdown-list normal-list">
                                 <li class="message-list message-scroll-list">
                                     <a href="#">
-                                        <span class="photo"> <img src="../../statics/images/avatar-6.jpg" class="img-circle" alt="img"></span>
+                                        <span class="photo"> <img src="../../static/images/avatar-6.jpg" class="img-circle" alt="img"></span>
                                         <span class="subject">管理员</span>
                                         <span class="message">新的任务需要完成</span>
                                         <span class="time">15 分钟前</span>
                                     </a>
                                     <a href="#">
-                                        <span class="photo"> <img src="../../statics/images/avatar-6.jpg" class="img-circle" alt="img"></span>
+                                        <span class="photo"> <img src="../../static/images/avatar-6.jpg" class="img-circle" alt="img"></span>
                                         <span class="subject">管理员</span>
                                         <span class="message">新的任务需要完成</span>
                                         <span class="time">15 分钟前</span>
                                     </a>
                                     <a href="#">
-                                        <span class="photo"> <img src="../../statics/images/avatar-6.jpg" class="img-circle" alt="img"></span>
+                                        <span class="photo"> <img src="../../static/images/avatar-6.jpg" class="img-circle" alt="img"></span>
                                         <span class="subject">管理员</span>
                                         <span class="message">新的任务需要完成</span>
                                         <span class="time">15 分钟前</span>
@@ -210,7 +210,7 @@
                     </li>
                     <li>
                         <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                            <img src="../../statics/images/avatar-6.jpg" alt="" />
+                            <img src="../../static/images/avatar-6.jpg" alt="" />
                             管理员
                             <span class="caret"></span>
                         </a>
@@ -345,18 +345,18 @@
     <!--主要内容结束 -->
 
     <!-- Start Script  -->
-    <script src="../../statics/lib/jquery-3.4.1/jquery-3.4.1.js"></script>
-    <script src="../../statics/lib/bootstrap-3.4.1/js/bootstrap.js"></script>
-    <script src="../../statics/lib/moment/moment.js"></script>
-    <script src="../../statics/js/jquery.nicescroll.js"></script>
-    <script src="../../statics/js/jquery.slimscroll.js"></script>
-    <script src="../../statics/js/functions.js"></script>
+    <script src="../../static/lib/jquery-3.4.1/jquery-3.4.1.js"></script>
+    <script src="../../static/lib/bootstrap-3.4.1/js/bootstrap.js"></script>
+    <script src="../../static/lib/moment/moment.js"></script>
+    <script src="../../static/js/jquery.nicescroll.js"></script>
+    <script src="../../static/js/jquery.slimscroll.js"></script>
+    <script src="../../static/js/functions.js"></script>
     <!-- End Script   -->
     <!-- BEGIN PAGE LEVEL SCRIPTS -->
-    <script type="text/javascript" src="../../statics/lib/bootstrap-wysihtml5/wysihtml5-0.3.0.min.js"></script>
-    <script type="text/javascript" src="../../statics/lib/bootstrap-select/bootstrap-select.min.js"></script>
-    <script type="text/javascript" src="../../statics/lib/bootstrap-wysihtml5/bootstrap-wysihtml5.js"></script>
-    <script type="text/javascript" src="../../statics/lib/summernote-master/summernote.min.js"></script>
+    <script type="text/javascript" src="../../static/lib/bootstrap-wysihtml5/wysihtml5-0.3.0.min.js"></script>
+    <script type="text/javascript" src="../../static/lib/bootstrap-select/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="../../static/lib/bootstrap-wysihtml5/bootstrap-wysihtml5.js"></script>
+    <script type="text/javascript" src="../../static/lib/summernote-master/summernote.min.js"></script>
     <script>
         $('.textarea').wysihtml5();
         $(document).ready(function() {
