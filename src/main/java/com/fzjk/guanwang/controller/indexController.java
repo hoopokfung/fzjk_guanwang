@@ -2,6 +2,7 @@ package com.fzjk.guanwang.controller;
 
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 
@@ -12,7 +13,8 @@ public class indexController {
 
 
     @RequestMapping("/index")
-    public String index() {
+    public String index(Model model) {
+        model.addAttribute("msg","hello,world");
         return "index";
     }
 }
