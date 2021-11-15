@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,14 +8,14 @@
     <meta name="author" content="">
     <link rel="icon" href="../../statics/images/logo2.png" type="image/png">
     <title>分类管理</title>
-    <link href="../../statics/lib/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../statics/lib/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="../../statics/lib/bootstrap-wysihtml5/bootstrap-wysihtml5.css" rel="stylesheet" type="text/css" />
-    <link href="../../statics/lib/summernote-master/summernote.css" rel="stylesheet" type="text/css" />
-    <link href="../../statics/lib/summernote-master/summernote-bs2.css" rel="stylesheet" type="text/css" />
-    <link href="../../statics/lib/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" type="text/css" />
-    <link href="../../statics/css/backstage.css" rel="stylesheet">
-    <link href="../../statics/css/responsive.css" rel="stylesheet">
+    <link href="../../static/lib/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet" th:href="@{/lib/bootstrap-3.4.1/css/bootstrap.min.css}">
+    <link href="../../static/lib/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" th:href="@{/lib/fonts/font-awesome-4.7.0/css/font-awesome.min.css}">
+    <link href="../../static/lib/bootstrap-wysihtml5/bootstrap-wysihtml5.css" rel="stylesheet" type="text/css" th:href="@{/lib/bootstrap-wysihtml5/bootstrap-wysihtml5.css}"/>
+    <link href="../../static/lib/summernote-master/summernote.css" rel="stylesheet" type="text/css" th:href="@{/lib/summernote-master/summernote.css}"/>
+    <link href="../../static/lib/summernote-master/summernote-bs2.css" rel="stylesheet" type="text/css" th:href="@{/lib/summernote-master/summernote-bs2.css}"/>
+    <link href="../../static/lib/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" type="text/css" th:href="/lib/bootstrap-select/bootstrap-select.min.css""/>
+    <link href="../../static/css/backstage.css" rel="stylesheet" th:href="@{/css/backstage.css}">
+    <link href="../../static/css/responsive.css" rel="stylesheet" th:href="@{/css/responsive.css}">
 
 </head>
 <body class="sticky-header">
@@ -306,7 +306,7 @@
 
     <!--Start  Footer -->
     <footer class="footer-main">
-        Copyright &copy; 2021.抚州市金融控股有限公司 All rights reserved.<a target="_blank" href="https://beian.miit.gov.cn/" target="_blank">赣ICP备18010030号</a>
+        Copyright &copy; 2021.抚州市金融控股有限公司 All rights reserved.<a href="https://beian.miit.gov.cn/" target="_blank">赣ICP备18010030号</a>
     </footer>
 
     <!--End footer -->
@@ -315,15 +315,15 @@
 
 
 <!-- Start Script  -->
-<script src="../../statics/lib/jquery-3.4.1/jquery-3.4.1.js"></script>
-<script src="../../statics/lib/bootstrap-3.4.1/js/bootstrap.js"></script>
-<script src="../../statics/lib/moment/moment.js"></script>
-<script src="../../statics/js/jquery.nicescroll.js"></script>
-<script src="../../statics/js/jquery.slimscroll.js"></script>
-<script src="../../statics/js/functions.js"></script>
+<script src="../../static/lib/jquery-3.4.1/jquery-3.4.1.js" type="text/javascript" th:href="@{/lib/jquery-3.4.1/jquery-3.4.1.js}"></script>
+<script src="../../static/lib/bootstrap-3.4.1/js/bootstrap.js" type="text/javascript" th:href="@{/lib/bootstrap-3.4.1/js/bootstrap.js}"></script>
+<script src="../../static/lib/moment/moment.js" type="text/javascript" th:href="@{/lib/moment/moment.js}"></script>
+<script src="../../static/js/jquery.nicescroll.js" type="text/javascript" th:href="@{/js/jquery.nicescroll.js}"></script>
+<script src="../../static/js/jquery.slimscroll.js" type="text/javascript" th:href="@{/js/jquery.slimscroll.js}"></script>
+<script src="../../static/js/functions.js" type="text/javascript" th:href="@{/js/functions.js}"></script>
 <!-- End Script   -->
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
-<script type="text/javascript" src="../../statics/lib/bootstrap-select/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="../../static/lib/bootstrap-select/bootstrap-select.min.js" th:href="@{/lib/bootstrap-select/bootstrap-select.min.js}"></script>
 
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
 </body>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,10 +8,10 @@
     <meta name="author" content="">
     <link rel="icon" href="../../statics/images/logo2.png" type="image/png">
     <title>500</title>
-    <link href="../../statics/lib/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../statics/css/style.css" rel="stylesheet">
-    <script src="../../statics/lib/jquery-3.4.1/jquery-3.4.1.js"></script>
-    <script src="../../statics/lib/bootstrap-3.4.1/js/bootstrap.js"></script>
+    <link href="../../static/lib/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet" th:href="@{/lib/bootstrap-3.4.1/css/bootstrap.min.css}">
+    <link href="../../static/css/style.css" rel="stylesheet" th:href="@{/css/style.css}">
+    <script src="../../static/lib/jquery-3.4.1/jquery-3.4.1.js" type="text/javascript" th:src="@{/lib/jquery-3.4.1/jquery-3.4.1.js}"></script>
+    <script src="../../static/lib/bootstrap-3.4.1/js/bootstrap.js" type="text/javascript" th:src="@{/lib/bootstrap-3.4.1/js/bootstrap.js}"></script>
 </head>
 <body class="error-bg">
     <section>
