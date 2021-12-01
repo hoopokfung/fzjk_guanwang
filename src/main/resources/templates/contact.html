@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,12 +8,12 @@
     <meta name="author" content="">
     <link rel="icon" href="../static/images/logo2.png" type="image/png">
     <title>联系我们</title>
-        <link href="../static/lib/bootstrap-3.4.1/css/bootstrap.css" rel="stylesheet">
-        <link href="../static/css/animate.min.css" rel="stylesheet">
-        <link href="../static/css/swiper-3.4.0.min.css" rel="stylesheet">
-        <link href="../static/lib/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
-        <link href="../static/css/jquery.mmenu.all.css" rel="stylesheet">
-        <link href="../static/css/style.css" rel="stylesheet">
+        <link href="../static/lib/bootstrap-3.4.1/css/bootstrap.css" rel="stylesheet" th:href="@{/lib/bootstrap-3.4.1/css/bootstrap.css}">
+        <link href="../static/css/animate.min.css" rel="stylesheet" th:href="@{/css/animate.min.css}">
+        <link href="../static/css/swiper-3.4.0.min.css" rel="stylesheet" th:href="@{/css/swiper-3.4.0.min.css}">
+        <link href="../static/lib/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" th:href="@{/lib/fonts/font-awesome-4.7.0/css/font-awesome.min.css}">
+        <link href="../static/css/jquery.mmenu.all.css" rel="stylesheet" th:href="@{/css/jquery.mmenu.all.css}">
+        <link href="../static/css/style.css" rel="stylesheet" th:href="@{/css/style.css}">
         <!--[if lt IE 9]>
         <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
@@ -22,7 +22,7 @@
 <body>
 
 <!-- 头部 -->
-<header class="header iheader tran300 ">
+<header th:replace="list/_fragment :: menu(7)" class="header iheader tran300 ">
     <div class="w1440 clearfix">
         <a  href="index.html" class="logo fl">
             <img src="../static/images/logo.png" alt="this is a logo image.">
@@ -155,7 +155,7 @@
 
 <div id="page">
 
-    <nav id="menu" class="m_nav" style="display:none;">
+    <nav th:replace="list/_fragment :: mmenu" id="menu" class="m_nav" style="display:none;">
         <ul>
             <li class="home">
                 <a href="index.html">网站首页</a>
@@ -241,7 +241,7 @@
                         <p>传真 : 0794-8236799</p>
                     </div>
                     <div id="baiduMap" class="col-xs-12 col-sm-6 col-md-6 mtb-30">
-                        <iframe src="baiduMap.html" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+                        <iframe src="baiduMap.html" th:src="@{/baiduMap}" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
                     </div>
                 </div>
             </div>
@@ -251,7 +251,7 @@
 
 
         <!-- 页脚 -->
-        <footer class="footer">
+        <footer th:replace="list/_fragment :: footer" class="footer">
             <!-- Footer Widget Section -->
             <div class="footer-widget-section">
                 <div class="w1200">
@@ -383,13 +383,13 @@
 
 
     <!--Start Script -->
-    <script src="../static/js/jquery-3.4.1.min.js"></script>
-    <script src="../static/js/swiper-3.4.0.jquery.min.js"></script>
-    <script src="../static/js/swiper.animate1.0.2.min.js"></script>
-    <script src="../static/js/bootstrap.min.js"></script>
-    <script src="../static/js/jquery.mmenu.all.js"></script>
-    <script src="../static/js/common.js"></script>
-    <script src="../static/js/TweenMax.js"></script>
+    <script src="../static/js/jquery-3.4.1.min.js" type="text/javascript" th:src="@{/js/jquery-3.4.1.min.js}"></script>
+    <script src="../static/js/swiper-3.4.0.jquery.min.js" type="text/javascript" th:src="@{/js/swiper-3.4.0.jquery.min.js}"></script>
+    <script src="../static/js/swiper.animate1.0.2.min.js" type="text/javascript" th:src="@{/js/swiper.animate1.0.2.min.js}"></script>
+    <script src="../static/js/bootstrap.min.js" type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
+    <script src="../static/js/jquery.mmenu.all.js" type="text/javascript" th:src="@{/js/jquery.mmenu.all.js}"></script>
+    <script src="../static/js/common.js" type="text/javascript" th:src="@{/js/common.js}"></script>
+    <script src="../static/js/TweenMax.js" type="text/javascript" th:src="@{/js/TweenMax.js}"></script>
     <script type="text/javascript">
         $("#toTopBtn").click(function () {
             $(window).scrollTop(0,500);

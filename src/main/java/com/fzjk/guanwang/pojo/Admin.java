@@ -13,15 +13,15 @@ import java.util.Date;
 @Component
 public class Admin {
 
-    private long id;
-    private String account; //手机号
-    private String password; //密码
-    private String avatar;  //头像
-    private String nickname; //昵称
-    private String email; //邮箱
-    private int authority;// 权限
-    private Date createTime;    //创建时间
-    private Date updateTime;    //更新时间
+    private long id;          //管理员id
+    private String account;   //手机号
+    private String password;  //密码
+    private String avatar;    //头像
+    private String nickname;  //昵称
+    private String email;     //邮箱
+    private int permission;    //权限
+    private Date createTime;  //创建时间
+    private Date updateTime;  //更新时间
 
 
     public long getId() {
@@ -72,12 +72,12 @@ public class Admin {
         this.email = email;
     }
 
-    public int getAuthority() {
-        return authority;
+    public int getPermission() {
+        return permission;
     }
 
-    public void setAuthority(int authority) {
-        this.authority = authority;
+    public void setPermission(int permission) {
+        this.permission = permission;
     }
 
     public Date getCreateTime() {
@@ -112,7 +112,7 @@ public class Admin {
                 ", avatar='" + avatar + '\'' +
                 ", nickname='" + nickname + '\'' +
                 ", email='" + email + '\'' +
-                ", authority=" + authority +
+                ", permission=" + permission +
                 ", createTime=" + createTime +
                 ", updateTime=" + updateTime +
                 '}';

@@ -1,14 +1,23 @@
 package com.fzjk.guanwang.pojo;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.springframework.stereotype.Component;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Component
 public class SubType {
 
-    private long sid;
-    private String name;
-    private long tid;
-    private int orderBy;    //排序
+    private long sid;       //子栏id
+    private String name;    //名字
+    private long tid;       //类型id
+
     private List<Article> articles = new ArrayList<>();
 
     public long getSid() {
@@ -35,14 +44,6 @@ public class SubType {
         this.tid = tid;
     }
 
-    public int getOrderBy() {
-        return orderBy;
-    }
-
-    public void setOrderBy(int orderBy) {
-        this.orderBy = orderBy;
-    }
-
     public List<Article> getArticles() {
         return articles;
     }
@@ -51,11 +52,13 @@ public class SubType {
         this.articles = articles;
     }
 
-    public SubType(long sid, String name, long tid, int orderBy, List<Article> articles) {
-        this.sid = sid;
-        this.name = name;
-        this.tid = tid;
-        this.orderBy = orderBy;
-        this.articles = articles;
+    @Override
+    public String toString() {
+        return "SubType{" +
+                "sid=" + sid +
+                ", name='" + name + '\'' +
+                ", tid=" + tid +
+                ", articles=" + articles +
+                '}';
     }
 }

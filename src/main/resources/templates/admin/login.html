@@ -18,16 +18,16 @@
             <span></span>
         </div>
         <div class="location">
-            <img src="../../static/images/location.png" class="img-responsive" alt="" />
+            <img src="../../static/images/location.png" th:src="@{/images/location.png}" class="img-responsive" alt="" />
         </div>
-        <form>
-            <input type="text" id="username" class="text" value="账号" onfocus="this.value = ''"><div id="feedback"></div>
-            <input type="password" id="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '123456';}">
+        <form method="post" th:action="@{/admin/login}">
+            <input type="text" id="username" name="username" placeholder="账号" onfocus="this.value=''">
+            <input type="password" id="password" name="password" placeholder="密码" onfocus="this.value=''"/>
             <div class="submit">
-                <input type="submit" onclick="myFunction()" value="登录" >
+                <input type="submit"  value="登录" >
             </div>
 
-            <div class="clear"></div>
+<!--            <div class="hide message" th:unless="${#strings.isEmpty(message)}" th:text="${message}"></div>-->
             <div class="new">
 <!--                <h3><a href="#">忘记密码?</a></h3>-->
 <!--                <h4><a href="#">注册</a></h4>-->
@@ -49,6 +49,5 @@
         window.scrollTo(0,1);
     }
 </script>
-<script src="../../static/js/common.js" type="text/javascript" th:src="@{/js/common.js}"></script>
-<script src="../../static/js/backstage.js" type="text/javascript" th:src="@{/js/backstage.js}"></script>
+<script type="text/javascript" src="../../static/js/backstage.js"  th:src="@{/js/backstage.js}"></script>
 </html>

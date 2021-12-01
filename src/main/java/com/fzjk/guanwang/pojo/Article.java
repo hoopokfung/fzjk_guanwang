@@ -1,25 +1,34 @@
 package com.fzjk.guanwang.pojo;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.springframework.stereotype.Component;
+
 import java.util.Date;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Component
 public class Article {
 
-    private long id;
-    private String title;
-    private String content; //内容
-    private String firstPicture; //首图
+    private long id;                //文章id
+    private String title;           //标题
+    private String content;         //内容
+    private String firstPicture;    //首图
 
-    private String flag;// 草稿？发布？
-    private String editor;//编辑人
-    private String status; // 待审核？审核通过？
+    private String flag;            //草稿？发布？
+    private String editor;          //编辑人
+    private String status;          //待审核？审核通过？
 
-    private Integer views;  //浏览次数
-    private long tid;   //所属大类
-    private long sid;   //所属小类
-    private String description; //描述
+    private Integer views;          //浏览次数
+    private long tid;               //所属大类
+    private long sid;               //所属小类
+    private String description;     //描述
 
-    private Date createTime;
-    private Date updateTime;
+    private Date createTime;        //创建时间
+    private Date updateTime;        //更新时间
 
     public long getId() {
         return id;
@@ -125,19 +134,22 @@ public class Article {
         this.updateTime = updateTime;
     }
 
-    public Article(long id, String title, String content, String firstPicture, String flag, String editor, String status, Integer views, long tid, long sid, String description, Date createTime, Date updateTime) {
-        this.id = id;
-        this.title = title;
-        this.content = content;
-        this.firstPicture = firstPicture;
-        this.flag = flag;
-        this.editor = editor;
-        this.status = status;
-        this.views = views;
-        this.tid = tid;
-        this.sid = sid;
-        this.description = description;
-        this.createTime = createTime;
-        this.updateTime = updateTime;
+    @Override
+    public String toString() {
+        return "Article{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", content='" + content + '\'' +
+                ", firstPicture='" + firstPicture + '\'' +
+                ", flag='" + flag + '\'' +
+                ", editor='" + editor + '\'' +
+                ", status='" + status + '\'' +
+                ", views=" + views +
+                ", tid=" + tid +
+                ", sid=" + sid +
+                ", description='" + description + '\'' +
+                ", createTime=" + createTime +
+                ", updateTime=" + updateTime +
+                '}';
     }
 }

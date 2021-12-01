@@ -16,6 +16,8 @@ public interface AdminMapper {
 
     Admin queryAdminById(int id);
 
+    Admin findByUsernameAndPassword(String username,String password);
+
     int addAdmin(Admin admin);
 
     int updateAdmin(Admin admin);

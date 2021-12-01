@@ -13,7 +13,11 @@
     <select id="queryAdminById" resultType="Admin">
         select * from t_admin where id = #{id}
     </select>
-    
+
+    <select id="findByUsernameAndPassword" resultType="Admin">
+        select * from t_admin where account=#{username} and password=#{password}
+    </select>
+
 <!--   根据前台注册的信息增加管理员-->
     <insert id="addAdmin" parameterType="Admin">
         insert into t_admin(account,password) values (#{account},#{pwd})

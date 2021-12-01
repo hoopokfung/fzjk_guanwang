@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,13 +8,13 @@
     <meta name="author" content="">
     <link rel="icon" href="../../static/images/logo2.png" type="image/png">
     <title>集团动态</title>
-        <link href="../../static/lib/bootstrap-3.4.1/css/bootstrap.css" rel="stylesheet">
-        <link href="../../static/css/animate.min.css" rel="stylesheet">
-        <link href="../../static/css/swiper-3.4.0.min.css" rel="stylesheet">
-        <link href="../../static/lib/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
-        <link href="../../static/css/jquery.mmenu.all.css" rel="stylesheet">
-        <link href="../../static/css/news.css" rel="stylesheet">
-        <link href="../../static/css/style.css" rel="stylesheet">
+        <link href="../../static/lib/bootstrap-3.4.1/css/bootstrap.css" rel="stylesheet" th:href="@{/lib/bootstrap-3.4.1/css/bootstrap.css}">
+        <link href="../../static/css/animate.min.css" rel="stylesheet" th:href="@{/css/animate.min.css}">
+        <link href="../../static/css/swiper-3.4.0.min.css" rel="stylesheet" th:href="@{/css/swiper-3.4.0.min.css}">
+        <link href="../../static/lib/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" th:href="@{/lib/fonts/font-awesome-4.7.0/css/font-awesome.min.css}">
+        <link href="../../static/css/jquery.mmenu.all.css" rel="stylesheet" th:href="@{/css/jquery.mmenu.all.css}">
+        <link href="../../static/css/style.css" rel="stylesheet" th:href="@{/css/style.css}">
+        <link href="../../static/css/news.css" rel="stylesheet" th:href="@{/css/news.css}">
         <!--[if lt IE 9]>
         <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
@@ -23,7 +23,7 @@
 <body>
 
 <!-- 头部 -->
-<header class="header iheader tran300 ">
+<header th:replace="list/_fragment :: menu(3)" class="header iheader tran300 ">
     <div class="w1440 clearfix">
         <a  href="../index.html" class="logo fl">
             <img src="../../static/images/logo.png" alt="this is a logo image.">
@@ -44,7 +44,7 @@
                         </a>
                     </h3>
                 </li>
-                <li class="nLi nLi2 tran400 on">
+                <li class="nLi nLi2 tran400 ">
                     <h3>
                         <a href="about_1.html"  class="tran300 clearfix">
                             <span class="ch">关于金控</span>
@@ -63,7 +63,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="nLi nLi3 tran400 ">
+                <li class="nLi nLi3 tran400 on">
                     <h3>
                         <a href="news_1.html"  class="tran300 clearfix">
                             <span class="ch">新闻中心</span>
@@ -156,7 +156,7 @@
 
 <div id="page">
 
-    <nav id="menu" class="m_nav" style="display:none;">
+    <nav th:replace="list/_fragment :: mmenu" id="menu" class="m_nav" style="display:none;">
         <ul>
             <li class="home">
                 <a href="../index.html">网站首页</a>
@@ -212,7 +212,7 @@
 
     <div class="pageWrap">
         <!--------- banner-box------------>
-        <section class="banner" style="background-image: url(../../static/images/banner1.jpg);">
+        <section class="banner">
             <div class="banner-text w1200">
                 <h2 class="">新闻中心</h2>
                 <h3 class="">news</h3>
@@ -224,13 +224,13 @@
         <div class="nyNav">
             <ul class="w1200 clearfix">
                 <li class='on'>
-                    <a href="news_1.html" class="tran300">集团动态</a>
+                    <a href="news_1.html" th:href="@{/list/5}" class="tran300">集团动态</a>
                 </li>
                 <li class=''>
-                    <a href="news_2.html" class="tran300">一线快讯</a>
+                    <a href="news_2.html" th:href="@{/list/6}" class="tran300">一线快讯</a>
                 </li>
                 <li class=''>
-                    <a href="news_3.html" class="tran300">行业动态</a>
+                    <a href="news_3.html" th:href="@{/list/7}" class="tran300">行业动态</a>
                 </li>
             </ul>
         </div>
@@ -250,7 +250,7 @@
                                 <div class="news-pic col-xs-3 col-sm-3 col-md-3">
                                     <div class="post-media">
                                         <a href="news_passage.html" title="">
-                                            <img src="../../static/images/会议图片1.jpg" alt="" class="img-responsive">
+                                            <img src="../../static/images/会议图片1.jpg" th:src="@{/images/会议图片1.jpg}" alt="" class="img-responsive">
                                             <div class="hovereffect">
 
                                             </div>
@@ -285,7 +285,7 @@
                                 <div class="news-pic col-xs-3 col-sm-3 col-md-3">
                                     <div class="post-media">
                                         <a href="news_passage.html" title="">
-                                            <img src="../../static/images/会议图片1.jpg" alt="" class="img-responsive">
+                                            <img src="../../static/images/会议图片1.jpg" th:src="@{/images/会议图片1.jpg}" alt="" class="img-responsive">
                                             <div class="hovereffect">
 
                                             </div>
@@ -320,7 +320,7 @@
                                 <div class="news-pic col-xs-3 col-sm-3 col-md-3">
                                     <div class="post-media">
                                         <a href="news_passage.html" title="">
-                                            <img src="../../static/images/会议图片1.jpg" alt="" class="img-responsive">
+                                            <img src="../../static/images/会议图片1.jpg" th:src="@{/images/会议图片1.jpg}" alt="" class="img-responsive">
                                             <div class="hovereffect">
 
                                             </div>
@@ -355,7 +355,7 @@
                                 <div class="news-pic col-xs-3 col-sm-3 col-md-3">
                                     <div class="post-media">
                                         <a href="news_passage.html" title="">
-                                            <img src="../../static/images/会议图片1.jpg" alt="" class="img-responsive">
+                                            <img src="../../static/images/会议图片1.jpg" th:src="@{/images/会议图片1.jpg}" alt="" class="img-responsive">
                                             <div class="hovereffect">
 
                                             </div>
@@ -390,7 +390,7 @@
                                 <div class="news-pic col-xs-3 col-sm-3 col-md-3">
                                     <div class="post-media">
                                         <a href="news_passage.html" title="">
-                                            <img src="../../static/images/会议图片1.jpg" alt="" class="img-responsive">
+                                            <img src="../../static/images/会议图片1.jpg" th:src="@{/images/会议图片1.jpg}" alt="" class="img-responsive">
                                             <div class="hovereffect">
 
                                             </div>
@@ -452,7 +452,7 @@
         </div>
 
         <!-- 页脚 -->
-        <footer class="footer">
+        <footer th:replace="list/_fragment :: footer" class="footer">
             <!-- Footer Widget Section -->
             <div class="footer-widget-section">
                 <div class="w1200">
@@ -581,7 +581,7 @@
 
 </div>
 
-
+<div  th:replace="list/_fragment :: script_fragment">
     <!--Start Script -->
     <script src="../../static/js/jquery-3.4.1.min.js"></script>
     <script src="../../static/js/swiper-3.4.0.jquery.min.js"></script>
@@ -596,5 +596,7 @@
         })
     </script>
     <!--End Script -->
+</div>
+
 </body>
 </html>

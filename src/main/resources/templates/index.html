@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1,maxinum-scale = 1 , user-scalable = 0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable = 0">
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -22,7 +22,7 @@
 </head>
 <body>
     <!-- 头部 -->
-    <header class="header iheader tran300 ">
+    <header th:replace="list/_fragment :: menu(1)" class="header iheader tran300 ">
         <div class="w1440 clearfix">
            <a  href="index.html" class="logo fl">
                <img src="../static/images/logo.png" type="image/png" alt="this is a logo image." th:src="@{/images/logo.png}">
@@ -45,7 +45,7 @@
                    </li>
                    <li class="nLi nLi2 tran400 ">
                        <h3>
-                           <a href="list/about_1.html"  class="tran300 clearfix">
+                           <a href="list/about_1.html" th:href="@{/list/1}"  class="tran300 clearfix">
                                <span class="ch">关于金控</span>
                                <span class="en">ABOUT US</span>
                                <i></i>
@@ -157,7 +157,7 @@
 
     <!-- 中间部分 -->
     <div id="page">
-        <nav id="menu" class="m_nav" style="display:none;">
+        <nav th:replace="list/_fragment :: mmenu" id="menu" class="m_nav" style="display:none;">
             <ul>
                 <li class="home">
                     <a href="index.html">网站首页</a>

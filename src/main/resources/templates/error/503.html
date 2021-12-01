@@ -20,8 +20,18 @@
             <div class="error-inner">
                 <h1>503</h1>
                 <h3>Looks like we are having some server issues.</h3>
-                <p>看来我们的服务器出了点问题 请点击下方按钮</p>
+                <p>看来我们的服务器出了点问题 请联系管理员</p>
+                <p>管理员联系方式：15979594979</p>
                 <a href="../index.html" type="button" class="btn btn-primary">返回首页<a/>
+                <div>
+                    <div th:utext="'&lt;!--'" th:remove="tag" ></div>
+                    <div th:utext="'Failed Request URL : ' + ${url}" th:remove="tag"  ></div>
+                    <div th:utext="'Exception message : ' + ${Exception}"  th:remove="tag" ></div>
+                    <ul th:remove="tag" >
+                        <li th:each="st : ${exception.stackTrace}" th:remove="tag"><span th:utext="${st}" th:remove="tag"></span></li>
+                    </ul>
+                    <div th:utext="'--&gt;'"  th:remove="tag" ></div>
+                </div>
             </div>
         </div>
     </div>

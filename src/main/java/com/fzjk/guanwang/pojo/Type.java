@@ -1,14 +1,22 @@
 package com.fzjk.guanwang.pojo;
 
-import javax.persistence.OneToMany;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.springframework.stereotype.Component;
+
 import java.util.ArrayList;
 import java.util.List;
 
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Component
 public class Type {
 
-    private long tid;
-    private String name;
-    private int orderBy;    //排序
+    private long tid;       //分类Id
+    private String name;    //名字
 
     private List<SubType> subTypes = new ArrayList<>();
 
@@ -28,14 +36,6 @@ public class Type {
         this.name = name;
     }
 
-    public int getOrderBy() {
-        return orderBy;
-    }
-
-    public void setOrderBy(int orderBy) {
-        this.orderBy = orderBy;
-    }
-
     public List<SubType> getSubTypes() {
         return subTypes;
     }
@@ -44,10 +44,13 @@ public class Type {
         this.subTypes = subTypes;
     }
 
-    public Type(long tid, String name, int orderBy, List<SubType> subTypes) {
-        this.tid = tid;
-        this.name = name;
-        this.orderBy = orderBy;
-        this.subTypes = subTypes;
+
+    @Override
+    public String toString() {
+        return "Type{" +
+                "tid=" + tid +
+                ", name='" + name + '\'' +
+                ", subTypes=" + subTypes +
+                '}';
     }
 }

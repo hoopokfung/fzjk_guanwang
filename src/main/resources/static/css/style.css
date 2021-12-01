@@ -1674,6 +1674,7 @@ news-box start
     height: 400px;
     background-position: center top;
     background-repeat: no-repeat;
+    background-image: url("../images/banner1.jpg");
 }
 .banner .banner-text{
     padding-top: 150px;
@@ -3057,6 +3058,7 @@ testimonialSlider
 
     .banner{
         height: 200px;
+        background-image: url("../images/banner1.jpg");
     }
     .banner .banner-text{
         padding-top: 50px;
@@ -3317,6 +3319,7 @@ testimonialSlider
     }
     .banner{
         height: 200px;
+        background-image: url("../images/banner1.jpg");
     }
     .banner .banner-text{
         padding-top: 50px;

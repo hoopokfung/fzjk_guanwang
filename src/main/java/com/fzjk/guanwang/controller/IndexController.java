@@ -3,6 +3,7 @@ package com.fzjk.guanwang.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 
@@ -17,4 +18,11 @@ public class IndexController {
         model.addAttribute("msg","hello,world");
         return "index";
     }
+
+    @GetMapping("/baiduMap")
+    public String baiduMap(){
+        return "baiduMap";
+    }
+
+
 }
