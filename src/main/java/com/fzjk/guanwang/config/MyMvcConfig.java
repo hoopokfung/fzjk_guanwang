@@ -12,6 +12,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import java.util.Locale;
 
+
 @Configuration
 public class MyMvcConfig implements WebMvcConfigurer {
 
@@ -29,13 +30,15 @@ public class MyMvcConfig implements WebMvcConfigurer {
 //        }
 //    }
 
-
+    //配置视图控制器
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/").setViewName("index");
         registry.addViewController("/index.html").setViewName("index");
     }
 
+
+    //配置管理员系统拦截器
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         /*配置LoginInterceptor拦截器的拦截路径*/

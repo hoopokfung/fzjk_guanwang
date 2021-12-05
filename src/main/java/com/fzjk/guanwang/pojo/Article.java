@@ -1,40 +1,46 @@
 package com.fzjk.guanwang.pojo;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import org.springframework.stereotype.Component;
 
+import javax.persistence.*;
 import java.util.Date;
 
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-@Component
+@Entity
+@Table(name = "t_article")
 public class Article {
 
-    private long id;                //文章id
-    private String title;           //标题
-    private String content;         //内容
-    private String firstPicture;    //首图
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;                //文章id
 
+    private String title;           //标题
+
+    @Basic(fetch = FetchType.LAZY)  //懒加载表示，初始化时不加载该属性，只有在调用时才加载;EAGER(即时加载，默认值）即实例化时必须加载该属性
+    @Lob //@Lob注解声明大字段类型 第一次初始时才有效，一般和@Basic懒加载一起使用，只有需要获取的时候才去查询，也可以直接去数据库内将该字段改为longtext类型
+    private String content;         //内容
+
+    private String firstPicture;    //首图
     private String flag;            //草稿？发布？
     private String editor;          //编辑人
     private String status;          //待审核？审核通过？
 
     private Integer views;          //浏览次数
-    private long tid;               //所属大类
-    private long sid;               //所属小类
     private String description;     //描述
-
+    @Temporal(TemporalType.TIMESTAMP)
     private Date createTime;        //创建时间
+    @Temporal(TemporalType.TIMESTAMP) //TIMESTAMP表示yyyy-MM-dd HH:mm:ss
     private Date updateTime;        //更新时间
 
-    public long getId() {
+    @ManyToOne //指定对应关系为多对一
+    private Type type;  //多个文章可从属于一个分类
+
+    @ManyToOne //多对一
+    private SubType subType; //多个文章可从属于一个子类，与SubType类的@OnetoMany中的mappedBy = "subType"对应
+
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -94,22 +100,6 @@ public class Article {
         this.views = views;
     }
 
-    public long getTid() {
-        return tid;
-    }
-
-    public void setTid(long tid) {
-        this.tid = tid;
-    }
-
-    public long getSid() {
-        return sid;
-    }
-
-    public void setSid(long sid) {
-        this.sid = sid;
-    }
-
     public String getDescription() {
         return description;
     }
@@ -134,6 +124,22 @@ public class Article {
         this.updateTime = updateTime;
     }
 
+    public Type getType() {
+        return type;
+    }
+
+    public void setType(Type type) {
+        this.type = type;
+    }
+
+    public SubType getSubType() {
+        return subType;
+    }
+
+    public void setSubType(SubType subType) {
+        this.subType = subType;
+    }
+
     @Override
     public String toString() {
         return "Article{" +
@@ -145,11 +151,11 @@ public class Article {
                 ", editor='" + editor + '\'' +
                 ", status='" + status + '\'' +
                 ", views=" + views +
-                ", tid=" + tid +
-                ", sid=" + sid +
                 ", description='" + description + '\'' +
                 ", createTime=" + createTime +
                 ", updateTime=" + updateTime +
+                ", type=" + type +
+                ", subType=" + subType +
                 '}';
     }
 }

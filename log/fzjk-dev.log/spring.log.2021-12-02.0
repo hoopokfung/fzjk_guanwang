@@ -1,0 +1,1551 @@
+2021-12-02 01:01:25.571  WARN 16952 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h29s527ms63µs900ns).
+2021-12-02 08:46:40.437  WARN 16952 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7h45m22s94ms530µs500ns).
+2021-12-02 08:50:14.369  INFO 16952 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/list/7', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.ListController.news_3', args=[]}
+2021-12-02 08:50:14.370  INFO 16952 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Result : {}/list/news_3
+2021-12-02 08:50:14.371  INFO 16952 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-02 08:50:18.819  INFO 16952 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/index', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.IndexController.index', args=[{}]}
+2021-12-02 08:50:18.820  INFO 16952 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Result : {}index
+2021-12-02 08:50:18.820  INFO 16952 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-02 08:50:21.568  INFO 16952 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/list/20', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.ListController.contact', args=[]}
+2021-12-02 08:50:21.569  INFO 16952 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Result : {}/contact
+2021-12-02 08:50:21.569  INFO 16952 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-02 08:50:21.682  INFO 16952 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/baiduMap', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.IndexController.baiduMap', args=[]}
+2021-12-02 08:50:21.683  INFO 16952 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Result : {}baiduMap
+2021-12-02 08:50:21.683  INFO 16952 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-02 08:50:26.143  INFO 16952 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/list/1', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.ListController.about_1', args=[]}
+2021-12-02 08:50:26.144  INFO 16952 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Result : {}/list/about_1
+2021-12-02 08:50:26.145  INFO 16952 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-02 08:50:28.624  INFO 16952 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/index', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.IndexController.index', args=[{}]}
+2021-12-02 08:50:28.624  INFO 16952 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Result : {}index
+2021-12-02 08:50:28.625  INFO 16952 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-02 08:50:34.414  INFO 16952 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/list/8', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.ListController.business', args=[]}
+2021-12-02 08:50:34.415  INFO 16952 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Result : {}/business
+2021-12-02 08:50:34.415  INFO 16952 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-02 08:50:37.226  INFO 16952 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/list/1', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.ListController.about_1', args=[]}
+2021-12-02 08:50:37.227  INFO 16952 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Result : {}/list/about_1
+2021-12-02 08:50:37.227  INFO 16952 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-02 08:50:37.915  INFO 16952 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/index', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.IndexController.index', args=[{}]}
+2021-12-02 08:50:37.916  INFO 16952 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Result : {}index
+2021-12-02 08:50:37.916  INFO 16952 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-02 08:50:40.405  INFO 16952 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/list/1', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.ListController.about_1', args=[]}
+2021-12-02 08:50:40.406  INFO 16952 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Result : {}/list/about_1
+2021-12-02 08:50:40.406  INFO 16952 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-02 08:50:41.529  INFO 16952 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/list/5', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.ListController.news_1', args=[]}
+2021-12-02 08:50:41.529  INFO 16952 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Result : {}/list/news_1
+2021-12-02 08:50:41.529  INFO 16952 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-02 08:50:42.728  INFO 16952 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/list/5', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.ListController.news_1', args=[]}
+2021-12-02 08:50:42.728  INFO 16952 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Result : {}/list/news_1
+2021-12-02 08:50:42.729  INFO 16952 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-02 08:50:43.142  INFO 16952 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/list/8', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.ListController.business', args=[]}
+2021-12-02 08:50:43.143  INFO 16952 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Result : {}/business
+2021-12-02 08:50:43.143  INFO 16952 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-02 08:50:44.114  INFO 16952 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/list/15', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.ListController.party_1', args=[]}
+2021-12-02 08:50:44.114  INFO 16952 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Result : {}/list/party_1
+2021-12-02 08:50:44.114  INFO 16952 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-02 08:50:44.952  INFO 16952 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/list/18', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.ListController.inform_1', args=[]}
+2021-12-02 08:50:44.953  INFO 16952 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Result : {}/list/inform_1
+2021-12-02 08:50:44.953  INFO 16952 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-02 08:50:46.488  INFO 16952 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/list/20', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.ListController.contact', args=[]}
+2021-12-02 08:50:46.488  INFO 16952 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Result : {}/contact
+2021-12-02 08:50:46.488  INFO 16952 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-02 08:50:46.574  INFO 16952 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/baiduMap', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.IndexController.baiduMap', args=[]}
+2021-12-02 08:50:46.575  INFO 16952 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Result : {}baiduMap
+2021-12-02 08:50:46.575  INFO 16952 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-02 08:50:48.535  INFO 16952 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/index', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.IndexController.index', args=[{}]}
+2021-12-02 08:50:48.535  INFO 16952 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Result : {}index
+2021-12-02 08:50:48.535  INFO 16952 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-02 08:50:53.411  INFO 16952 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/list/5', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.ListController.news_1', args=[]}
+2021-12-02 08:50:53.412  INFO 16952 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Result : {}/list/news_1
+2021-12-02 08:50:53.412  INFO 16952 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-02 08:50:54.138  INFO 16952 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/list/8', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.ListController.business', args=[]}
+2021-12-02 08:50:54.138  INFO 16952 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Result : {}/business
+2021-12-02 08:50:54.138  INFO 16952 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-02 08:50:59.666  INFO 16952 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/index', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.IndexController.index', args=[{}]}
+2021-12-02 08:50:59.667  INFO 16952 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Result : {}index
+2021-12-02 08:50:59.667  INFO 16952 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-02 08:51:30.591 DEBUG 16952 --- [http-nio-8080-exec-10] c.f.g.m.A.findByUsernameAndPassword      : ==>  Preparing: select * from t_admin where account=? and password=?
+2021-12-02 08:51:30.679 DEBUG 16952 --- [http-nio-8080-exec-10] c.f.g.m.A.findByUsernameAndPassword      : ==> Parameters: 15979594979(String), 07a6f8db065a8a13f275a51e0ac1301a(String)
+2021-12-02 08:51:30.692 DEBUG 16952 --- [http-nio-8080-exec-10] c.f.g.m.A.findByUsernameAndPassword      : <==      Total: 1
+2021-12-02 08:54:26.701  INFO 15480 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Starting GuanwangApplication using Java 1.8.0_65 on DESKTOP-0R0PQ9E with PID 15480 (E:\workplace\fzjk_guanwang\target\classes started by hushizhi0121 in E:\workplace\fzjk_guanwang)
+2021-12-02 08:54:26.701 DEBUG 15480 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-12-02 08:54:26.701  INFO 15480 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : No active profile set, falling back to default profiles: default
+2021-12-02 08:54:26.794  INFO 15480 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-02 08:54:26.794  INFO 15480 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-02 08:54:28.419  INFO 15480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-02 08:54:28.435  INFO 15480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+2021-12-02 08:54:29.497  INFO 15480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-02 08:54:29.497  INFO 15480 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-02 08:54:29.497  INFO 15480 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-02 08:54:29.637  INFO 15480 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-02 08:54:29.637  INFO 15480 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2843 ms
+2021-12-02 08:54:29.825  INFO 15480 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-02 08:54:29.966  INFO 15480 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-02 08:54:30.028  INFO 15480 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-02 08:54:30.137  INFO 15480 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-12-02 08:54:30.403  INFO 15480 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-02 08:54:30.543  INFO 15480 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-12-02 08:54:30.778  INFO 15480 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-02 08:54:30.778  INFO 15480 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 08:54:31.122  WARN 15480 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 08:54:31.465  INFO 15480 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-02 08:54:31.809  INFO 15480 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-02 08:54:31.840  INFO 15480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-02 08:54:31.856  INFO 15480 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Started GuanwangApplication in 5.978 seconds (JVM running for 7.736)
+2021-12-02 08:54:35.208  INFO 15480 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-02 08:54:35.208  INFO 15480 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-02 08:54:35.209  INFO 15480 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-12-02 08:54:45.203 DEBUG 15480 --- [http-nio-8080-exec-7] c.f.g.m.A.findByUsernameAndPassword      : ==>  Preparing: select * from t_admin where account=? and password=?
+2021-12-02 08:54:45.219 DEBUG 15480 --- [http-nio-8080-exec-7] c.f.g.m.A.findByUsernameAndPassword      : ==> Parameters: 15979594979(String), 07a6f8db065a8a13f275a51e0ac1301a(String)
+2021-12-02 08:54:45.231 DEBUG 15480 --- [http-nio-8080-exec-7] c.f.g.m.A.findByUsernameAndPassword      : <==      Total: 1
+2021-12-02 08:57:29.818  INFO 15480 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 08:57:29.850  INFO 15480 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-02 08:57:29.850  INFO 15480 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-02 08:57:29.975  INFO 15480 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Starting GuanwangApplication using Java 1.8.0_65 on DESKTOP-0R0PQ9E with PID 15480 (E:\workplace\fzjk_guanwang\target\classes started by hushizhi0121 in E:\workplace\fzjk_guanwang)
+2021-12-02 08:57:29.975 DEBUG 15480 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-12-02 08:57:29.975  INFO 15480 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : No active profile set, falling back to default profiles: default
+2021-12-02 08:57:30.256  INFO 15480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-02 08:57:30.256  INFO 15480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2021-12-02 08:57:30.527  INFO 15480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-02 08:57:30.527  INFO 15480 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-02 08:57:30.527  INFO 15480 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-02 08:57:30.543  INFO 15480 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-02 08:57:30.543  INFO 15480 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 553 ms
+2021-12-02 08:57:30.621  INFO 15480 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-12-02 08:57:30.637  INFO 15480 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-12-02 08:57:30.637  INFO 15480 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-02 08:57:30.652  INFO 15480 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-12-02 08:57:30.668  INFO 15480 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-02 08:57:30.668  INFO 15480 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 08:57:30.824  WARN 15480 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 08:57:31.074  INFO 15480 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-02 08:57:31.371  INFO 15480 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-02 08:57:31.386  INFO 15480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-02 08:57:31.386  INFO 15480 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Started GuanwangApplication in 1.469 seconds (JVM running for 187.279)
+2021-12-02 08:57:31.402  INFO 15480 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-02 08:57:33.120  INFO 15480 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 08:57:33.120  INFO 15480 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-12-02 08:57:33.120  INFO 15480 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-12-02 08:57:33.214  INFO 15480 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Starting GuanwangApplication using Java 1.8.0_65 on DESKTOP-0R0PQ9E with PID 15480 (E:\workplace\fzjk_guanwang\target\classes started by hushizhi0121 in E:\workplace\fzjk_guanwang)
+2021-12-02 08:57:33.214 DEBUG 15480 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-12-02 08:57:33.214  INFO 15480 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : No active profile set, falling back to default profiles: default
+2021-12-02 08:57:33.433  INFO 15480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-02 08:57:33.433  INFO 15480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2021-12-02 08:57:33.605  INFO 15480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-02 08:57:33.605  INFO 15480 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-02 08:57:33.605  INFO 15480 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-02 08:57:33.683  INFO 15480 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-02 08:57:33.683  INFO 15480 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 469 ms
+2021-12-02 08:57:33.776  INFO 15480 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2021-12-02 08:57:33.792  INFO 15480 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2021-12-02 08:57:33.792  INFO 15480 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-02 08:57:33.792  INFO 15480 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-12-02 08:57:33.792  INFO 15480 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-02 08:57:33.792  INFO 15480 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 08:57:33.886  WARN 15480 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 08:57:34.073  INFO 15480 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-02 08:57:34.245  INFO 15480 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-02 08:57:34.261  INFO 15480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-02 08:57:34.261  INFO 15480 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Started GuanwangApplication in 1.077 seconds (JVM running for 190.149)
+2021-12-02 08:57:34.261  INFO 15480 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-02 08:57:41.213  INFO 15480 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-02 08:57:41.220  INFO 15480 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-02 08:57:41.222  INFO 15480 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-12-02 08:58:22.453 DEBUG 15480 --- [http-nio-8080-exec-2] c.f.g.m.A.findByUsernameAndPassword      : ==>  Preparing: select * from t_admin where account=? and password=?
+2021-12-02 08:58:22.454 DEBUG 15480 --- [http-nio-8080-exec-2] c.f.g.m.A.findByUsernameAndPassword      : ==> Parameters: 15979594979(String), 07a6f8db065a8a13f275a51e0ac1301a(String)
+2021-12-02 08:58:22.454 DEBUG 15480 --- [http-nio-8080-exec-2] c.f.g.m.A.findByUsernameAndPassword      : <==      Total: 1
+2021-12-02 08:58:46.902  INFO 15480 --- [Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 08:58:46.902  INFO 15480 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2021-12-02 08:58:46.902  INFO 15480 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2021-12-02 08:58:47.027  INFO 15480 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Starting GuanwangApplication using Java 1.8.0_65 on DESKTOP-0R0PQ9E with PID 15480 (E:\workplace\fzjk_guanwang\target\classes started by hushizhi0121 in E:\workplace\fzjk_guanwang)
+2021-12-02 08:58:47.027 DEBUG 15480 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-12-02 08:58:47.027  INFO 15480 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : No active profile set, falling back to default profiles: default
+2021-12-02 08:58:47.339  INFO 15480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-02 08:58:47.355  INFO 15480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 JPA repository interfaces.
+2021-12-02 08:58:47.679  INFO 15480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-02 08:58:47.679  INFO 15480 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-02 08:58:47.679  INFO 15480 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-02 08:58:47.694  INFO 15480 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-02 08:58:47.694  INFO 15480 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 667 ms
+2021-12-02 08:58:47.804  INFO 15480 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2021-12-02 08:58:47.804  INFO 15480 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2021-12-02 08:58:47.819  INFO 15480 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-02 08:58:47.819  INFO 15480 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-12-02 08:58:47.835  INFO 15480 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-02 08:58:47.835  INFO 15480 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 08:58:47.991  WARN 15480 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 08:58:48.272  INFO 15480 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-02 08:58:48.585  INFO 15480 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-02 08:58:48.600  INFO 15480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-02 08:58:48.600  INFO 15480 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Started GuanwangApplication in 1.623 seconds (JVM running for 264.494)
+2021-12-02 08:58:48.616  INFO 15480 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-02 08:58:50.440  INFO 15480 --- [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 08:58:50.441  INFO 15480 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2021-12-02 08:58:50.445  INFO 15480 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2021-12-02 08:58:50.557  INFO 15480 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Starting GuanwangApplication using Java 1.8.0_65 on DESKTOP-0R0PQ9E with PID 15480 (E:\workplace\fzjk_guanwang\target\classes started by hushizhi0121 in E:\workplace\fzjk_guanwang)
+2021-12-02 08:58:50.557 DEBUG 15480 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-12-02 08:58:50.557  INFO 15480 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : No active profile set, falling back to default profiles: default
+2021-12-02 08:58:50.767  INFO 15480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-02 08:58:50.770  INFO 15480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2021-12-02 08:58:50.968  INFO 15480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-02 08:58:50.968  INFO 15480 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-02 08:58:50.968  INFO 15480 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-02 08:58:50.987  INFO 15480 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-02 08:58:50.987  INFO 15480 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 428 ms
+2021-12-02 08:58:51.077  INFO 15480 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2021-12-02 08:58:51.080  INFO 15480 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2021-12-02 08:58:51.086  INFO 15480 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-02 08:58:51.090  INFO 15480 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-12-02 08:58:51.097  INFO 15480 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-02 08:58:51.097  INFO 15480 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 08:58:51.226  WARN 15480 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 08:58:51.410  INFO 15480 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-02 08:58:51.606  INFO 15480 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-02 08:58:51.627  INFO 15480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-02 08:58:51.633  INFO 15480 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Started GuanwangApplication in 1.107 seconds (JVM running for 267.512)
+2021-12-02 08:58:51.635  INFO 15480 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-02 08:58:55.508  INFO 15480 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-02 08:58:55.509  INFO 15480 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-02 08:58:55.511  INFO 15480 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-12-02 08:59:19.007  INFO 15480 --- [Thread-20] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 08:59:19.007  INFO 15480 --- [Thread-20] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2021-12-02 08:59:19.007  INFO 15480 --- [Thread-20] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2021-12-02 08:59:19.132  INFO 15480 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Starting GuanwangApplication using Java 1.8.0_65 on DESKTOP-0R0PQ9E with PID 15480 (E:\workplace\fzjk_guanwang\target\classes started by hushizhi0121 in E:\workplace\fzjk_guanwang)
+2021-12-02 08:59:19.132 DEBUG 15480 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-12-02 08:59:19.132  INFO 15480 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : No active profile set, falling back to default profiles: default
+2021-12-02 08:59:19.367  INFO 15480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-02 08:59:19.367  INFO 15480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
+2021-12-02 08:59:19.601  INFO 15480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-02 08:59:19.601  INFO 15480 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-02 08:59:19.601  INFO 15480 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-02 08:59:19.617  INFO 15480 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-02 08:59:19.617  INFO 15480 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 485 ms
+2021-12-02 08:59:19.723  INFO 15480 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2021-12-02 08:59:19.723  INFO 15480 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2021-12-02 08:59:19.723  INFO 15480 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-02 08:59:19.723  INFO 15480 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-12-02 08:59:19.739  INFO 15480 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-02 08:59:19.739  INFO 15480 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 08:59:19.864  WARN 15480 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 08:59:20.129  INFO 15480 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-02 08:59:20.395  INFO 15480 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-02 08:59:20.410  INFO 15480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-02 08:59:20.410  INFO 15480 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Started GuanwangApplication in 1.316 seconds (JVM running for 296.303)
+2021-12-02 08:59:20.426  INFO 15480 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-02 08:59:22.205  INFO 15480 --- [Thread-24] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 08:59:22.205  INFO 15480 --- [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2021-12-02 08:59:22.220  INFO 15480 --- [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2021-12-02 08:59:22.315  INFO 15480 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Starting GuanwangApplication using Java 1.8.0_65 on DESKTOP-0R0PQ9E with PID 15480 (E:\workplace\fzjk_guanwang\target\classes started by hushizhi0121 in E:\workplace\fzjk_guanwang)
+2021-12-02 08:59:22.315 DEBUG 15480 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-12-02 08:59:22.315  INFO 15480 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : No active profile set, falling back to default profiles: default
+2021-12-02 08:59:22.529  INFO 15480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-02 08:59:22.537  INFO 15480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2021-12-02 08:59:22.730  INFO 15480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-02 08:59:22.731  INFO 15480 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-02 08:59:22.731  INFO 15480 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-02 08:59:22.758  INFO 15480 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-02 08:59:22.759  INFO 15480 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 442 ms
+2021-12-02 08:59:22.831  INFO 15480 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2021-12-02 08:59:22.835  INFO 15480 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2021-12-02 08:59:22.838  INFO 15480 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-02 08:59:22.843  INFO 15480 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-12-02 08:59:22.850  INFO 15480 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-02 08:59:22.850  INFO 15480 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 08:59:22.984  WARN 15480 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 08:59:23.202  INFO 15480 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-02 08:59:23.380  INFO 15480 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-02 08:59:23.392  INFO 15480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-02 08:59:23.396  INFO 15480 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Started GuanwangApplication in 1.111 seconds (JVM running for 299.275)
+2021-12-02 08:59:23.397  INFO 15480 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-02 08:59:23.832  INFO 15480 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-02 08:59:23.833  INFO 15480 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-02 08:59:23.835  INFO 15480 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-12-02 09:24:38.445  WARN 15480 --- [HikariPool-7 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Thread starvation or clock leap detected (housekeeper delta=2m15s450ms857µs900ns).
+2021-12-02 10:11:51.071  INFO 11964 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Starting GuanwangApplication using Java 1.8.0_65 on DESKTOP-0R0PQ9E with PID 11964 (E:\workplace\fzjk_guanwang\target\classes started by hushizhi0121 in E:\workplace\fzjk_guanwang)
+2021-12-02 10:11:51.072 DEBUG 11964 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-12-02 10:11:51.072  INFO 11964 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : No active profile set, falling back to default profiles: default
+2021-12-02 10:11:51.158  INFO 11964 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-02 10:11:51.159  INFO 11964 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-02 10:11:52.214  INFO 11964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-02 10:11:52.237  INFO 11964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2021-12-02 10:11:53.278  INFO 11964 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-02 10:11:53.286  INFO 11964 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-02 10:11:53.286  INFO 11964 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-02 10:11:53.394  INFO 11964 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-02 10:11:53.395  INFO 11964 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2235 ms
+2021-12-02 10:11:53.587  INFO 11964 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-02 10:11:53.699  INFO 11964 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-02 10:11:53.760  INFO 11964 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-02 10:11:53.859  INFO 11964 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-12-02 10:11:54.137  INFO 11964 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-02 10:11:54.257  INFO 11964 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-12-02 10:11:54.542  INFO 11964 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-02 10:11:54.552  INFO 11964 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 10:11:54.878  WARN 11964 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 10:11:55.258  INFO 11964 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-02 10:11:55.584  INFO 11964 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-02 10:11:55.622  INFO 11964 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-02 10:11:55.632  INFO 11964 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Started GuanwangApplication in 5.321 seconds (JVM running for 7.13)
+2021-12-02 10:12:00.715  INFO 11964 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-02 10:12:00.715  INFO 11964 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-02 10:12:00.716  INFO 11964 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-12-02 10:12:16.577 DEBUG 11964 --- [http-nio-8080-exec-6] c.f.g.m.A.findByUsernameAndPassword      : ==>  Preparing: select * from t_admin where account=? and password=?
+2021-12-02 10:12:16.593 DEBUG 11964 --- [http-nio-8080-exec-6] c.f.g.m.A.findByUsernameAndPassword      : ==> Parameters: 15979594979(String), 07a6f8db065a8a13f275a51e0ac1301a(String)
+2021-12-02 10:12:16.672 DEBUG 11964 --- [http-nio-8080-exec-6] c.f.g.m.A.findByUsernameAndPassword      : <==      Total: 1
+2021-12-02 10:24:24.574 DEBUG 11964 --- [http-nio-8080-exec-6] c.f.g.m.A.findByUsernameAndPassword      : ==>  Preparing: select * from t_admin where account=? and password=?
+2021-12-02 10:24:24.574 DEBUG 11964 --- [http-nio-8080-exec-6] c.f.g.m.A.findByUsernameAndPassword      : ==> Parameters: 15979594979(String), 07a6f8db065a8a13f275a51e0ac1301a(String)
+2021-12-02 10:24:24.575 DEBUG 11964 --- [http-nio-8080-exec-6] c.f.g.m.A.findByUsernameAndPassword      : <==      Total: 1
+2021-12-02 10:44:10.942 ERROR 11964 --- [http-nio-8080-exec-9] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-9] Exception processing template "admin/subType-input": An error happened during template parsing (template: "class path resource [templates/admin/subType-input.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/admin/subType-input.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1400)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.attoparser.ParseException: Could not parse as expression: "/lib/bootstrap-select/bootstrap-select.min.css" (template: "admin/subType-input" - line 16, col 110)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "/lib/bootstrap-select/bootstrap-select.min.css" (template: "admin/subType-input" - line 16, col 110)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleStandaloneElementEnd(TemplateHandlerAdapterMarkupHandler.java:260)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleStandaloneElementEnd(InlinedOutputExpressionMarkupHandler.java:256)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleStandaloneElementEnd(OutputExpressionInlinePreProcessorHandler.java:169)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleStandaloneElementEnd(InlinedOutputExpressionMarkupHandler.java:104)
+	at org.attoparser.HtmlElement.handleStandaloneElementEnd(HtmlElement.java:79)
+	at org.attoparser.HtmlMarkupHandler.handleStandaloneElementEnd(HtmlMarkupHandler.java:241)
+	at org.attoparser.MarkupEventProcessorHandler.handleStandaloneElementEnd(MarkupEventProcessorHandler.java:327)
+	at org.attoparser.ParsingElementMarkupUtil.parseStandaloneElement(ParsingElementMarkupUtil.java:96)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:706)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 50 common frames omitted
+
+2021-12-02 10:44:10.945 ERROR 11964 --- [http-nio-8080-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/admin/subType-input.html]")] with root cause
+
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "/lib/bootstrap-select/bootstrap-select.min.css" (template: "admin/subType-input" - line 16, col 110)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleStandaloneElementEnd(TemplateHandlerAdapterMarkupHandler.java:260)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleStandaloneElementEnd(InlinedOutputExpressionMarkupHandler.java:256)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleStandaloneElementEnd(OutputExpressionInlinePreProcessorHandler.java:169)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleStandaloneElementEnd(InlinedOutputExpressionMarkupHandler.java:104)
+	at org.attoparser.HtmlElement.handleStandaloneElementEnd(HtmlElement.java:79)
+	at org.attoparser.HtmlMarkupHandler.handleStandaloneElementEnd(HtmlMarkupHandler.java:241)
+	at org.attoparser.MarkupEventProcessorHandler.handleStandaloneElementEnd(MarkupEventProcessorHandler.java:327)
+	at org.attoparser.ParsingElementMarkupUtil.parseStandaloneElement(ParsingElementMarkupUtil.java:96)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:706)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1400)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2021-12-02 10:44:28.319 ERROR 11964 --- [http-nio-8080-exec-8] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-8] Exception processing template "admin/subType-input": An error happened during template parsing (template: "class path resource [templates/admin/subType-input.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/admin/subType-input.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1400)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.attoparser.ParseException: Could not parse as expression: "/lib/bootstrap-select/bootstrap-select.min.css" (template: "admin/subType-input" - line 16, col 110)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "/lib/bootstrap-select/bootstrap-select.min.css" (template: "admin/subType-input" - line 16, col 110)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleStandaloneElementEnd(TemplateHandlerAdapterMarkupHandler.java:260)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleStandaloneElementEnd(InlinedOutputExpressionMarkupHandler.java:256)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleStandaloneElementEnd(OutputExpressionInlinePreProcessorHandler.java:169)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleStandaloneElementEnd(InlinedOutputExpressionMarkupHandler.java:104)
+	at org.attoparser.HtmlElement.handleStandaloneElementEnd(HtmlElement.java:79)
+	at org.attoparser.HtmlMarkupHandler.handleStandaloneElementEnd(HtmlMarkupHandler.java:241)
+	at org.attoparser.MarkupEventProcessorHandler.handleStandaloneElementEnd(MarkupEventProcessorHandler.java:327)
+	at org.attoparser.ParsingElementMarkupUtil.parseStandaloneElement(ParsingElementMarkupUtil.java:96)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:706)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 50 common frames omitted
+
+2021-12-02 10:44:28.321 ERROR 11964 --- [http-nio-8080-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/admin/subType-input.html]")] with root cause
+
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "/lib/bootstrap-select/bootstrap-select.min.css" (template: "admin/subType-input" - line 16, col 110)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleStandaloneElementEnd(TemplateHandlerAdapterMarkupHandler.java:260)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleStandaloneElementEnd(InlinedOutputExpressionMarkupHandler.java:256)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleStandaloneElementEnd(OutputExpressionInlinePreProcessorHandler.java:169)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleStandaloneElementEnd(InlinedOutputExpressionMarkupHandler.java:104)
+	at org.attoparser.HtmlElement.handleStandaloneElementEnd(HtmlElement.java:79)
+	at org.attoparser.HtmlMarkupHandler.handleStandaloneElementEnd(HtmlMarkupHandler.java:241)
+	at org.attoparser.MarkupEventProcessorHandler.handleStandaloneElementEnd(MarkupEventProcessorHandler.java:327)
+	at org.attoparser.ParsingElementMarkupUtil.parseStandaloneElement(ParsingElementMarkupUtil.java:96)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:706)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1400)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2021-12-02 10:47:47.636 ERROR 11964 --- [http-nio-8080-exec-7] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-7] Exception processing template "admin/type-input": An error happened during template parsing (template: "class path resource [templates/admin/type-input.html]" - line 16, col 5)
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/admin/type-input.html]" - line 16, col 5)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:239)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1400)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.attoparser.ParseException: (Line = 16, Column = 5) Incomplete structure: "<link href="../../static/lib/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" type="text/css" th:href="/lib/bootstrap-select/bootstrap-select.min.css""/>
+    <link href="../../static/css/backstage.css" rel="stylesheet" th:href="@{/css/backstage.css}">
+    <link href="../../static/css/responsive.css" rel="stylesheet" th:href="@{/css/responsive.css}">
+
+</head>
+<body class="sticky-header">
+
+<!--左边菜单开始-->
+<div class="left-side sticky-left-side">
+    <div class="logo">
+        <a href="adminIndex.html" th:href="@{/admin/index}" ><img src="../../static/images/logo.png" th:src="@{/images/logo.png}" alt=""></a>
+    </div>
+    <div class="logo-icon text-center">
+        <a href="adminIndex.html" th:href="@{/admin/index}"><img src="../../static/images/logo2.png" th:src="@{/images/logo2.png}" alt=""></a>
+    </div>
+
+    <div class="left-side-inner">
+        <!--Sidebar nav-->
+        <ul class="nav nav-pills nav-stacked custom-nav">
+            <li class=" nav-active"><a href="adminIndex.html" th:href="@{/admin/index}"><i class="fa fa-home"></i> <span>首页</span></a>
+
+            </li>
+
+            <li class="menu-list"><a href="#"><i class="fa fa-newspaper-o"></i> <span>新闻中心</span></a>
+                <ul class="sub-menu-list">
+                    <li><a href="article.html" th:href="@{/admin/article}"> 集团动态</a></li>
+                    <li><a href="#"> 一线快讯</a></li>
+                    <li><a href="#">行业动态</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-list"><a href="#"><i class="fa fa-star"></i> <span>党的建设</span></a>
+                <ul class="sub-menu-list">
+                    <li><a href="#"> 党建工作</a></li>
+                    <li><a href="#">在线学习</a></li>
+                    <li><a href="#">群团工作</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-list"><a href="#"><i class="fa fa-bullhorn"></i> <span>通知公告</span></a>
+                <ul class="sub-menu-list">
+                    <li><a href="#"> 公示公告</a></li>
+                    <li><a href="#"> 消息披露 </a></li>
+                </ul>
+            </li>
+
+            <li class="menu-list"><a href="type.html"><i class="fa fa-gear"></i> <span>栏目管理</span></a>
+                <ul class="sub-menu-list">
+                    <li><a href="type.html" th:href="@{/admin/type}"> 一级大类</a></li>
+                    <li><a href="#" th:href="@{/admin/subType}"> 二级子栏</a></li>
+                </ul>
+            </li>
+        </ul>
+        <!--End sidebar nav-->
+
+    </div>
+</div>
+<!--左侧菜单结束 -->
+
+<!--主要内容开始-->
+<div class="main-content" >
+
+    <!-- header section start-->
+    <div class="header-section ">
+
+        <a class="toggle-btn"><i class="fa fa-bars"></i></a>
+
+        <form class="searchform">
+            <input type="text" class="form-control" name="keyword" placeholder="搜索点击这里..." />
+        </form>
+
+        <!--notification menu start -->
+        <div class="menu-right">
+            <ul class="notification-menu">
+                <li>
+                    <a href="#" class="btn btn-default dropdown-toggle info-number" data-toggle="dropdown">
+                        <i class="fa fa-tasks"></i>
+                        <span class="badge">8</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-head pull-right">
+                        <h5 class="title">你有8个代办任务</h5>
+                        <ul class="dropdown-list">
+                            <li class="notification-scroll-list notification-list ">
+                                <!-- list item-->
+                                <a href="javascript:void(0);" class="list-group-item">
+                                    <div class="media">
+                                        <div class="pull-left p-r-10">
+                                            <em class="fa  fa-shopping-cart noti-primary"></em>
+                                        </div>
+                                        <div class="media-body">
+                                            <h5 class="media-heading">1个订单已经被处理</h5>
+                                            <p class="m-0">
+                                                <small>29 分钟前</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- list item-->
+                                <a href="javascript:void(0);" class="list-group-item">
+                                    <div class="media">
+                                        <div class="pull-left p-r-10">
+                                            <em class="fa fa-check noti-success"></em>
+                                        </div>
+                                        <div class="media-body">
+                                            <h5 class="media-heading">数据库备份已经完成</h5>
+                                            <p class="m-0">
+                                                <small>12 分钟 前</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- list item-->
+                                <a href="javascript:void(0);" class="list-group-item">
+                                    <div class="media">
+                                        <div class="pull-left p-r-10">
+                                            <em class="fa fa-user-plus noti-info"></em>
+                                        </div>
+                                        <div class="media-body">
+                                            <h5 class="media-heading">新用户注册</h5>
+                                            <p class="m-0">
+                                                <small>17 分钟前</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- list item-->
+                                <a href="javascript:void(0);" class="list-group-item">
+                                    <div class="media">
+                                        <div class="pull-left p-r-10">
+                                            <em class="fa fa-diamond noti-danger"></em>
+                                        </div>
+                                        <div class="media-body">
+                                            <h5 class="media-heading">数据库错误.</h5>
+                                            <p class="m-0">
+                                                <small>11 min ago</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- list item-->
+                                <a href="javascript:void(0);" class="list-group-item">
+                                    <div class="media">
+                                        <div class="pull-left p-r-10">
+                                            <em class="fa fa-cog noti-warning"></em>
+                                        </div>
+                                        <div class="media-body">
+                                            <h5 class="media-heading">更新设置</h5>
+                                            <p class="m-0">
+                                                <small>18 分钟前</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="last"> <a href="#">查看所有通知</a> </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#" class="btn btn-default dropdown-toggle info-number" data-toggle="dropdown">
+                        <i class="fa fa-bell-o"></i>
+                        <span class="badge">4</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-head pull-right">
+                        <h5 class="title">通知</h5>
+                        <ul class="dropdown-list normal-list">
+                            <li class="message-list message-scroll-list">
+                                <a href="#">
+                                    <span class="photo"> <img src="../../statics/images/avatar-6.jpg" class="img-circle" alt="img"></span>
+                                    <span class="subject">管理员</span>
+                                    <span class="message">新的任务需要完成</span>
+                                    <span class="time">15 分钟前</span>
+                                </a>
+                                <a href="#">
+                                    <span class="photo"> <img src="../../statics/images/avatar-6.jpg" class="img-circle" alt="img"></span>
+                                    <span class="subject">管理员</span>
+                                    <span class="message">新的任务需要完成</span>
+                                    <span class="time">15 分钟前</span>
+                                </a>
+                                <a href="#">
+                                    <span class="photo"> <img src="../../statics/images/avatar-6.jpg" class="img-circle" alt="img"></span>
+                                    <span class="subject">管理员</span>
+                                    <span class="message">新的任务需要完成</span>
+                                    <span class="time">15 分钟前</span>
+                                </a>
+                            </li>
+                            <li class="last"> <a  href="#">所有消息</a> </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <img src="../../statics/images/avatar-6.jpg" alt="" />
+                        管理员
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
+                        <li> <a href="#"> <i class="fa fa-wrench"></i> 设置 </a> </li>
+                        <li> <a href="#"> <i class="fa fa-user"></i> 外观 </a> </li>
+                        <li> <a href="#"> <i class="fa fa-info"></i> 帮助 </a> </li>
+                        <li> <a href="#"> <i class="fa fa-lock"></i> 退出 </a> </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+        <!--notification menu end -->
+
+    </div>
+    <!-- header section end-->
+
+
+    <!--body wrapper start-->
+    <div class="wrapper">
+
+        <!--Start Page Title-->
+        <div class="page-title-box">
+            <h4 class="page-title">栏目管理 </h4>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="#">栏目管理</a>
+                </li>
+
+                <li class="active">
+                    一级大类
+                </li>
+            </ol>
+            <div class="clearfix"></div>
+        </div>
+        <!--End Page Title-->
+
+        <!--Start row-->
+        <div class="row">
+            <div class="container">
+                <div class="analytics-box">
+                    <!-- Start inbox widget-->
+                    <div class="col-md-12">
+                        <div class="white-box">
+                            <h2 class="header-title">新增一级类别 </h2>
+                            <form id="article-form" class="form" action="#" method="post">
+                                <div class="form-group">
+                                    <input type="hidden" name="id">
+
+                                    <div class="field">
+                                        <div class="input-group" style="width: 100%;display: inline-flex">
+                                            <label class="btn btn-success" for="firstPicture" style="width: 10%">新增一级大类</label>
+                                            <input type="text" id="firstPicture" name="firstPicture" placeholder="输入新增加的类别名称" style="width: 90%;height: 35px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field submit-btn ">
+                                    <button type="button" id="publish-btn" class="btn btn-inverse " >提交</button>
+                                    <button type="button" class="btn btn-default " onclick="window.history.go(-1)" >返回</button>
+                                </div>
+                                <br>
+                                <br>
+                                <div class="field alert alert-success alert-dismissible" role="alert">
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                    <h3 class="header-title">提示: </h3>
+                                    <strong>恭喜!</strong> <span>操作成功!</span>
+                                </div>
+                            </form>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+
+                        </div><!-- /.white-box-->
+
+                    </div>
+                    <!-- Start inbox widget-->
+                </div>
+            </div>
+        </div>
+        <!--End row-->
+
+
+
+
+
+    </div>
+    <!-- End Wrapper-->
+
+
+
+    <!--Start  Footer -->
+    <footer class="footer-main">
+        Copyright &copy; 2021.抚州市金融控股有限公司 All rights reserved.<a href="https://beian.miit.gov.cn/" target="_blank">赣ICP备18010030号</a>
+    </footer>
+
+    <!--End footer -->
+</div>
+<!--主要内容结束 -->
+
+
+<!-- Start Script  -->
+<script src="../../static/lib/jquery-3.4.1/jquery-3.4.1.js" type="text/javascript" th:src="@{/lib/jquery-3.4.1/jquery-3.4.1.js}"></script>
+<script src="../../static/lib/bootstrap-3.4.1/js/bootstrap.js" type="text/javascript" th:src="@{/lib/bootstrap-3.4.1/js/bootstrap.js}"></script>
+<script src="../../static/lib/moment/moment.js" type="text/javascript" th:src="@{/lib/moment/moment.js}"></script>
+<script src="../../static/js/jquery.nicescroll.js" type="text/javascript" th:src="@{/js/jquery.nicescroll.js}"></script>
+<script src="../../static/js/jquery.slimscroll.js" type="text/javascript" th:src="@{/js/jquery.slimscroll.js}"></script>
+<script src="../../static/js/functions.js" type="text/javascript" th:src="@{/js/functions.js}"></script>
+<!-- End Script   -->
+<!-- BEGIN PAGE LEVEL SCRIPTS -->
+<script type="text/javascript" src="../../static/lib/bootstrap-select/bootstrap-select.min.js" th:src="@{/lib/bootstrap-select/bootstrap-select.min.js}"></script>
+
+<!-- BEGIN PAGE LEVEL SCRIPTS -->
+</body>
+</html>"
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:366)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+
+2021-12-02 10:47:47.637 ERROR 11964 --- [http-nio-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/admin/type-input.html]" - line 16, col 5)] with root cause
+
+org.attoparser.ParseException: (Line = 16, Column = 5) Incomplete structure: "<link href="../../static/lib/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" type="text/css" th:href="/lib/bootstrap-select/bootstrap-select.min.css""/>
+    <link href="../../static/css/backstage.css" rel="stylesheet" th:href="@{/css/backstage.css}">
+    <link href="../../static/css/responsive.css" rel="stylesheet" th:href="@{/css/responsive.css}">
+
+</head>
+<body class="sticky-header">
+
+<!--左边菜单开始-->
+<div class="left-side sticky-left-side">
+    <div class="logo">
+        <a href="adminIndex.html" th:href="@{/admin/index}" ><img src="../../static/images/logo.png" th:src="@{/images/logo.png}" alt=""></a>
+    </div>
+    <div class="logo-icon text-center">
+        <a href="adminIndex.html" th:href="@{/admin/index}"><img src="../../static/images/logo2.png" th:src="@{/images/logo2.png}" alt=""></a>
+    </div>
+
+    <div class="left-side-inner">
+        <!--Sidebar nav-->
+        <ul class="nav nav-pills nav-stacked custom-nav">
+            <li class=" nav-active"><a href="adminIndex.html" th:href="@{/admin/index}"><i class="fa fa-home"></i> <span>首页</span></a>
+
+            </li>
+
+            <li class="menu-list"><a href="#"><i class="fa fa-newspaper-o"></i> <span>新闻中心</span></a>
+                <ul class="sub-menu-list">
+                    <li><a href="article.html" th:href="@{/admin/article}"> 集团动态</a></li>
+                    <li><a href="#"> 一线快讯</a></li>
+                    <li><a href="#">行业动态</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-list"><a href="#"><i class="fa fa-star"></i> <span>党的建设</span></a>
+                <ul class="sub-menu-list">
+                    <li><a href="#"> 党建工作</a></li>
+                    <li><a href="#">在线学习</a></li>
+                    <li><a href="#">群团工作</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-list"><a href="#"><i class="fa fa-bullhorn"></i> <span>通知公告</span></a>
+                <ul class="sub-menu-list">
+                    <li><a href="#"> 公示公告</a></li>
+                    <li><a href="#"> 消息披露 </a></li>
+                </ul>
+            </li>
+
+            <li class="menu-list"><a href="type.html"><i class="fa fa-gear"></i> <span>栏目管理</span></a>
+                <ul class="sub-menu-list">
+                    <li><a href="type.html" th:href="@{/admin/type}"> 一级大类</a></li>
+                    <li><a href="#" th:href="@{/admin/subType}"> 二级子栏</a></li>
+                </ul>
+            </li>
+        </ul>
+        <!--End sidebar nav-->
+
+    </div>
+</div>
+<!--左侧菜单结束 -->
+
+<!--主要内容开始-->
+<div class="main-content" >
+
+    <!-- header section start-->
+    <div class="header-section ">
+
+        <a class="toggle-btn"><i class="fa fa-bars"></i></a>
+
+        <form class="searchform">
+            <input type="text" class="form-control" name="keyword" placeholder="搜索点击这里..." />
+        </form>
+
+        <!--notification menu start -->
+        <div class="menu-right">
+            <ul class="notification-menu">
+                <li>
+                    <a href="#" class="btn btn-default dropdown-toggle info-number" data-toggle="dropdown">
+                        <i class="fa fa-tasks"></i>
+                        <span class="badge">8</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-head pull-right">
+                        <h5 class="title">你有8个代办任务</h5>
+                        <ul class="dropdown-list">
+                            <li class="notification-scroll-list notification-list ">
+                                <!-- list item-->
+                                <a href="javascript:void(0);" class="list-group-item">
+                                    <div class="media">
+                                        <div class="pull-left p-r-10">
+                                            <em class="fa  fa-shopping-cart noti-primary"></em>
+                                        </div>
+                                        <div class="media-body">
+                                            <h5 class="media-heading">1个订单已经被处理</h5>
+                                            <p class="m-0">
+                                                <small>29 分钟前</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- list item-->
+                                <a href="javascript:void(0);" class="list-group-item">
+                                    <div class="media">
+                                        <div class="pull-left p-r-10">
+                                            <em class="fa fa-check noti-success"></em>
+                                        </div>
+                                        <div class="media-body">
+                                            <h5 class="media-heading">数据库备份已经完成</h5>
+                                            <p class="m-0">
+                                                <small>12 分钟 前</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- list item-->
+                                <a href="javascript:void(0);" class="list-group-item">
+                                    <div class="media">
+                                        <div class="pull-left p-r-10">
+                                            <em class="fa fa-user-plus noti-info"></em>
+                                        </div>
+                                        <div class="media-body">
+                                            <h5 class="media-heading">新用户注册</h5>
+                                            <p class="m-0">
+                                                <small>17 分钟前</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- list item-->
+                                <a href="javascript:void(0);" class="list-group-item">
+                                    <div class="media">
+                                        <div class="pull-left p-r-10">
+                                            <em class="fa fa-diamond noti-danger"></em>
+                                        </div>
+                                        <div class="media-body">
+                                            <h5 class="media-heading">数据库错误.</h5>
+                                            <p class="m-0">
+                                                <small>11 min ago</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- list item-->
+                                <a href="javascript:void(0);" class="list-group-item">
+                                    <div class="media">
+                                        <div class="pull-left p-r-10">
+                                            <em class="fa fa-cog noti-warning"></em>
+                                        </div>
+                                        <div class="media-body">
+                                            <h5 class="media-heading">更新设置</h5>
+                                            <p class="m-0">
+                                                <small>18 分钟前</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="last"> <a href="#">查看所有通知</a> </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#" class="btn btn-default dropdown-toggle info-number" data-toggle="dropdown">
+                        <i class="fa fa-bell-o"></i>
+                        <span class="badge">4</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-head pull-right">
+                        <h5 class="title">通知</h5>
+                        <ul class="dropdown-list normal-list">
+                            <li class="message-list message-scroll-list">
+                                <a href="#">
+                                    <span class="photo"> <img src="../../statics/images/avatar-6.jpg" class="img-circle" alt="img"></span>
+                                    <span class="subject">管理员</span>
+                                    <span class="message">新的任务需要完成</span>
+                                    <span class="time">15 分钟前</span>
+                                </a>
+                                <a href="#">
+                                    <span class="photo"> <img src="../../statics/images/avatar-6.jpg" class="img-circle" alt="img"></span>
+                                    <span class="subject">管理员</span>
+                                    <span class="message">新的任务需要完成</span>
+                                    <span class="time">15 分钟前</span>
+                                </a>
+                                <a href="#">
+                                    <span class="photo"> <img src="../../statics/images/avatar-6.jpg" class="img-circle" alt="img"></span>
+                                    <span class="subject">管理员</span>
+                                    <span class="message">新的任务需要完成</span>
+                                    <span class="time">15 分钟前</span>
+                                </a>
+                            </li>
+                            <li class="last"> <a  href="#">所有消息</a> </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <img src="../../statics/images/avatar-6.jpg" alt="" />
+                        管理员
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
+                        <li> <a href="#"> <i class="fa fa-wrench"></i> 设置 </a> </li>
+                        <li> <a href="#"> <i class="fa fa-user"></i> 外观 </a> </li>
+                        <li> <a href="#"> <i class="fa fa-info"></i> 帮助 </a> </li>
+                        <li> <a href="#"> <i class="fa fa-lock"></i> 退出 </a> </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+        <!--notification menu end -->
+
+    </div>
+    <!-- header section end-->
+
+
+    <!--body wrapper start-->
+    <div class="wrapper">
+
+        <!--Start Page Title-->
+        <div class="page-title-box">
+            <h4 class="page-title">栏目管理 </h4>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="#">栏目管理</a>
+                </li>
+
+                <li class="active">
+                    一级大类
+                </li>
+            </ol>
+            <div class="clearfix"></div>
+        </div>
+        <!--End Page Title-->
+
+        <!--Start row-->
+        <div class="row">
+            <div class="container">
+                <div class="analytics-box">
+                    <!-- Start inbox widget-->
+                    <div class="col-md-12">
+                        <div class="white-box">
+                            <h2 class="header-title">新增一级类别 </h2>
+                            <form id="article-form" class="form" action="#" method="post">
+                                <div class="form-group">
+                                    <input type="hidden" name="id">
+
+                                    <div class="field">
+                                        <div class="input-group" style="width: 100%;display: inline-flex">
+                                            <label class="btn btn-success" for="firstPicture" style="width: 10%">新增一级大类</label>
+                                            <input type="text" id="firstPicture" name="firstPicture" placeholder="输入新增加的类别名称" style="width: 90%;height: 35px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field submit-btn ">
+                                    <button type="button" id="publish-btn" class="btn btn-inverse " >提交</button>
+                                    <button type="button" class="btn btn-default " onclick="window.history.go(-1)" >返回</button>
+                                </div>
+                                <br>
+                                <br>
+                                <div class="field alert alert-success alert-dismissible" role="alert">
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                    <h3 class="header-title">提示: </h3>
+                                    <strong>恭喜!</strong> <span>操作成功!</span>
+                                </div>
+                            </form>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+
+                        </div><!-- /.white-box-->
+
+                    </div>
+                    <!-- Start inbox widget-->
+                </div>
+            </div>
+        </div>
+        <!--End row-->
+
+
+
+
+
+    </div>
+    <!-- End Wrapper-->
+
+
+
+    <!--Start  Footer -->
+    <footer class="footer-main">
+        Copyright &copy; 2021.抚州市金融控股有限公司 All rights reserved.<a href="https://beian.miit.gov.cn/" target="_blank">赣ICP备18010030号</a>
+    </footer>
+
+    <!--End footer -->
+</div>
+<!--主要内容结束 -->
+
+
+<!-- Start Script  -->
+<script src="../../static/lib/jquery-3.4.1/jquery-3.4.1.js" type="text/javascript" th:src="@{/lib/jquery-3.4.1/jquery-3.4.1.js}"></script>
+<script src="../../static/lib/bootstrap-3.4.1/js/bootstrap.js" type="text/javascript" th:src="@{/lib/bootstrap-3.4.1/js/bootstrap.js}"></script>
+<script src="../../static/lib/moment/moment.js" type="text/javascript" th:src="@{/lib/moment/moment.js}"></script>
+<script src="../../static/js/jquery.nicescroll.js" type="text/javascript" th:src="@{/js/jquery.nicescroll.js}"></script>
+<script src="../../static/js/jquery.slimscroll.js" type="text/javascript" th:src="@{/js/jquery.slimscroll.js}"></script>
+<script src="../../static/js/functions.js" type="text/javascript" th:src="@{/js/functions.js}"></script>
+<!-- End Script   -->
+<!-- BEGIN PAGE LEVEL SCRIPTS -->
+<script type="text/javascript" src="../../static/lib/bootstrap-select/bootstrap-select.min.js" th:src="@{/lib/bootstrap-select/bootstrap-select.min.js}"></script>
+
+<!-- BEGIN PAGE LEVEL SCRIPTS -->
+</body>
+</html>"
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:366)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1400)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2021-12-02 11:25:59.187  INFO 11964 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 11:25:59.205  INFO 11964 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-02 11:25:59.211  INFO 11964 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-02 11:25:59.463  INFO 11964 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Starting GuanwangApplication using Java 1.8.0_65 on DESKTOP-0R0PQ9E with PID 11964 (E:\workplace\fzjk_guanwang\target\classes started by hushizhi0121 in E:\workplace\fzjk_guanwang)
+2021-12-02 11:25:59.463 DEBUG 11964 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-12-02 11:25:59.464  INFO 11964 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : No active profile set, falling back to default profiles: default
+2021-12-02 11:25:59.939  INFO 11964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-02 11:25:59.944  INFO 11964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2021-12-02 11:26:00.332  INFO 11964 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-02 11:26:00.333  INFO 11964 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-02 11:26:00.333  INFO 11964 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-02 11:26:00.349  INFO 11964 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-02 11:26:00.349  INFO 11964 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 881 ms
+2021-12-02 11:26:00.439  INFO 11964 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-12-02 11:26:00.442  INFO 11964 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-12-02 11:26:00.446  INFO 11964 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-02 11:26:00.450  INFO 11964 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-12-02 11:26:00.463  INFO 11964 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-02 11:26:00.463  INFO 11964 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 11:26:00.610  WARN 11964 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 11:26:00.822  INFO 11964 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-02 11:26:01.017  INFO 11964 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-02 11:26:01.033  INFO 11964 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-02 11:26:01.038  INFO 11964 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Started GuanwangApplication in 1.736 seconds (JVM running for 4452.536)
+2021-12-02 11:26:01.040  INFO 11964 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-02 11:26:02.034  INFO 11964 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-02 11:26:02.035  INFO 11964 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-02 11:26:02.037  INFO 11964 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-12-02 11:26:02.839  INFO 11964 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 11:26:02.840  INFO 11964 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-12-02 11:26:02.844  INFO 11964 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-12-02 11:26:02.947  INFO 11964 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Starting GuanwangApplication using Java 1.8.0_65 on DESKTOP-0R0PQ9E with PID 11964 (E:\workplace\fzjk_guanwang\target\classes started by hushizhi0121 in E:\workplace\fzjk_guanwang)
+2021-12-02 11:26:02.947 DEBUG 11964 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-12-02 11:26:02.947  INFO 11964 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : No active profile set, falling back to default profiles: default
+2021-12-02 11:26:03.158  INFO 11964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-02 11:26:03.165  INFO 11964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2021-12-02 11:26:03.371  INFO 11964 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-02 11:26:03.372  INFO 11964 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-02 11:26:03.372  INFO 11964 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-02 11:26:03.391  INFO 11964 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-02 11:26:03.391  INFO 11964 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 442 ms
+2021-12-02 11:26:03.454  INFO 11964 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2021-12-02 11:26:03.457  INFO 11964 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2021-12-02 11:26:03.461  INFO 11964 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-02 11:26:03.464  INFO 11964 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-12-02 11:26:03.472  INFO 11964 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-02 11:26:03.473  INFO 11964 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 11:26:03.579  WARN 11964 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 11:26:03.757  INFO 11964 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-02 11:26:03.955  INFO 11964 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-02 11:26:03.967  INFO 11964 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-02 11:26:03.971  INFO 11964 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Started GuanwangApplication in 1.058 seconds (JVM running for 4455.469)
+2021-12-02 11:26:03.972  INFO 11964 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-02 11:26:09.236  INFO 11964 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-02 11:26:09.238  INFO 11964 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-02 11:26:09.239  INFO 11964 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-12-02 11:26:09.250 DEBUG 11964 --- [http-nio-8080-exec-1] c.f.g.m.A.findByUsernameAndPassword      : ==>  Preparing: select * from t_admin where account=? and password=?
+2021-12-02 11:26:09.250 DEBUG 11964 --- [http-nio-8080-exec-1] c.f.g.m.A.findByUsernameAndPassword      : ==> Parameters: 15979594979(String), 07a6f8db065a8a13f275a51e0ac1301a(String)
+2021-12-02 11:26:09.251 DEBUG 11964 --- [http-nio-8080-exec-1] c.f.g.m.A.findByUsernameAndPassword      : <==      Total: 1
+2021-12-02 15:25:49.425 DEBUG 11964 --- [http-nio-8080-exec-6] c.f.g.m.A.findByUsernameAndPassword      : ==>  Preparing: select * from t_admin where account=? and password=?
+2021-12-02 15:25:49.427 DEBUG 11964 --- [http-nio-8080-exec-6] c.f.g.m.A.findByUsernameAndPassword      : ==> Parameters: 15979594979(String), 72a22a1a810ce1a650212ad8de809c45(String)
+2021-12-02 15:25:49.430 DEBUG 11964 --- [http-nio-8080-exec-6] c.f.g.m.A.findByUsernameAndPassword      : <==      Total: 0
+2021-12-02 15:26:01.007 DEBUG 11964 --- [http-nio-8080-exec-7] c.f.g.m.A.findByUsernameAndPassword      : ==>  Preparing: select * from t_admin where account=? and password=?
+2021-12-02 15:26:01.008 DEBUG 11964 --- [http-nio-8080-exec-7] c.f.g.m.A.findByUsernameAndPassword      : ==> Parameters: 15979594979(String), 72a22a1a810ce1a650212ad8de809c45(String)
+2021-12-02 15:26:01.010 DEBUG 11964 --- [http-nio-8080-exec-7] c.f.g.m.A.findByUsernameAndPassword      : <==      Total: 0
+2021-12-02 15:26:24.852  INFO 10060 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Starting GuanwangApplication using Java 1.8.0_65 on DESKTOP-0R0PQ9E with PID 10060 (E:\workplace\fzjk_guanwang\target\classes started by hushizhi0121 in E:\workplace\fzjk_guanwang)
+2021-12-02 15:26:24.857 DEBUG 10060 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-12-02 15:26:24.857  INFO 10060 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : No active profile set, falling back to default profiles: default
+2021-12-02 15:26:24.911  INFO 10060 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-02 15:26:24.911  INFO 10060 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-02 15:26:25.644  INFO 10060 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-02 15:26:25.659  INFO 10060 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2021-12-02 15:26:26.469  INFO 10060 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-02 15:26:26.478  INFO 10060 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-02 15:26:26.478  INFO 10060 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-02 15:26:26.561  INFO 10060 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-02 15:26:26.561  INFO 10060 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1649 ms
+2021-12-02 15:26:26.732  INFO 10060 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-02 15:26:26.844  INFO 10060 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-02 15:26:26.910  INFO 10060 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-02 15:26:27.058  INFO 10060 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-12-02 15:26:27.330  INFO 10060 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-02 15:26:27.504  INFO 10060 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-12-02 15:26:27.801  INFO 10060 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-02 15:26:27.812  INFO 10060 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 15:26:28.093  WARN 10060 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 15:26:28.413  INFO 10060 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-02 15:26:28.709  INFO 10060 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-02 15:26:28.750  INFO 10060 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-02 15:26:28.758  INFO 10060 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Started GuanwangApplication in 4.586 seconds (JVM running for 7.209)
+2021-12-02 15:26:33.200  INFO 10060 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-02 15:26:33.200  INFO 10060 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-02 15:26:33.202  INFO 10060 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-12-02 15:26:42.994 DEBUG 10060 --- [http-nio-8080-exec-6] c.f.g.m.A.findByUsernameAndPassword      : ==>  Preparing: select * from t_admin where account=? and password=?
+2021-12-02 15:26:43.007 DEBUG 10060 --- [http-nio-8080-exec-6] c.f.g.m.A.findByUsernameAndPassword      : ==> Parameters: 15979594979(String), 72a22a1a810ce1a650212ad8de809c45(String)
+2021-12-02 15:26:43.014 DEBUG 10060 --- [http-nio-8080-exec-6] c.f.g.m.A.findByUsernameAndPassword      : <==      Total: 0
+2021-12-02 15:28:10.299 DEBUG 10060 --- [http-nio-8080-exec-6] c.f.g.m.A.findByUsernameAndPassword      : ==>  Preparing: select * from t_admin where account=? and password=?
+2021-12-02 15:28:10.300 DEBUG 10060 --- [http-nio-8080-exec-6] c.f.g.m.A.findByUsernameAndPassword      : ==> Parameters: 15979594979(String), 07a6f8db065a8a13f275a51e0ac1301a(String)
+2021-12-02 15:28:10.305 DEBUG 10060 --- [http-nio-8080-exec-6] c.f.g.m.A.findByUsernameAndPassword      : <==      Total: 1
+2021-12-02 16:02:18.015  INFO 10060 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 16:02:18.019  INFO 10060 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-02 16:02:18.024  INFO 10060 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-02 16:02:18.173  INFO 10060 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Starting GuanwangApplication using Java 1.8.0_65 on DESKTOP-0R0PQ9E with PID 10060 (E:\workplace\fzjk_guanwang\target\classes started by hushizhi0121 in E:\workplace\fzjk_guanwang)
+2021-12-02 16:02:18.174 DEBUG 10060 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-12-02 16:02:18.174  INFO 10060 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : No active profile set, falling back to default profiles: default
+2021-12-02 16:02:18.533  INFO 10060 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-02 16:02:18.548  INFO 10060 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 JPA repository interfaces.
+2021-12-02 16:02:19.008  INFO 10060 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-02 16:02:19.009  INFO 10060 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-02 16:02:19.009  INFO 10060 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-02 16:02:19.024  INFO 10060 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-02 16:02:19.025  INFO 10060 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 844 ms
+2021-12-02 16:02:19.119  INFO 10060 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-12-02 16:02:19.125  INFO 10060 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-12-02 16:02:19.129  INFO 10060 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-02 16:02:19.135  INFO 10060 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-12-02 16:02:19.147  INFO 10060 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-02 16:02:19.148  INFO 10060 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 16:02:19.310  WARN 10060 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 16:02:19.563  INFO 10060 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-02 16:02:19.925  INFO 10060 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-02 16:02:19.949  INFO 10060 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-02 16:02:19.957  INFO 10060 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Started GuanwangApplication in 1.858 seconds (JVM running for 2158.408)
+2021-12-02 16:02:19.961  INFO 10060 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-02 16:02:26.377  INFO 17320 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Starting GuanwangApplication using Java 1.8.0_65 on DESKTOP-0R0PQ9E with PID 17320 (E:\workplace\fzjk_guanwang\target\classes started by hushizhi0121 in E:\workplace\fzjk_guanwang)
+2021-12-02 16:02:26.379 DEBUG 17320 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-12-02 16:02:26.379  INFO 17320 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : No active profile set, falling back to default profiles: default
+2021-12-02 16:02:26.442  INFO 17320 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-02 16:02:26.443  INFO 17320 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-02 16:02:27.502  INFO 17320 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-02 16:02:27.518  INFO 17320 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2021-12-02 16:02:28.382  INFO 17320 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-02 16:02:28.390  INFO 17320 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-02 16:02:28.390  INFO 17320 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-02 16:02:28.478  INFO 17320 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-02 16:02:28.478  INFO 17320 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2035 ms
+2021-12-02 16:02:28.517  WARN 17320 --- [restartedMain] o.a.catalina.session.StandardManager     : Unable to delete [C:\Users\HUSHIZ~1\AppData\Local\Temp\E0D06E4EBF4782113921ADB23ACDCA4F9F059979\servlet-sessions\SESSIONS.ser] after reading the persisted sessions. The continued presence of this file may cause future attempts to persist sessions to fail.
+2021-12-02 16:02:28.518 ERROR 17320 --- [restartedMain] o.a.catalina.session.StandardManager     : Exception loading sessions from persistent storage
+
+java.io.EOFException: null
+	at java.io.ObjectInputStream$PeekInputStream.readFully(ObjectInputStream.java:2335)
+	at java.io.ObjectInputStream$BlockDataInputStream.readShort(ObjectInputStream.java:2804)
+	at java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:802)
+	at java.io.ObjectInputStream.<init>(ObjectInputStream.java:299)
+	at org.apache.catalina.util.CustomObjectInputStream.<init>(CustomObjectInputStream.java:95)
+	at org.apache.catalina.session.StandardManager.doLoad(StandardManager.java:211)
+	at org.apache.catalina.session.StandardManager.load(StandardManager.java:162)
+	at org.apache.catalina.session.StandardManager.startInternal(StandardManager.java:356)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5247)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:486)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:450)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:199)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:182)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:160)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.fzjk.guanwang.GuanwangApplication.main(GuanwangApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+
+2021-12-02 16:02:28.686  INFO 17320 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-02 16:02:28.796  INFO 17320 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-02 16:02:28.846  INFO 17320 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-02 16:02:28.890  INFO 17320 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-12-02 16:02:29.044  INFO 17320 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-02 16:02:29.137  INFO 17320 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-12-02 16:02:29.271  INFO 17320 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-02 16:02:29.280  INFO 17320 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 16:02:29.591  WARN 17320 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 16:02:29.942  INFO 17320 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-02 16:02:30.258  INFO 17320 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-02 16:02:30.344  INFO 17320 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-02 16:02:30.364  INFO 17320 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Started GuanwangApplication in 6.253 seconds (JVM running for 8.28)
+2021-12-02 17:20:47.301  WARN 17320 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=47s143ms137µs100ns).

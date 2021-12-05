@@ -1,31 +1,34 @@
 package com.fzjk.guanwang.pojo;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import org.springframework.stereotype.Component;
 
+import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 import java.util.ArrayList;
 import java.util.List;
 
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-@Component
+@Entity
+@Table(name = "t_sub_type")
 public class SubType {
 
-    private long sid;       //子栏id
-    private String name;    //名字
-    private long tid;       //类型id
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;       //子栏id
 
+    @NotBlank(message = "子类名称不能为空")
+    private String name;    //名称
+
+    @ManyToOne //多对一
+    private Type type;  //多个子类可从属于一个分类
+
+    @OneToMany(mappedBy = "subType") //一对多
     private List<Article> articles = new ArrayList<>();
 
-    public long getSid() {
-        return sid;
+    public Long getId() {
+        return id;
     }
 
-    public void setSid(long sid) {
-        this.sid = sid;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -36,12 +39,12 @@ public class SubType {
         this.name = name;
     }
 
-    public long getTid() {
-        return tid;
+    public Type getType() {
+        return type;
     }
 
-    public void setTid(long tid) {
-        this.tid = tid;
+    public void setType(Type type) {
+        this.type = type;
     }
 
     public List<Article> getArticles() {
@@ -52,12 +55,14 @@ public class SubType {
         this.articles = articles;
     }
 
+
+
     @Override
     public String toString() {
         return "SubType{" +
-                "sid=" + sid +
+                "id=" + id +
                 ", name='" + name + '\'' +
-                ", tid=" + tid +
+                ", type=" + type +
                 ", articles=" + articles +
                 '}';
     }

@@ -22,7 +22,7 @@
                 <h3>Looks like we are having some server issues.</h3>
                 <p>看来我们的服务器出了点问题 请联系管理员</p>
                 <p>管理员联系方式：15979594979</p>
-                <a href="../index.html" type="button" class="btn btn-primary">返回首页<a/>
+                <a href="#" type="button" class="btn btn-primary" onclick="window.history.go(-1)">返回上一页<a/>
                 <div>
                     <div th:utext="'&lt;!--'" th:remove="tag" ></div>
                     <div th:utext="'Failed Request URL : ' + ${url}" th:remove="tag"  ></div>

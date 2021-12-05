@@ -17,24 +17,24 @@
 <body class="sticky-header">
 
 <!--左边菜单开始-->
-<div class="left-side sticky-left-side">
+<div th:replace="admin/_fragments :: menu" class="left-side sticky-left-side">
     <div class="logo">
-        <a href="adminIndex.html"><img src="../../static/images/logo.png" alt=""></a>
+        <a href="adminIndex.html" th:href="@{/admin/index}" ><img src="../../static/images/logo.png" th:src="@{/images/logo.png}" alt=""></a>
     </div>
     <div class="logo-icon text-center">
-        <a href="adminIndex.html"><img src="../../static/images/logo2.png" alt=""></a>
+        <a href="adminIndex.html" th:href="@{/admin/index}"><img src="../../static/images/logo2.png" th:src="@{/images/logo2.png}" alt=""></a>
     </div>
 
     <div class="left-side-inner">
         <!--Sidebar nav-->
         <ul class="nav nav-pills nav-stacked custom-nav">
-            <li class=" nav-active"><a href="adminIndex.html"><i class="fa fa-home"></i> <span>首页</span></a>
+            <li class=" nav-active"><a href="adminIndex.html" th:href="@{/admin/index}"><i class="fa fa-home"></i> <span>首页</span></a>
 
             </li>
 
-            <li class="menu-list nav-active"><a href="#"><i class="fa fa-newspaper-o"></i> <span>新闻中心</span></a>
+            <li class="menu-list"><a href="#"><i class="fa fa-newspaper-o"></i> <span>新闻中心</span></a>
                 <ul class="sub-menu-list">
-                    <li class="active"><a href="#"> 集团动态</a></li>
+                    <li><a href="articles.html" th:href="@{/admin/articles}"> 集团动态</a></li>
                     <li><a href="#"> 一线快讯</a></li>
                     <li><a href="#">行业动态</a></li>
                 </ul>
@@ -54,10 +54,11 @@
                     <li><a href="#"> 消息披露 </a></li>
                 </ul>
             </li>
-            <li class="menu-list"><a href="type.html"><i class="fa fa-gear"></i> <span>栏目管理</span></a>
+
+            <li class="menu-list"><a href="types.html"><i class="fa fa-gear"></i> <span>栏目管理</span></a>
                 <ul class="sub-menu-list">
-                    <li><a href="type.html"> 一级大类</a></li>
-                    <li><a href="column.html"> 二级子栏</a></li>
+                    <li><a href="types.html" th:href="@{/admin/types}"> 一级大类</a></li>
+                    <li><a href="#" th:href="@{/admin/subTypes}"> 二级子栏</a></li>
                 </ul>
             </li>
         </ul>
@@ -238,7 +239,7 @@
                     <a href="#">栏目管理</a>
                 </li>
                 <li class="active">
-                    一级大类
+                    二级子栏
                 </li>
             </ol>
             <div class="clearfix"></div>
@@ -253,7 +254,19 @@
                     <div class="col-md-12">
                         <div class="white-box">
                             <h2 class="header-title">分类列表 </h2>
-                            <div class="">
+
+                            <div class="field">
+                                <label class="btn btn-success">所属一级大类</label>
+                                <input type="hidden" name="type.id">
+                                <select class="selectpicker" data-width="410px" >
+                                    <option>新闻中心</option>
+                                    <option>党的建设</option>
+                                    <option>通知公告</option>
+                                </select>
+                                <button type="button" class="btn btn-inverse">确认</button>
+                            </div>
+
+                            <div class="field">
                                 <div class="table-responsive">
                                     <table id="example" class="display table text-center">
                                         <thead>
@@ -312,7 +325,7 @@
                                             </th>
                                             <th class="text-center">
 
-                                                <a href="type-input.html" class="btn btn-primary round ">新增</a>
+                                                <a href="subType-input.html" th:href="@{/admin/subType/input}" class="btn btn-primary round ">新增</a>
                                             </th>
                                         </tr>
                                         </tfoot>
@@ -355,10 +368,10 @@
 <script type="text/javascript" src="../../static/lib/moment/moment.js" th:src="@{/lib/moment/moment.js}"></script>
 <script type="text/javascript" src="../../static/js/jquery.nicescroll.js" th:src="@{/js/jquery.nicescroll.js}"></script>
 <script type="text/javascript" src="../../static/js/jquery.slimscroll.js" th:src="@{/js/jquery.slimscroll.js}"></script>
-<script type="text/javascript" src="../../static/js/functions.js" th:src="@{/js/jquery.slimscroll.js}"></script>
+<script type="text/javascript" src="../../static/js/functions.js" th:src="@{/js/functions.js}"></script>
 <!-- End Script   -->
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
-<script type="text/javascript" src="../../static/lib/bootstrap-select/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="../../static/lib/bootstrap-select/bootstrap-select.min.js" th:href="@{/lib/bootstrap-select/bootstrap-select.min.js}"></script>
 
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
 </body>

@@ -29,6 +29,11 @@ public class LoginController {
     }
 
 
+    @GetMapping("/login")
+    public String loginPage(){
+        return "admin/login";
+    }
+
     //登录方法
     @PostMapping("/login")
     public String login(@RequestParam String username,

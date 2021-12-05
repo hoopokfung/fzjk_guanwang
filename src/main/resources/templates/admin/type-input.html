@@ -10,10 +10,10 @@
     <title>分类管理</title>
     <link href="../../static/lib/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet" th:href="@{/lib/bootstrap-3.4.1/css/bootstrap.min.css}">
     <link href="../../static/lib/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" th:href="@{/lib/fonts/font-awesome-4.7.0/css/font-awesome.min.css}">
-    <link href="../../static/lib/bootstrap-wysihtml5/bootstrap-wysihtml5.css" rel="stylesheet" type="text/css" th:href="@{/lib/bootstrap-wysihtml5/bootstrap-wysihtml5.css}"/>
-    <link href="../../static/lib/summernote-master/summernote.css" rel="stylesheet" type="text/css" th:href="@{/lib/summernote-master/summernote.css}"/>
-    <link href="../../static/lib/summernote-master/summernote-bs2.css" rel="stylesheet" type="text/css" th:href="@{/lib/summernote-master/summernote-bs2.css}"/>
-    <link href="../../static/lib/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" type="text/css" th:href="/lib/bootstrap-select/bootstrap-select.min.css""/>
+    <link href="../../static/lib/bootstrap-wysihtml5/bootstrap-wysihtml5.css" th:href="@{/lib/bootstrap-wysihtml5/bootstrap-wysihtml5.css}"/>
+    <link href="../../static/lib/summernote-master/summernote.css" rel="stylesheet" th:href="@{/lib/summernote-master/summernote.css}"/>
+    <link href="../../static/lib/summernote-master/summernote-bs2.css" rel="stylesheet" th:href="@{/lib/summernote-master/summernote-bs2.css}"/>
+    <link href="../../static/lib/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" th:href="@{/lib/bootstrap-select/bootstrap-select.min.css}"/>
     <link href="../../static/css/backstage.css" rel="stylesheet" th:href="@{/css/backstage.css}">
     <link href="../../static/css/responsive.css" rel="stylesheet" th:href="@{/css/responsive.css}">
 
@@ -21,24 +21,24 @@
 <body class="sticky-header">
 
 <!--左边菜单开始-->
-<div class="left-side sticky-left-side">
+<div th:replace="admin/_fragments :: menu" class="left-side sticky-left-side">
     <div class="logo">
-        <a href="adminIndex.html"><img src="../../statics/images/logo.png" alt=""></a>
+        <a href="adminIndex.html" th:href="@{/admin/index}" ><img src="../../static/images/logo.png" th:src="@{/images/logo.png}" alt=""></a>
     </div>
     <div class="logo-icon text-center">
-        <a href="adminIndex.html"><img src="../../statics/images/logo2.png" alt=""></a>
+        <a href="adminIndex.html" th:href="@{/admin/index}"><img src="../../static/images/logo2.png" th:src="@{/images/logo2.png}" alt=""></a>
     </div>
 
     <div class="left-side-inner">
         <!--Sidebar nav-->
         <ul class="nav nav-pills nav-stacked custom-nav">
-            <li class=" nav-active"><a href="adminIndex.html"><i class="fa fa-home"></i> <span>首页</span></a>
+            <li class=" nav-active"><a href="adminIndex.html" th:href="@{/admin/index}"><i class="fa fa-home"></i> <span>首页</span></a>
 
             </li>
 
-            <li class="menu-list nav-active"><a href="#"><i class="fa fa-newspaper-o"></i> <span>新闻中心</span></a>
+            <li class="menu-list"><a href="#"><i class="fa fa-newspaper-o"></i> <span>新闻中心</span></a>
                 <ul class="sub-menu-list">
-                    <li class="active"><a href="#"> 集团动态</a></li>
+                    <li><a href="articles.html" th:href="@{/admin/articles}"> 集团动态</a></li>
                     <li><a href="#"> 一线快讯</a></li>
                     <li><a href="#">行业动态</a></li>
                 </ul>
@@ -59,10 +59,10 @@
                 </ul>
             </li>
 
-            <li class="menu-list"><a href="type.html"><i class="fa fa-gear"></i> <span>栏目管理</span></a>
+            <li class="menu-list"><a href="types.html"><i class="fa fa-gear"></i> <span>栏目管理</span></a>
                 <ul class="sub-menu-list">
-                    <li><a href="type.html"> 一级大类</a></li>
-                    <li><a href="column.html"> 二级子栏</a></li>
+                    <li><a href="types.html" th:href="@{/admin/types}"> 一级大类</a></li>
+                    <li><a href="#" th:href="@{/admin/subTypes}"> 二级子栏</a></li>
                 </ul>
             </li>
         </ul>
@@ -76,7 +76,7 @@
 <div class="main-content" >
 
     <!-- header section start-->
-    <div class="header-section ">
+    <div th:replace="admin/_fragments :: header" class="header-section ">
 
         <a class="toggle-btn"><i class="fa fa-bars"></i></a>
 
@@ -257,28 +257,30 @@
                     <div class="col-md-12">
                         <div class="white-box">
                             <h2 class="header-title">新增一级类别 </h2>
-                            <form id="article-form" class="form" action="#" method="post">
+                            <form action="#" method="post" th:object="${type}" th:action="*{id} == null ? @{/admin/types} : @{/admin/types/{id}(id=*{id})}" class="form">
                                 <div class="form-group">
-                                    <input type="hidden" name="id">
-
                                     <div class="field">
                                         <div class="input-group" style="width: 100%;display: inline-flex">
-                                            <label class="btn btn-success" for="firstPicture" style="width: 10%">新增一级大类</label>
-                                            <input type="text" id="firstPicture" name="firstPicture" placeholder="输入新增加的类别名称" style="width: 90%;height: 35px;">
+                                            <input type="hidden" name="id" th:value="*{id}">
+                                            <label class="btn btn-success"  style="width: 10%">新增一级大类</label>
+                                            <input type="text"  name="name" placeholder="输入新增加的类别名称" th:value="*{name}" style="width: 90%;height: 35px;" >
                                         </div>
                                     </div>
+                                    <div class="error message"></div>
+                                    <!--/*/
+                                    <div class="alert alert-success alert-dismissible" role="alert" th:if="${#fields.hasErrors('name')}">
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                        <h3 class="header-title">验证失败</h3>
+                                        <strong th:errors="*{name}"> 操作成功!</strong>
+                                    </div>
+                                    /*/-->
                                 </div>
                                 <div class="field submit-btn ">
-                                    <button type="button" id="publish-btn" class="btn btn-inverse " >提交</button>
+                                    <button type="submit" id="publish-btn" class="btn btn-inverse" >提交</button>
                                     <button type="button" class="btn btn-default " onclick="window.history.go(-1)" >返回</button>
                                 </div>
                                 <br>
                                 <br>
-                                <div class="field alert alert-success alert-dismissible" role="alert">
-                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
-                                    <h3 class="header-title">提示: </h3>
-                                    <strong>恭喜!</strong> <span>操作成功!</span>
-                                </div>
                             </form>
                             <br>
                             <br>
@@ -305,7 +307,7 @@
 
 
     <!--Start  Footer -->
-    <footer class="footer-main">
+    <footer id="footer" class="footer-main">
         Copyright &copy; 2021.抚州市金融控股有限公司 All rights reserved.<a href="https://beian.miit.gov.cn/" target="_blank">赣ICP备18010030号</a>
     </footer>
 
@@ -323,7 +325,7 @@
 <script src="../../static/js/functions.js" type="text/javascript" th:src="@{/js/functions.js}"></script>
 <!-- End Script   -->
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
-<script type="text/javascript" src="../../static/lib/bootstrap-select/bootstrap-select.min.js" th:href="@{/lib/bootstrap-select/bootstrap-select.min.js}"></script>
+<script type="text/javascript" src="../../static/lib/bootstrap-select/bootstrap-select.min.js" th:src="@{/lib/bootstrap-select/bootstrap-select.min.js}"></script>
 
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
 </body>

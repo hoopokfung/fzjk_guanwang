@@ -1,34 +1,31 @@
 package com.fzjk.guanwang.pojo;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import org.springframework.stereotype.Component;
-
+import javax.persistence.*;
 import java.util.Date;
 
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-@Component
+@Entity
+@Table(name = "t_admin")
 public class Admin {
 
-    private long id;          //管理员id
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;          //管理员id
     private String account;   //手机号
     private String password;  //密码
     private String avatar;    //头像
     private String nickname;  //昵称
     private String email;     //邮箱
-    private int permission;    //权限
+    @Temporal(TemporalType.TIMESTAMP)
     private Date createTime;  //创建时间
+    @Temporal(TemporalType.TIMESTAMP)
     private Date updateTime;  //更新时间
 
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -72,14 +69,6 @@ public class Admin {
         this.email = email;
     }
 
-    public int getPermission() {
-        return permission;
-    }
-
-    public void setPermission(int permission) {
-        this.permission = permission;
-    }
-
     public Date getCreateTime() {
         return createTime;
     }
@@ -96,13 +85,6 @@ public class Admin {
         this.updateTime = updateTime;
     }
 
-    public Admin(long id, String account, String password) {
-        this.id = id;
-        this.account = account;
-        this.password = password;
-    }
-
-
     @Override
     public String toString() {
         return "Admin{" +
@@ -112,7 +94,6 @@ public class Admin {
                 ", avatar='" + avatar + '\'' +
                 ", nickname='" + nickname + '\'' +
                 ", email='" + email + '\'' +
-                ", permission=" + permission +
                 ", createTime=" + createTime +
                 ", updateTime=" + updateTime +
                 '}';

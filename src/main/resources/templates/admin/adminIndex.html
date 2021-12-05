@@ -17,7 +17,7 @@
 <body class="sticky-header">
 
     <!--左边菜单开始-->
-    <div class="left-side sticky-left-side">
+    <div th:replace="admin/_fragments :: menu" class="left-side sticky-left-side">
         <div class="logo">
             <a href="adminIndex.html" th:href="@{/admin/index}" ><img src="../../static/images/logo.png" th:src="@{/images/logo.png}" alt=""></a>
         </div>
@@ -34,7 +34,7 @@
 
                 <li class="menu-list"><a href="#"><i class="fa fa-newspaper-o"></i> <span>新闻中心</span></a>
                     <ul class="sub-menu-list">
-                        <li><a href="article.html" th:href="@{/admin/article}"> 集团动态</a></li>
+                        <li><a href="articles.html" th:href="@{/admin/articles}"> 集团动态</a></li>
                         <li><a href="#"> 一线快讯</a></li>
                         <li><a href="#">行业动态</a></li>
                     </ul>
@@ -55,10 +55,10 @@
                     </ul>
                 </li>
 
-                <li class="menu-list"><a href="type.html"><i class="fa fa-gear"></i> <span>栏目管理</span></a>
+                <li class="menu-list"><a href="types.html"><i class="fa fa-gear"></i> <span>栏目管理</span></a>
                     <ul class="sub-menu-list">
-                        <li><a href="type.html"> 一级大类</a></li>
-                        <li><a href="#"> 二级子栏</a></li>
+                        <li><a href="types.html" th:href="@{/admin/types}"> 一级大类</a></li>
+                        <li><a href="#" th:href="@{/admin/subTypes}"> 二级子栏</a></li>
                     </ul>
                 </li>
             </ul>
@@ -68,163 +68,162 @@
     </div>
     <!--左侧菜单结束 -->
 
+    <!-- header section start-->
+    <div class="header-section ">
+
+        <a class="toggle-btn"><i class="fa fa-bars"></i></a>
+
+        <form class="searchform">
+            <input type="text" class="form-control" name="keyword" placeholder="搜索点击这里..." />
+        </form>
+
+        <!--notification menu start -->
+        <div class="menu-right">
+            <ul class="notification-menu">
+                <li>
+                    <a href="#" class="btn btn-default dropdown-toggle info-number" data-toggle="dropdown">
+                        <i class="fa fa-tasks"></i>
+                        <span class="badge">8</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-head pull-right">
+                        <h5 class="title">你有8个代办任务</h5>
+                        <ul class="dropdown-list">
+                            <li class="notification-scroll-list notification-list ">
+                                <!-- list item-->
+                                <a href="javascript:void(0);" class="list-group-item">
+                                    <div class="media">
+                                        <div class="pull-left p-r-10">
+                                            <em class="fa  fa-shopping-cart noti-primary"></em>
+                                        </div>
+                                        <div class="media-body">
+                                            <h5 class="media-heading">1个订单已经被处理</h5>
+                                            <p class="m-0">
+                                                <small>29 分钟前</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- list item-->
+                                <a href="javascript:void(0);" class="list-group-item">
+                                    <div class="media">
+                                        <div class="pull-left p-r-10">
+                                            <em class="fa fa-check noti-success"></em>
+                                        </div>
+                                        <div class="media-body">
+                                            <h5 class="media-heading">数据库备份已经完成</h5>
+                                            <p class="m-0">
+                                                <small>12 分钟 前</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- list item-->
+                                <a href="javascript:void(0);" class="list-group-item">
+                                    <div class="media">
+                                        <div class="pull-left p-r-10">
+                                            <em class="fa fa-user-plus noti-info"></em>
+                                        </div>
+                                        <div class="media-body">
+                                            <h5 class="media-heading">新用户注册</h5>
+                                            <p class="m-0">
+                                                <small>17 分钟前</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- list item-->
+                                <a href="javascript:void(0);" class="list-group-item">
+                                    <div class="media">
+                                        <div class="pull-left p-r-10">
+                                            <em class="fa fa-diamond noti-danger"></em>
+                                        </div>
+                                        <div class="media-body">
+                                            <h5 class="media-heading">数据库错误.</h5>
+                                            <p class="m-0">
+                                                <small>11 min ago</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- list item-->
+                                <a href="javascript:void(0);" class="list-group-item">
+                                    <div class="media">
+                                        <div class="pull-left p-r-10">
+                                            <em class="fa fa-cog noti-warning"></em>
+                                        </div>
+                                        <div class="media-body">
+                                            <h5 class="media-heading">更新设置</h5>
+                                            <p class="m-0">
+                                                <small>18 分钟前</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="last"> <a href="#">查看所有通知</a> </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#" class="btn btn-default dropdown-toggle info-number" data-toggle="dropdown">
+                        <i class="fa fa-bell-o"></i>
+                        <span class="badge">4</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-head pull-right">
+                        <h5 class="title">通知</h5>
+                        <ul class="dropdown-list normal-list">
+                            <li class="message-list message-scroll-list">
+                                <a href="#">
+                                    <span class="photo"> <img src="../../static/images/avatar-6.jpg" th:src="@{/images/avatar-6.jpg}" class="img-circle" alt="img"></span>
+                                    <span class="subject">管理员</span>
+                                    <span class="message">新的任务需要完成</span>
+                                    <span class="time">15 分钟前</span>
+                                </a>
+                                <a href="#">
+                                    <span class="photo"> <img src="../../static/images/avatar-6.jpg" th:src="@{/images/avatar-6.jpg}" class="img-circle" alt="img"></span>
+                                    <span class="subject">管理员</span>
+                                    <span class="message">新的任务需要完成</span>
+                                    <span class="time">15 分钟前</span>
+                                </a>
+                                <a href="#">
+                                    <span class="photo"> <img src="../../static/images/avatar-6.jpg" th:src="@{/images/avatar-6.jpg}" class="img-circle" alt="img"></span>
+                                    <span class="subject">管理员</span>
+                                    <span class="message">新的任务需要完成</span>
+                                    <span class="time">15 分钟前</span>
+                                </a>
+                            </li>
+                            <li class="last"> <a  href="#">所有消息</a> </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <img src="../../static/images/avatar-6.jpg" th:src="@{/images/avatar-6.jpg}" alt="" />
+                        管理员
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
+                        <li> <a href="#"> <i class="fa fa-wrench"></i> 设置 </a> </li>
+                        <li> <a href="#"> <i class="fa fa-user"></i> 外观 </a> </li>
+                        <li> <a href="#"> <i class="fa fa-info"></i> 帮助 </a> </li>
+                        <li> <a href="#" th:href="@{/admin/logout}"> <i class="fa fa-lock"></i> 退出 </a> </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+        <!--notification menu end -->
+
+    </div>
+    <!-- header section end-->
+
     <!--主要内容开始-->
     <div class="main-content" >
-
-        <!-- header section start-->
-        <div class="header-section ">
-
-            <a class="toggle-btn"><i class="fa fa-bars"></i></a>
-
-            <form class="searchform">
-                <input type="text" class="form-control" name="keyword" placeholder="搜索点击这里..." />
-            </form>
-
-            <!--notification menu start -->
-            <div class="menu-right">
-                <ul class="notification-menu">
-                    <li>
-                        <a href="#" class="btn btn-default dropdown-toggle info-number" data-toggle="dropdown">
-                            <i class="fa fa-tasks"></i>
-                            <span class="badge">8</span>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-head pull-right">
-                            <h5 class="title">你有8个代办任务</h5>
-                            <ul class="dropdown-list">
-                                <li class="notification-scroll-list notification-list ">
-                                    <!-- list item-->
-                                    <a href="javascript:void(0);" class="list-group-item">
-                                        <div class="media">
-                                            <div class="pull-left p-r-10">
-                                                <em class="fa  fa-shopping-cart noti-primary"></em>
-                                            </div>
-                                            <div class="media-body">
-                                                <h5 class="media-heading">1个订单已经被处理</h5>
-                                                <p class="m-0">
-                                                    <small>29 分钟前</small>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-
-                                    <!-- list item-->
-                                    <a href="javascript:void(0);" class="list-group-item">
-                                        <div class="media">
-                                            <div class="pull-left p-r-10">
-                                                <em class="fa fa-check noti-success"></em>
-                                            </div>
-                                            <div class="media-body">
-                                                <h5 class="media-heading">数据库备份已经完成</h5>
-                                                <p class="m-0">
-                                                    <small>12 分钟 前</small>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-
-                                    <!-- list item-->
-                                    <a href="javascript:void(0);" class="list-group-item">
-                                        <div class="media">
-                                            <div class="pull-left p-r-10">
-                                                <em class="fa fa-user-plus noti-info"></em>
-                                            </div>
-                                            <div class="media-body">
-                                                <h5 class="media-heading">新用户注册</h5>
-                                                <p class="m-0">
-                                                    <small>17 分钟前</small>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-
-                                    <!-- list item-->
-                                    <a href="javascript:void(0);" class="list-group-item">
-                                        <div class="media">
-                                            <div class="pull-left p-r-10">
-                                                <em class="fa fa-diamond noti-danger"></em>
-                                            </div>
-                                            <div class="media-body">
-                                                <h5 class="media-heading">数据库错误.</h5>
-                                                <p class="m-0">
-                                                    <small>11 min ago</small>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-
-                                    <!-- list item-->
-                                    <a href="javascript:void(0);" class="list-group-item">
-                                        <div class="media">
-                                            <div class="pull-left p-r-10">
-                                                <em class="fa fa-cog noti-warning"></em>
-                                            </div>
-                                            <div class="media-body">
-                                                <h5 class="media-heading">更新设置</h5>
-                                                <p class="m-0">
-                                                    <small>18 分钟前</small>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="last"> <a href="#">查看所有通知</a> </li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li>
-                        <a href="#" class="btn btn-default dropdown-toggle info-number" data-toggle="dropdown">
-                            <i class="fa fa-bell-o"></i>
-                            <span class="badge">4</span>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-head pull-right">
-                            <h5 class="title">通知</h5>
-                            <ul class="dropdown-list normal-list">
-                                <li class="message-list message-scroll-list">
-                                    <a href="#">
-                                        <span class="photo"> <img src="../../static/images/avatar-6.jpg" th:src="@{images/avatar-6.jpg}" class="img-circle" alt="img"></span>
-                                        <span class="subject">管理员</span>
-                                        <span class="message">新的任务需要完成</span>
-                                        <span class="time">15 分钟前</span>
-                                    </a>
-                                    <a href="#">
-                                        <span class="photo"> <img src="../../static/images/avatar-6.jpg" th:src="@{images/avatar-6.jpg}" class="img-circle" alt="img"></span>
-                                        <span class="subject">管理员</span>
-                                        <span class="message">新的任务需要完成</span>
-                                        <span class="time">15 分钟前</span>
-                                    </a>
-                                    <a href="#">
-                                        <span class="photo"> <img src="../../static/images/avatar-6.jpg" th:src="@{images/avatar-6.jpg}" class="img-circle" alt="img"></span>
-                                        <span class="subject">管理员</span>
-                                        <span class="message">新的任务需要完成</span>
-                                        <span class="time">15 分钟前</span>
-                                    </a>
-                                </li>
-                                <li class="last"> <a  href="#">所有消息</a> </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                            <img src="../../static/images/avatar-6.jpg" th:src="@{/images/avatar-6.jpg}" alt="" />
-                            管理员
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
-                            <li> <a href="#"> <i class="fa fa-wrench"></i> 设置 </a> </li>
-                            <li> <a href="#"> <i class="fa fa-user"></i> 外观 </a> </li>
-                            <li> <a href="#"> <i class="fa fa-info"></i> 帮助 </a> </li>
-                            <li> <a href="#" th:href="@{/admin/logout}"> <i class="fa fa-lock"></i> 退出 </a> </li>
-                        </ul>
-                    </li>
-
-                </ul>
-            </div>
-            <!--notification menu end -->
-
-        </div>
-        <!-- header section end-->
-
 
         <!--body wrapper start-->
         <div class="wrapper">
