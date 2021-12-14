@@ -19,11 +19,13 @@ public class Article {
     private String content;         //内容
 
     private String firstPicture;    //首图
-    private String flag;            //草稿？发布？
     private String editor;          //编辑人
-    private String status;          //待审核？审核通过？
+
+    private Boolean published;       //草稿？发布？
+    private Boolean status;          //待审核？审核通过？
 
     private Integer views;          //浏览次数
+
     private String description;     //描述
     @Temporal(TemporalType.TIMESTAMP)
     private Date createTime;        //创建时间
@@ -68,14 +70,6 @@ public class Article {
         this.firstPicture = firstPicture;
     }
 
-    public String getFlag() {
-        return flag;
-    }
-
-    public void setFlag(String flag) {
-        this.flag = flag;
-    }
-
     public String getEditor() {
         return editor;
     }
@@ -84,11 +78,19 @@ public class Article {
         this.editor = editor;
     }
 
-    public String getStatus() {
+    public Boolean getPublished() {
+        return published;
+    }
+
+    public void setPublished(Boolean published) {
+        this.published = published;
+    }
+
+    public Boolean getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(Boolean status) {
         this.status = status;
     }
 
@@ -147,15 +149,13 @@ public class Article {
                 ", title='" + title + '\'' +
                 ", content='" + content + '\'' +
                 ", firstPicture='" + firstPicture + '\'' +
-                ", flag='" + flag + '\'' +
                 ", editor='" + editor + '\'' +
-                ", status='" + status + '\'' +
+                ", published=" + published +
+                ", status=" + status +
                 ", views=" + views +
                 ", description='" + description + '\'' +
                 ", createTime=" + createTime +
                 ", updateTime=" + updateTime +
-                ", type=" + type +
-                ", subType=" + subType +
                 '}';
     }
 }

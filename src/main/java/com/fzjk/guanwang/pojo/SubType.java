@@ -1,6 +1,8 @@
 package com.fzjk.guanwang.pojo;
 
 
+import org.hibernate.event.spi.SaveOrUpdateEvent;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import java.util.ArrayList;
@@ -55,15 +57,11 @@ public class SubType {
         this.articles = articles;
     }
 
-
-
     @Override
     public String toString() {
         return "SubType{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", type=" + type +
-                ", articles=" + articles +
                 '}';
     }
 }

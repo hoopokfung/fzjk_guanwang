@@ -16,6 +16,7 @@ public class Type {
     @NotBlank(message = "分类名称不能为空") //一定要和@Valid用，否则@NotBlank不起作用
     private String name;    //名字
 
+
     @OneToMany(mappedBy = "type")   // 一对多，一的一方为被维护方，mappedBy指定被维护方通过某属性链接
     private List<SubType> subTypes = new ArrayList<>(); //一个分类下面可以有多个子类
 
@@ -59,8 +60,6 @@ public class Type {
         return "Type{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", subTypes=" + subTypes +
-                ", articles=" + articles +
                 '}';
     }
 }

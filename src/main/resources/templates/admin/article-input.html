@@ -13,7 +13,7 @@
     <link href="../../static/lib/bootstrap-wysihtml5/bootstrap-wysihtml5.css" rel="stylesheet" type="text/css" th:href="@{/lib/bootstrap-wysihtml5/bootstrap-wysihtml5.css}"/>
     <link href="../../static/lib/summernote-master/summernote.css" rel="stylesheet" type="text/css" th:href="@{/lib/summernote-master/summernote.css}"/>
     <link href="../../static/lib/summernote-master/summernote-bs2.css" rel="stylesheet" type="text/css" th:href="@{/lib/summernote-master/summernote-bs2.css}"/>
-    <link href="../../static/lib/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" type="text/css" th:href="/lib/bootstrap-select/bootstrap-select.min.css"/>
+    <link href="../../static/lib/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" type="text/css" th:href="@{/lib/bootstrap-select/bootstrap-select.min.css}"/>
     <link href="../../static/css/backstage.css" rel="stylesheet" th:href="@{/css/backstage.css}">
     <link href="../../static/css/responsive.css" rel="stylesheet" th:href="@{/css/responsive.css}">
 
@@ -282,20 +282,14 @@
                                         <div class="field">
                                             <div class="field-half">
                                                 <label class="btn btn-success">分类</label>
-                                                <input type="hidden" name="type.id">
-                                                <select class="selectpicker" data-width="410px">
-                                                    <option>新闻中心</option>
-                                                    <option>党的建设</option>
-                                                    <option>通知公告</option>
+                                                <select name="type.id" class="selectpicker" data-width="410px">
+                                                    <option th:each="type : ${types}" th:value="${type.id}" th:text="${type.name}">新闻中心</option>
                                                 </select>
                                             </div>
                                             <div class="field-half" style="float: right">
                                                 <label class="btn btn-success">分栏</label>
-                                                <input type="hidden" name="tag.id">
-                                                <select class="selectpicker"  data-width="415px" >
-                                                    <option>集团动态</option>
-                                                    <option>一线快讯</option>
-                                                    <option>行业动态</option>
+                                                <select name="subType.id" class="selectpicker"  data-width="415px" >
+                                                    <option th:each="subType : ${subTypes}" th:value="${subType.id}" th:text="${subType.name}">集团动态</option>
                                                 </select>
                                             </div>
                                         </div>

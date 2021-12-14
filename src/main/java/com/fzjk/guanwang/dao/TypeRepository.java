@@ -7,6 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
 
+
 public interface TypeRepository extends JpaRepository<Type, Long> {
 
     /*通过名字查找*/

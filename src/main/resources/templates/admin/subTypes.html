@@ -72,7 +72,7 @@
 <div class="main-content" >
 
     <!-- header section start-->
-    <div class="header-section ">
+    <div th:replace="admin/_fragments :: header" class="header-section ">
 
         <a class="toggle-btn"><i class="fa fa-bars"></i></a>
 
@@ -254,21 +254,18 @@
                     <div class="col-md-12">
                         <div class="white-box">
                             <h2 class="header-title">分类列表 </h2>
-
                             <div class="field">
+                                <input type="hidden" name="page">
                                 <label class="btn btn-success">所属一级大类</label>
-                                <input type="hidden" name="type.id">
-                                <select class="selectpicker" data-width="410px" >
-                                    <option>新闻中心</option>
-                                    <option>党的建设</option>
-                                    <option>通知公告</option>
+                                <select name="typeId" class="selectpicker" data-width="410px" >
+                                    <option  th:each="type : ${types}" th:value="${type.id}" th:text="${type.name}">新闻中心</option>
                                 </select>
-                                <button type="button" class="btn btn-inverse">确认</button>
+                                <button id="search-btn" type="button"  class="btn btn-inverse">确认</button>
                             </div>
 
                             <div class="field">
-                                <div class="table-responsive">
-                                    <table id="example" class="display table text-center">
+                                <div class="table-responsive" id="table-responsive">
+                                    <table th:fragment="subTypeList" id="example" class="display table text-center">
                                         <thead>
                                         <tr>
                                             <th class="text-center">#</th>
@@ -280,62 +277,39 @@
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>新闻中心</td>
+                                        <tr th:each="subType,iterStat : ${page.content}">
+                                            <td th:text="${iterStat.count}">1</td>
+                                            <td th:text="${subType.name}">新闻中心</td>
                                             <td></td>
                                             <td></td>
                                             <td></td>
                                             <td>
-                                                <a class="btn btn-primary">编辑</a>
-                                                <a class="btn btn-danger">删除</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>党的建设</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td>
-                                                <a class="btn btn-primary">编辑</a>
-                                                <a class="btn btn-danger">删除</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>通知公告</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td>
-                                                <a class="btn btn-primary">编辑</a>
-                                                <a class="btn btn-danger">删除</a>
+                                                <a href="#" th:href="@{/admin/subTypes/{id}/input(id=${subType.id})}" class="btn btn-primary">编辑</a>
+                                                <a href="#" th:href="@{/admin/subTypes/{id}/delete(id=${subType.id})}" class="btn btn-danger">删除</a>
                                             </td>
                                         </tr>
                                         </tbody>
                                         <tfoot>
                                         <tr>
                                             <th colspan="5">
-                                                <div class=" ">
-                                                    <a class="btn btn-success round">上一页</a>
-                                                    <a class="btn btn-success round">下一页</a>
+                                                <div th:if="${page.totalPages}>1">
+                                                    <a onclick="page(this)" th:attr="data-page=${page.number}-1" class="btn btn-success round" th:unless="${page.first}">上一页</a>
+                                                    <a onclick="page(this)" th:attr="data-page=${page.number}+1" class="btn btn-success round" th:unless="${page.last}">下一页</a>
 
                                                 </div>
                                             </th>
                                             <th class="text-center">
-
-                                                <a href="subType-input.html" th:href="@{/admin/subType/input}" class="btn btn-primary round ">新增</a>
+                                                <a href="subType-input.html" th:href="@{/admin/subTypes/input}" class="btn btn-primary round ">新增</a>
                                             </th>
                                         </tr>
                                         </tfoot>
                                     </table>
                                 </div>
 
-                                <div class="alert alert-success alert-dismissible" role="alert">
+                                <div class="alert alert-success alert-dismissible" role="alert" th:unless="${#strings.isEmpty(message)}">
                                     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
                                     <h3 class="header-title">提示: </h3>
-                                    <strong>恭喜!</strong> <span>操作成功!</span>
+                                    <strong th:text="${message}"> 操作成功!</strong>
                                 </div>
                             </div>
                         </div>
@@ -371,8 +345,25 @@
 <script type="text/javascript" src="../../static/js/functions.js" th:src="@{/js/functions.js}"></script>
 <!-- End Script   -->
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
-<script type="text/javascript" src="../../static/lib/bootstrap-select/bootstrap-select.min.js" th:href="@{/lib/bootstrap-select/bootstrap-select.min.js}"></script>
+<script type="text/javascript" src="../../static/lib/bootstrap-select/bootstrap-select.min.js" th:src="@{/lib/bootstrap-select/bootstrap-select.min.js}"></script>
+<script>
+    function page(object) {
+        $("[name='page']").val($(object).data("page"));
+        loaddata();
+    }
 
+    $("#search-btn").click(function () {
+        $("[name='page']").val(0);
+        loaddata();
+    });
+
+    function loaddata() {
+        $("#table-responsive").load("/admin/subTypesByTypeId",{
+            typeId : $("[name='typeId']").val(),
+            page : $("[name='page']").val()
+        });
+    }
+</script>
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
 </body>
 </html>

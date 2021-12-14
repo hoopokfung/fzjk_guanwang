@@ -1,0 +1,955 @@
+2021-12-13 09:47:11.368  WARN 22284 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5d18h39m15s212ms323µs100ns).
+2021-12-13 10:21:52.850  WARN 22284 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=23m41s268ms340µs900ns).
+2021-12-13 10:23:22.437  INFO 22284 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.loginPage', args=[{}]}
+2021-12-13 10:23:22.438  INFO 22284 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/login
+2021-12-13 10:23:22.439  INFO 22284 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:23:28.756  INFO 22284 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.loginPage', args=[{}]}
+2021-12-13 10:23:28.757  INFO 22284 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/login
+2021-12-13 10:23:28.757  INFO 22284 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:23:31.144  INFO 22284 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.login', args=[hoopokfung, 123456, org.apache.catalina.session.StandardSessionFacade@1e706e6, {}]}
+2021-12-13 10:23:31.162  INFO 22284 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Result : {}redirect:/admin
+2021-12-13 10:23:31.162  INFO 22284 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:23:31.383  INFO 22284 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.loginPage', args=[{message=用户名和密码错误}]}
+2021-12-13 10:23:31.383  INFO 22284 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/login
+2021-12-13 10:23:31.383  INFO 22284 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:23:38.102  INFO 22284 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.login', args=[15979594979, fzjk2016, org.apache.catalina.session.StandardSessionFacade@1e706e6, {}]}
+2021-12-13 10:23:38.109  INFO 22284 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/adminIndex
+2021-12-13 10:23:38.109  INFO 22284 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:23:41.624  INFO 22284 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {}]}
+2021-12-13 10:23:41.644  INFO 22284 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 10:23:41.644  INFO 22284 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:23:45.736  INFO 22284 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 5, sort: id: DESC], 1, {}]}
+2021-12-13 10:23:45.895  INFO 22284 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:23:45.896  INFO 22284 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:23:49.689  INFO 22284 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 5, sort: id: DESC], 2, {}]}
+2021-12-13 10:23:49.693  INFO 22284 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:23:49.693  INFO 22284 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:23:52.167  INFO 22284 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 5, sort: id: DESC], 2, {}]}
+2021-12-13 10:23:52.171  INFO 22284 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:23:52.171  INFO 22284 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:23:54.413  INFO 22284 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 5, sort: id: DESC], 3, {}]}
+2021-12-13 10:23:54.418  INFO 22284 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:23:54.418  INFO 22284 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:23:57.347  INFO 22284 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 5, sort: id: DESC], 1, {}]}
+2021-12-13 10:23:57.352  INFO 22284 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:23:57.353  INFO 22284 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:27:56.044  INFO 22284 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {}]}
+2021-12-13 10:27:56.051  INFO 22284 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 10:27:56.052  INFO 22284 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:27:57.831  INFO 22284 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 1, size 5, sort: id: DESC], 1, {}]}
+2021-12-13 10:27:57.836  INFO 22284 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:27:57.836  INFO 22284 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:28:01.963  INFO 22284 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {}]}
+2021-12-13 10:28:01.972  INFO 22284 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 10:28:01.973  INFO 22284 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:28:03.772  INFO 22284 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 1, size 5, sort: id: DESC], 1, {}]}
+2021-12-13 10:28:03.777  INFO 22284 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:28:03.777  INFO 22284 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:28:10.534  INFO 22284 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {}]}
+2021-12-13 10:28:10.548  INFO 22284 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 10:28:10.549  INFO 22284 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:28:14.584  INFO 22284 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 1, size 5, sort: id: DESC], 1, {}]}
+2021-12-13 10:28:14.588  INFO 22284 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:28:14.588  INFO 22284 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:40:56.762  INFO 28780 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Starting GuanwangApplication using Java 1.8.0_65 on DESKTOP-0R0PQ9E with PID 28780 (E:\workplace\fzjk_guanwang\target\classes started by hushizhi0121 in E:\workplace\fzjk_guanwang)
+2021-12-13 10:40:56.762 DEBUG 28780 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-12-13 10:40:56.762  INFO 28780 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : The following profiles are active: dev
+2021-12-13 10:40:56.824  INFO 28780 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-13 10:40:56.824  INFO 28780 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-13 10:40:58.464  INFO 28780 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-13 10:40:58.558  INFO 28780 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 4 JPA repository interfaces.
+2021-12-13 10:40:59.636  INFO 28780 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-13 10:40:59.652  INFO 28780 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-13 10:40:59.652  INFO 28780 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-13 10:40:59.745  INFO 28780 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-13 10:40:59.745  INFO 28780 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2921 ms
+2021-12-13 10:41:00.042  INFO 28780 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-13 10:41:00.167  INFO 28780 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-12-13 10:41:00.339  INFO 28780 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-13 10:41:00.480  INFO 28780 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-13 10:41:00.684  INFO 28780 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-13 10:41:00.699  INFO 28780 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-12-13 10:41:01.652  INFO 28780 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-13 10:41:01.652  INFO 28780 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-13 10:41:02.558  WARN 28780 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-13 10:41:02.886  INFO 28780 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-13 10:41:03.386  INFO 28780 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-13 10:41:03.433  INFO 28780 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-13 10:41:03.433  INFO 28780 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Started GuanwangApplication in 7.454 seconds (JVM running for 8.871)
+2021-12-13 10:41:23.157  INFO 28780 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-13 10:41:23.157  INFO 28780 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-13 10:41:23.160  INFO 28780 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2021-12-13 10:41:23.202  INFO 28780 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.loginPage', args=[{}]}
+2021-12-13 10:41:23.213  INFO 28780 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/login
+2021-12-13 10:41:23.213  INFO 28780 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:41:29.096  INFO 28780 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.login', args=[15979594979, fzjk2016, org.apache.catalina.session.StandardSessionFacade@1670ccd, {}]}
+2021-12-13 10:41:29.166  INFO 28780 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/adminIndex
+2021-12-13 10:41:29.166  INFO 28780 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:41:30.923  INFO 28780 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {}]}
+2021-12-13 10:41:30.983  INFO 28780 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 10:41:30.983  INFO 28780 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:41:34.767  INFO 28780 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 5, sort: id: DESC], 1, {}]}
+2021-12-13 10:41:34.794  INFO 28780 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:41:34.794  INFO 28780 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:43:17.812  INFO 28448 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Starting GuanwangApplication using Java 1.8.0_65 on DESKTOP-0R0PQ9E with PID 28448 (E:\workplace\fzjk_guanwang\target\classes started by hushizhi0121 in E:\workplace\fzjk_guanwang)
+2021-12-13 10:43:17.812 DEBUG 28448 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-12-13 10:43:17.812  INFO 28448 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : The following profiles are active: dev
+2021-12-13 10:43:17.874  INFO 28448 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-13 10:43:17.874  INFO 28448 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-13 10:43:18.499  INFO 28448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-13 10:43:18.562  INFO 28448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 4 JPA repository interfaces.
+2021-12-13 10:43:19.343  INFO 28448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-13 10:43:19.343  INFO 28448 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-13 10:43:19.343  INFO 28448 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-13 10:43:19.421  INFO 28448 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-13 10:43:19.421  INFO 28448 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1547 ms
+2021-12-13 10:43:19.624  INFO 28448 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-13 10:43:19.687  INFO 28448 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-12-13 10:43:19.796  INFO 28448 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-13 10:43:19.874  INFO 28448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-13 10:43:20.061  INFO 28448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-13 10:43:20.061  INFO 28448 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-12-13 10:43:20.718  INFO 28448 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-13 10:43:20.733  INFO 28448 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-13 10:43:21.483  WARN 28448 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-13 10:43:21.780  INFO 28448 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-13 10:43:22.334  INFO 28448 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-13 10:43:22.397  INFO 28448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-13 10:43:22.397  INFO 28448 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Started GuanwangApplication in 5.168 seconds (JVM running for 6.223)
+2021-12-13 10:43:26.028  INFO 28448 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-13 10:43:26.029  INFO 28448 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-13 10:43:26.030  INFO 28448 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-12-13 10:43:26.070  INFO 28448 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.loginPage', args=[{}]}
+2021-12-13 10:43:26.088  INFO 28448 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/login
+2021-12-13 10:43:26.088  INFO 28448 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:43:32.017  INFO 28448 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.login', args=[15979594979, fzjk2016, org.apache.catalina.session.StandardSessionFacade@5ff673, {}]}
+2021-12-13 10:43:32.088  INFO 28448 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/adminIndex
+2021-12-13 10:43:32.088  INFO 28448 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:43:34.532  INFO 28448 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {}]}
+2021-12-13 10:43:34.608  INFO 28448 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 10:43:34.608  INFO 28448 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:43:37.840  INFO 28448 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 5, sort: id: DESC], 1, {}]}
+2021-12-13 10:43:37.862  INFO 28448 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:43:37.862  INFO 28448 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:44:22.097  INFO 26172 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Starting GuanwangApplication using Java 1.8.0_65 on DESKTOP-0R0PQ9E with PID 26172 (E:\workplace\fzjk_guanwang\target\classes started by hushizhi0121 in E:\workplace\fzjk_guanwang)
+2021-12-13 10:44:22.113 DEBUG 26172 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-12-13 10:44:22.113  INFO 26172 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : The following profiles are active: dev
+2021-12-13 10:44:22.176  INFO 26172 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-13 10:44:22.176  INFO 26172 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-13 10:44:22.863  INFO 26172 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-13 10:44:22.941  INFO 26172 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 4 JPA repository interfaces.
+2021-12-13 10:44:23.785  INFO 26172 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-13 10:44:23.800  INFO 26172 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-13 10:44:23.800  INFO 26172 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-13 10:44:23.878  INFO 26172 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-13 10:44:23.878  INFO 26172 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1702 ms
+2021-12-13 10:44:24.050  INFO 26172 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-13 10:44:24.113  INFO 26172 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-12-13 10:44:24.206  INFO 26172 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-13 10:44:24.300  INFO 26172 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-13 10:44:24.456  INFO 26172 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-13 10:44:24.472  INFO 26172 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-12-13 10:44:25.253  INFO 26172 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-13 10:44:25.253  INFO 26172 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-13 10:44:26.050  WARN 26172 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-13 10:44:26.456  INFO 26172 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-13 10:44:26.815  INFO 26172 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-13 10:44:26.846  INFO 26172 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-13 10:44:26.862  INFO 26172 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Started GuanwangApplication in 5.37 seconds (JVM running for 6.52)
+2021-12-13 10:44:50.113  INFO 26172 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-13 10:44:50.113  INFO 26172 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-13 10:44:50.114  INFO 26172 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-12-13 10:44:50.152  INFO 26172 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.loginPage', args=[{}]}
+2021-12-13 10:44:50.162  INFO 26172 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/login
+2021-12-13 10:44:50.162  INFO 26172 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:44:57.334  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.login', args=[15979594979, fzjk2016, org.apache.catalina.session.StandardSessionFacade@95e204, {}]}
+2021-12-13 10:44:57.396  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/adminIndex
+2021-12-13 10:44:57.396  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:44:59.470  INFO 26172 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {}]}
+2021-12-13 10:44:59.531  INFO 26172 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 10:44:59.532  INFO 26172 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:45:09.943  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 6, sort: id: DESC], 1, {}]}
+2021-12-13 10:45:09.961  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:45:09.961  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:45:17.408  INFO 26172 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes/input', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypeInput', args=[{}]}
+2021-12-13 10:45:17.412  INFO 26172 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subType-input
+2021-12-13 10:45:17.412  INFO 26172 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:45:42.741  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.post', args=[SubType{id=null, name='新闻子栏一'}, org.springframework.validation.BeanPropertyBindingResult: 0 errors, {}]}
+2021-12-13 10:45:42.774  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Result : {}redirect:/admin/subTypes
+2021-12-13 10:45:42.774  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:45:42.792  INFO 26172 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {message=恭喜！新增成功！}]}
+2021-12-13 10:45:42.800  INFO 26172 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 10:45:42.800  INFO 26172 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:45:45.676  INFO 26172 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 6, sort: id: DESC], 1, {}]}
+2021-12-13 10:45:45.685  INFO 26172 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:45:45.685  INFO 26172 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:45:50.181  INFO 26172 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes/input', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypeInput', args=[{}]}
+2021-12-13 10:45:50.187  INFO 26172 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subType-input
+2021-12-13 10:45:50.187  INFO 26172 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:46:06.938  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.post', args=[SubType{id=null, name='新闻子栏二'}, org.springframework.validation.BeanPropertyBindingResult: 0 errors, {}]}
+2021-12-13 10:46:06.946  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Result : {}redirect:/admin/subTypes
+2021-12-13 10:46:06.946  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:46:06.951  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {message=恭喜！新增成功！}]}
+2021-12-13 10:46:06.957  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 10:46:06.958  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:46:11.158  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 6, sort: id: DESC], 1, {}]}
+2021-12-13 10:46:11.166  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:46:11.166  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:46:12.950  INFO 26172 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 1, size 6, sort: id: DESC], 1, {}]}
+2021-12-13 10:46:12.954  INFO 26172 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:46:12.954  INFO 26172 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:46:17.132  INFO 26172 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 6, sort: id: DESC], 1, {}]}
+2021-12-13 10:46:17.139  INFO 26172 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:46:17.139  INFO 26172 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:46:19.587  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 6, sort: id: DESC], 1, {}]}
+2021-12-13 10:46:19.594  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:46:19.594  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:46:22.142  INFO 26172 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes/input', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypeInput', args=[{}]}
+2021-12-13 10:46:22.147  INFO 26172 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subType-input
+2021-12-13 10:46:22.149  INFO 26172 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:46:35.831  INFO 26172 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.post', args=[SubType{id=null, name='新闻子栏三'}, org.springframework.validation.BeanPropertyBindingResult: 0 errors, {}]}
+2021-12-13 10:46:35.839  INFO 26172 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Result : {}redirect:/admin/subTypes
+2021-12-13 10:46:35.839  INFO 26172 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:46:35.844  INFO 26172 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {message=恭喜！新增成功！}]}
+2021-12-13 10:46:35.854  INFO 26172 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 10:46:35.854  INFO 26172 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:46:40.437  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes/input', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypeInput', args=[{}]}
+2021-12-13 10:46:40.441  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subType-input
+2021-12-13 10:46:40.441  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:46:47.057  INFO 26172 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 6, sort: id: DESC], 1, {}]}
+2021-12-13 10:46:47.064  INFO 26172 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:46:47.065  INFO 26172 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:46:48.262  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 1, size 6, sort: id: DESC], 1, {}]}
+2021-12-13 10:46:48.266  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:46:48.266  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:46:49.456  INFO 26172 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 6, sort: id: DESC], 1, {}]}
+2021-12-13 10:46:49.460  INFO 26172 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:46:49.460  INFO 26172 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:46:51.737  INFO 26172 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes/input', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypeInput', args=[{}]}
+2021-12-13 10:46:51.742  INFO 26172 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subType-input
+2021-12-13 10:46:51.743  INFO 26172 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:46:55.207  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.post', args=[SubType{id=null, name='12'}, org.springframework.validation.BeanPropertyBindingResult: 0 errors, {}]}
+2021-12-13 10:46:55.214  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Result : {}redirect:/admin/subTypes
+2021-12-13 10:46:55.215  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:46:55.221  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {message=恭喜！新增成功！}]}
+2021-12-13 10:46:55.227  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 10:46:55.227  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:46:57.518  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes/input', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypeInput', args=[{}]}
+2021-12-13 10:46:57.523  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subType-input
+2021-12-13 10:46:57.524  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:46:59.310  INFO 26172 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.post', args=[SubType{id=null, name='123'}, org.springframework.validation.BeanPropertyBindingResult: 0 errors, {}]}
+2021-12-13 10:46:59.318  INFO 26172 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Result : {}redirect:/admin/subTypes
+2021-12-13 10:46:59.318  INFO 26172 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:46:59.325  INFO 26172 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {message=恭喜！新增成功！}]}
+2021-12-13 10:46:59.333  INFO 26172 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 10:46:59.333  INFO 26172 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:00.517  INFO 26172 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes/input', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypeInput', args=[{}]}
+2021-12-13 10:47:00.521  INFO 26172 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subType-input
+2021-12-13 10:47:00.521  INFO 26172 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:03.015  INFO 26172 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.post', args=[SubType{id=null, name='1234'}, org.springframework.validation.BeanPropertyBindingResult: 0 errors, {}]}
+2021-12-13 10:47:03.021  INFO 26172 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Result : {}redirect:/admin/subTypes
+2021-12-13 10:47:03.021  INFO 26172 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:03.028  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {message=恭喜！新增成功！}]}
+2021-12-13 10:47:03.038  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 10:47:03.039  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:04.299  INFO 26172 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes/input', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypeInput', args=[{}]}
+2021-12-13 10:47:04.303  INFO 26172 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subType-input
+2021-12-13 10:47:04.304  INFO 26172 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:07.524  INFO 26172 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.post', args=[SubType{id=null, name='123456'}, org.springframework.validation.BeanPropertyBindingResult: 0 errors, {}]}
+2021-12-13 10:47:07.531  INFO 26172 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Result : {}redirect:/admin/subTypes
+2021-12-13 10:47:07.532  INFO 26172 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:07.539  INFO 26172 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {message=恭喜！新增成功！}]}
+2021-12-13 10:47:07.547  INFO 26172 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 10:47:07.547  INFO 26172 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:08.816  INFO 26172 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes/input', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypeInput', args=[{}]}
+2021-12-13 10:47:08.820  INFO 26172 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subType-input
+2021-12-13 10:47:08.821  INFO 26172 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:13.313  INFO 26172 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.post', args=[SubType{id=null, name='12345'}, org.springframework.validation.BeanPropertyBindingResult: 0 errors, {}]}
+2021-12-13 10:47:13.320  INFO 26172 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Result : {}redirect:/admin/subTypes
+2021-12-13 10:47:13.320  INFO 26172 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:13.326  INFO 26172 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {message=恭喜！新增成功！}]}
+2021-12-13 10:47:13.336  INFO 26172 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 10:47:13.336  INFO 26172 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:15.484  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes/input', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypeInput', args=[{}]}
+2021-12-13 10:47:15.487  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subType-input
+2021-12-13 10:47:15.488  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:18.453  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.post', args=[SubType{id=null, name='123啊士大'}, org.springframework.validation.BeanPropertyBindingResult: 0 errors, {}]}
+2021-12-13 10:47:18.461  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Result : {}redirect:/admin/subTypes
+2021-12-13 10:47:18.462  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:18.467  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {message=恭喜！新增成功！}]}
+2021-12-13 10:47:18.473  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 10:47:18.474  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:19.909  INFO 26172 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes/input', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypeInput', args=[{}]}
+2021-12-13 10:47:19.912  INFO 26172 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subType-input
+2021-12-13 10:47:19.913  INFO 26172 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:22.693  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.post', args=[SubType{id=null, name='123asfda '}, org.springframework.validation.BeanPropertyBindingResult: 0 errors, {}]}
+2021-12-13 10:47:22.701  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Result : {}redirect:/admin/subTypes
+2021-12-13 10:47:22.701  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:22.709  INFO 26172 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {message=恭喜！新增成功！}]}
+2021-12-13 10:47:22.714  INFO 26172 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 10:47:22.714  INFO 26172 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:24.010  INFO 26172 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes/input', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypeInput', args=[{}]}
+2021-12-13 10:47:24.014  INFO 26172 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subType-input
+2021-12-13 10:47:24.015  INFO 26172 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:27.394  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.post', args=[SubType{id=null, name='123eadf  asd a'}, org.springframework.validation.BeanPropertyBindingResult: 0 errors, {}]}
+2021-12-13 10:47:27.400  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Result : {}redirect:/admin/subTypes
+2021-12-13 10:47:27.400  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:27.407  INFO 26172 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {message=恭喜！新增成功！}]}
+2021-12-13 10:47:27.413  INFO 26172 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 10:47:27.413  INFO 26172 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:30.717  INFO 26172 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 6, sort: id: DESC], 1, {}]}
+2021-12-13 10:47:30.724  INFO 26172 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:47:30.724  INFO 26172 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:31.962  INFO 26172 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 1, size 6, sort: id: DESC], 1, {}]}
+2021-12-13 10:47:31.968  INFO 26172 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:47:31.968  INFO 26172 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:33.146  INFO 26172 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 2, size 6, sort: id: DESC], 1, {}]}
+2021-12-13 10:47:33.150  INFO 26172 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:47:33.150  INFO 26172 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:34.465  INFO 26172 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 1, size 6, sort: id: DESC], 1, {}]}
+2021-12-13 10:47:34.472  INFO 26172 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:47:34.472  INFO 26172 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:35.409  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 6, sort: id: DESC], 1, {}]}
+2021-12-13 10:47:35.413  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:47:35.414  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:37.273  INFO 26172 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes/37/delete', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.delete', args=[37, {}]}
+2021-12-13 10:47:37.295  INFO 26172 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Result : {}redirect:/admin/subTypes
+2021-12-13 10:47:37.295  INFO 26172 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:37.299  INFO 26172 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {message=删除成功}]}
+2021-12-13 10:47:37.307  INFO 26172 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 10:47:37.308  INFO 26172 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:38.282  INFO 26172 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes/36/delete', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.delete', args=[36, {}]}
+2021-12-13 10:47:38.285  INFO 26172 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Result : {}redirect:/admin/subTypes
+2021-12-13 10:47:38.286  INFO 26172 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:38.292  INFO 26172 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {message=删除成功}]}
+2021-12-13 10:47:38.297  INFO 26172 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 10:47:38.297  INFO 26172 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:38.801  INFO 26172 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes/35/delete', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.delete', args=[35, {}]}
+2021-12-13 10:47:38.808  INFO 26172 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Result : {}redirect:/admin/subTypes
+2021-12-13 10:47:38.808  INFO 26172 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:38.811  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {message=删除成功}]}
+2021-12-13 10:47:38.817  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 10:47:38.817  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:39.201  INFO 26172 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes/34/delete', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.delete', args=[34, {}]}
+2021-12-13 10:47:39.207  INFO 26172 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Result : {}redirect:/admin/subTypes
+2021-12-13 10:47:39.207  INFO 26172 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:39.210  INFO 26172 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {message=删除成功}]}
+2021-12-13 10:47:39.217  INFO 26172 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 10:47:39.217  INFO 26172 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:39.606  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes/33/delete', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.delete', args=[33, {}]}
+2021-12-13 10:47:39.611  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Result : {}redirect:/admin/subTypes
+2021-12-13 10:47:39.612  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:39.616  INFO 26172 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {message=删除成功}]}
+2021-12-13 10:47:39.628  INFO 26172 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 10:47:39.628  INFO 26172 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:40.065  INFO 26172 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes/32/delete', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.delete', args=[32, {}]}
+2021-12-13 10:47:40.070  INFO 26172 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Result : {}redirect:/admin/subTypes
+2021-12-13 10:47:40.071  INFO 26172 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:40.078  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {message=删除成功}]}
+2021-12-13 10:47:40.084  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 10:47:40.085  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:40.443  INFO 26172 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes/31/delete', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.delete', args=[31, {}]}
+2021-12-13 10:47:40.446  INFO 26172 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Result : {}redirect:/admin/subTypes
+2021-12-13 10:47:40.446  INFO 26172 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:40.450  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {message=删除成功}]}
+2021-12-13 10:47:40.465  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 10:47:40.465  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:41.032  INFO 26172 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes/30/delete', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.delete', args=[30, {}]}
+2021-12-13 10:47:41.037  INFO 26172 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Result : {}redirect:/admin/subTypes
+2021-12-13 10:47:41.037  INFO 26172 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:41.043  INFO 26172 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {message=删除成功}]}
+2021-12-13 10:47:41.048  INFO 26172 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 10:47:41.048  INFO 26172 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:42.190  INFO 26172 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 1, size 6, sort: id: DESC], 1, {}]}
+2021-12-13 10:47:42.193  INFO 26172 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:47:42.193  INFO 26172 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:43.070  INFO 26172 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 6, sort: id: DESC], 1, {}]}
+2021-12-13 10:47:43.076  INFO 26172 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:47:43.076  INFO 26172 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:47:50.924  INFO 26172 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 6, sort: id: DESC], 1, {}]}
+2021-12-13 10:47:50.929  INFO 26172 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:47:50.930  INFO 26172 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:49:06.612  INFO 26172 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {}]}
+2021-12-13 10:49:06.619  INFO 26172 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 10:49:06.619  INFO 26172 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:49:09.408  INFO 26172 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 1, size 6, sort: id: DESC], 1, {}]}
+2021-12-13 10:49:09.411  INFO 26172 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:49:09.412  INFO 26172 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:49:10.703  INFO 26172 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 6, sort: id: DESC], 1, {}]}
+2021-12-13 10:49:10.708  INFO 26172 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:49:10.708  INFO 26172 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:49:12.392  INFO 26172 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {}]}
+2021-12-13 10:49:12.402  INFO 26172 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 10:49:12.402  INFO 26172 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:49:14.044  INFO 26172 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 1, size 6, sort: id: DESC], 1, {}]}
+2021-12-13 10:49:14.048  INFO 26172 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:49:14.048  INFO 26172 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:49:15.180  INFO 26172 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 6, sort: id: DESC], 1, {}]}
+2021-12-13 10:49:15.185  INFO 26172 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:49:15.185  INFO 26172 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:49:17.570  INFO 26172 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 6, sort: id: DESC], 1, {}]}
+2021-12-13 10:49:17.576  INFO 26172 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:49:17.577  INFO 26172 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:49:18.163  INFO 26172 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 6, sort: id: DESC], 1, {}]}
+2021-12-13 10:49:18.169  INFO 26172 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:49:18.169  INFO 26172 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:49:18.794  INFO 26172 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 6, sort: id: DESC], 1, {}]}
+2021-12-13 10:49:18.799  INFO 26172 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:49:18.799  INFO 26172 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:49:21.001  INFO 26172 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 6, sort: id: DESC], 1, {}]}
+2021-12-13 10:49:21.006  INFO 26172 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:49:21.006  INFO 26172 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:49:22.040  INFO 26172 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 1, size 6, sort: id: DESC], 1, {}]}
+2021-12-13 10:49:22.043  INFO 26172 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:49:22.043  INFO 26172 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:49:23.048  INFO 26172 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 6, sort: id: DESC], 1, {}]}
+2021-12-13 10:49:23.053  INFO 26172 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:49:23.053  INFO 26172 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:49:25.228  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.TypeController.types', args=[Page request [number: 0, size 3, sort: id: DESC], {}]}
+2021-12-13 10:49:25.242  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/types
+2021-12-13 10:49:25.243  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:49:27.057  INFO 26172 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.TypeController.types', args=[Page request [number: 1, size 3, sort: id: DESC], {}]}
+2021-12-13 10:49:27.060  INFO 26172 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/types
+2021-12-13 10:49:27.060  INFO 26172 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:49:29.088  INFO 26172 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.TypeController.types', args=[Page request [number: 0, size 3, sort: id: DESC], {}]}
+2021-12-13 10:49:29.091  INFO 26172 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/types
+2021-12-13 10:49:29.091  INFO 26172 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:49:31.064  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.TypeController.types', args=[Page request [number: 1, size 3, sort: id: DESC], {}]}
+2021-12-13 10:49:31.068  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/types
+2021-12-13 10:49:31.069  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:49:32.864  INFO 26172 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.TypeController.types', args=[Page request [number: 0, size 3, sort: id: DESC], {}]}
+2021-12-13 10:49:32.869  INFO 26172 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/types
+2021-12-13 10:49:32.869  INFO 26172 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:49:35.005  INFO 26172 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {}]}
+2021-12-13 10:49:35.015  INFO 26172 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 10:49:35.016  INFO 26172 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:49:36.731  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 1, size 6, sort: id: DESC], 1, {}]}
+2021-12-13 10:49:36.734  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:49:36.735  INFO 26172 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:49:37.738  INFO 26172 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 6, sort: id: DESC], 1, {}]}
+2021-12-13 10:49:37.743  INFO 26172 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:49:37.744  INFO 26172 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:49:41.824  INFO 26172 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 6, sort: id: DESC], 2, {}]}
+2021-12-13 10:49:41.829  INFO 26172 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:49:41.829  INFO 26172 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:49:44.030  INFO 26172 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 6, sort: id: DESC], 3, {}]}
+2021-12-13 10:49:44.034  INFO 26172 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:49:44.034  INFO 26172 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:49:47.965  INFO 26172 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 6, sort: id: DESC], 4, {}]}
+2021-12-13 10:49:47.969  INFO 26172 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:49:47.969  INFO 26172 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:49:50.229  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 6, sort: id: DESC], 1, {}]}
+2021-12-13 10:49:50.235  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:49:50.235  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:49:51.755  INFO 26172 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 1, size 6, sort: id: DESC], 1, {}]}
+2021-12-13 10:49:51.759  INFO 26172 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:49:51.759  INFO 26172 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:49:52.739  INFO 26172 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 6, sort: id: DESC], 1, {}]}
+2021-12-13 10:49:52.745  INFO 26172 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:49:52.745  INFO 26172 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:49:58.720  INFO 26172 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes/29/delete', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.delete', args=[29, {}]}
+2021-12-13 10:49:58.732  INFO 26172 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Result : {}redirect:/admin/subTypes
+2021-12-13 10:49:58.732  INFO 26172 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:49:58.742  INFO 26172 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {message=删除成功}]}
+2021-12-13 10:49:58.759  INFO 26172 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 10:49:58.759  INFO 26172 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:49:59.340  INFO 26172 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes/28/delete', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.delete', args=[28, {}]}
+2021-12-13 10:49:59.345  INFO 26172 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Result : {}redirect:/admin/subTypes
+2021-12-13 10:49:59.345  INFO 26172 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:49:59.348  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {message=删除成功}]}
+2021-12-13 10:49:59.357  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 10:49:59.357  INFO 26172 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:50:00.075  INFO 26172 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes/27/delete', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.delete', args=[27, {}]}
+2021-12-13 10:50:00.077  INFO 26172 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Result : {}redirect:/admin/subTypes
+2021-12-13 10:50:00.078  INFO 26172 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:50:00.081  INFO 26172 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {message=删除成功}]}
+2021-12-13 10:50:00.088  INFO 26172 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 10:50:00.088  INFO 26172 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:50:03.776  INFO 26172 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {}]}
+2021-12-13 10:50:03.780  INFO 26172 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 10:50:03.781  INFO 26172 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:50:05.648  INFO 26172 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {}]}
+2021-12-13 10:50:05.656  INFO 26172 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 10:50:05.656  INFO 26172 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:50:06.692  INFO 26172 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 1, size 6, sort: id: DESC], 1, {}]}
+2021-12-13 10:50:06.696  INFO 26172 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:50:06.696  INFO 26172 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:50:11.180  INFO 26172 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {}]}
+2021-12-13 10:50:11.189  INFO 26172 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 10:50:11.189  INFO 26172 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:50:19.775  INFO 26172 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 6, sort: id: DESC], 1, {}]}
+2021-12-13 10:50:19.780  INFO 26172 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:50:19.780  INFO 26172 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:50:22.213  INFO 26172 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 6, sort: id: DESC], 1, {}]}
+2021-12-13 10:50:22.217  INFO 26172 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:50:22.217  INFO 26172 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:52:50.773  INFO 3856 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Starting GuanwangApplication using Java 1.8.0_65 on DESKTOP-0R0PQ9E with PID 3856 (E:\workplace\fzjk_guanwang\target\classes started by hushizhi0121 in E:\workplace\fzjk_guanwang)
+2021-12-13 10:52:50.773 DEBUG 3856 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-12-13 10:52:50.773  INFO 3856 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : The following profiles are active: dev
+2021-12-13 10:52:50.836  INFO 3856 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-13 10:52:50.836  INFO 3856 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-13 10:52:51.539  INFO 3856 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-13 10:52:51.601  INFO 3856 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 4 JPA repository interfaces.
+2021-12-13 10:52:52.476  INFO 3856 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-13 10:52:52.492  INFO 3856 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-13 10:52:52.492  INFO 3856 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-13 10:52:52.601  INFO 3856 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-13 10:52:52.601  INFO 3856 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1765 ms
+2021-12-13 10:52:52.835  INFO 3856 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-13 10:52:52.882  INFO 3856 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-12-13 10:52:52.992  INFO 3856 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-13 10:52:53.101  INFO 3856 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-13 10:52:53.242  INFO 3856 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-13 10:52:53.320  INFO 3856 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-12-13 10:52:53.991  INFO 3856 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-13 10:52:54.007  INFO 3856 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-13 10:52:54.788  WARN 3856 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-13 10:52:55.101  INFO 3856 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-13 10:52:55.476  INFO 3856 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-13 10:52:55.507  INFO 3856 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-13 10:52:55.522  INFO 3856 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Started GuanwangApplication in 5.311 seconds (JVM running for 6.635)
+2021-12-13 10:53:00.723  INFO 3856 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-13 10:53:00.723  INFO 3856 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-13 10:53:00.724  INFO 3856 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-12-13 10:53:00.869  INFO 3856 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.loginPage', args=[{}]}
+2021-12-13 10:53:00.879  INFO 3856 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/login
+2021-12-13 10:53:00.880  INFO 3856 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:53:11.565  INFO 3856 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.login', args=[15979594979, fzjk2016, org.apache.catalina.session.StandardSessionFacade@15440f6, {}]}
+2021-12-13 10:53:11.630  INFO 3856 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/adminIndex
+2021-12-13 10:53:11.630  INFO 3856 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:53:13.879  INFO 3856 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {}]}
+2021-12-13 10:53:13.933  INFO 3856 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 10:53:13.933  INFO 3856 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 10:53:23.728  INFO 3856 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 1, size 5, sort: id: DESC], 1, {}]}
+2021-12-13 10:53:23.746  INFO 3856 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 10:53:23.746  INFO 3856 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:02:21.208  INFO 3856 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.loginPage', args=[{}]}
+2021-12-13 11:02:21.210  INFO 3856 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/login
+2021-12-13 11:02:21.210  INFO 3856 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:02:27.055  INFO 3856 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.login', args=[15979594979, fzjk2016, org.apache.catalina.session.StandardSessionFacade@41d0b3, {}]}
+2021-12-13 11:02:27.058  INFO 3856 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/adminIndex
+2021-12-13 11:02:27.059  INFO 3856 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:02:29.200  INFO 3856 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {}]}
+2021-12-13 11:02:29.210  INFO 3856 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 11:02:29.211  INFO 3856 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:02:42.790  INFO 3856 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 1, size 5, sort: id: DESC], 1, {}]}
+2021-12-13 11:02:42.794  INFO 3856 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 11:02:42.794  INFO 3856 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:02:46.391  INFO 3856 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {}]}
+2021-12-13 11:02:46.403  INFO 3856 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 11:02:46.403  INFO 3856 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:02:51.572  INFO 3856 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes/24/delete', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.delete', args=[24, {}]}
+2021-12-13 11:02:51.609  INFO 3856 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Result : {}redirect:/admin/subTypes
+2021-12-13 11:02:51.610  INFO 3856 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:02:51.631  INFO 3856 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {message=删除成功}]}
+2021-12-13 11:02:51.639  INFO 3856 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 11:02:51.639  INFO 3856 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:02:53.777  INFO 3856 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes/25/delete', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.delete', args=[25, {}]}
+2021-12-13 11:02:53.783  INFO 3856 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Result : {}redirect:/admin/subTypes
+2021-12-13 11:02:53.783  INFO 3856 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:02:53.789  INFO 3856 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {message=删除成功}]}
+2021-12-13 11:02:53.794  INFO 3856 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 11:02:53.794  INFO 3856 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:03:15.232  INFO 3856 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 5, sort: id: DESC], 1, {}]}
+2021-12-13 11:03:15.236  INFO 3856 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 11:03:15.237  INFO 3856 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:03:17.677  INFO 3856 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 5, sort: id: DESC], 2, {}]}
+2021-12-13 11:03:17.681  INFO 3856 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 11:03:17.682  INFO 3856 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:03:19.845  INFO 3856 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 5, sort: id: DESC], 3, {}]}
+2021-12-13 11:03:19.849  INFO 3856 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 11:03:19.849  INFO 3856 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:03:23.026  INFO 3856 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 5, sort: id: DESC], 4, {}]}
+2021-12-13 11:03:23.030  INFO 3856 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 11:03:23.031  INFO 3856 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:03:27.664  INFO 3856 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 5, sort: id: DESC], 3, {}]}
+2021-12-13 11:03:27.668  INFO 3856 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 11:03:27.668  INFO 3856 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:03:28.476  INFO 3856 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes/input', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypeInput', args=[{}]}
+2021-12-13 11:03:28.480  INFO 3856 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subType-input
+2021-12-13 11:03:28.480  INFO 3856 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:03:39.649  INFO 3856 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.post', args=[SubType{id=null, name='消息披露'}, org.springframework.validation.BeanPropertyBindingResult: 0 errors, {}]}
+2021-12-13 11:03:39.683  INFO 3856 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Result : {}redirect:/admin/subTypes
+2021-12-13 11:03:39.683  INFO 3856 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:03:39.693  INFO 3856 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {message=恭喜！新增成功！}]}
+2021-12-13 11:03:39.700  INFO 3856 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 11:03:39.701  INFO 3856 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:03:43.179  INFO 3856 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 5, sort: id: DESC], 3, {}]}
+2021-12-13 11:03:43.182  INFO 3856 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 11:03:43.182  INFO 3856 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:03:45.873  INFO 3856 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 5, sort: id: DESC], 1, {}]}
+2021-12-13 11:03:45.878  INFO 3856 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 11:03:45.878  INFO 3856 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:05:28.255  INFO 3856 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 5, sort: id: DESC], 2, {}]}
+2021-12-13 11:05:28.260  INFO 3856 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 11:05:28.260  INFO 3856 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:05:29.738  INFO 3856 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 5, sort: id: DESC], 3, {}]}
+2021-12-13 11:05:29.743  INFO 3856 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 11:05:29.743  INFO 3856 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:05:31.704  INFO 3856 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 5, sort: id: DESC], 4, {}]}
+2021-12-13 11:05:31.709  INFO 3856 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 11:05:31.710  INFO 3856 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:05:33.059  INFO 3856 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 5, sort: id: DESC], {}]}
+2021-12-13 11:05:33.068  INFO 3856 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 11:05:33.068  INFO 3856 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:05:40.261  INFO 3856 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 1, size 5, sort: id: DESC], 1, {}]}
+2021-12-13 11:05:40.265  INFO 3856 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 11:05:40.265  INFO 3856 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:07:30.843  INFO 24600 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Starting GuanwangApplication using Java 1.8.0_65 on DESKTOP-0R0PQ9E with PID 24600 (E:\workplace\fzjk_guanwang\target\classes started by hushizhi0121 in E:\workplace\fzjk_guanwang)
+2021-12-13 11:07:30.843 DEBUG 24600 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-12-13 11:07:30.843  INFO 24600 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : The following profiles are active: dev
+2021-12-13 11:07:30.890  INFO 24600 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-13 11:07:30.890  INFO 24600 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-13 11:07:31.608  INFO 24600 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-13 11:07:31.686  INFO 24600 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 4 JPA repository interfaces.
+2021-12-13 11:07:32.606  INFO 24600 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-13 11:07:32.622  INFO 24600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-13 11:07:32.622  INFO 24600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-13 11:07:32.716  INFO 24600 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-13 11:07:32.716  INFO 24600 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1826 ms
+2021-12-13 11:07:33.046  INFO 24600 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-13 11:07:33.133  INFO 24600 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-12-13 11:07:33.280  INFO 24600 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-13 11:07:33.364  INFO 24600 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-13 11:07:33.492  INFO 24600 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-13 11:07:33.559  INFO 24600 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-12-13 11:07:34.368  INFO 24600 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-13 11:07:34.384  INFO 24600 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-13 11:07:35.112  WARN 24600 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-13 11:07:35.514  INFO 24600 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-13 11:07:35.872  INFO 24600 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-13 11:07:35.909  INFO 24600 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-13 11:07:35.918  INFO 24600 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Started GuanwangApplication in 5.667 seconds (JVM running for 6.682)
+2021-12-13 11:08:06.879  INFO 24600 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-13 11:08:06.880  INFO 24600 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-13 11:08:06.881  INFO 24600 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-12-13 11:08:06.930  INFO 24600 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.loginPage', args=[{}]}
+2021-12-13 11:08:06.942  INFO 24600 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/login
+2021-12-13 11:08:06.942  INFO 24600 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:08:12.979  INFO 24600 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.login', args=[15979594979, fzjk2016, org.apache.catalina.session.StandardSessionFacade@1374187, {}]}
+2021-12-13 11:08:13.060  INFO 24600 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/adminIndex
+2021-12-13 11:08:13.060  INFO 24600 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:08:14.886  INFO 24600 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 10, sort: id: DESC], {}]}
+2021-12-13 11:08:14.945  INFO 24600 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 11:08:14.945  INFO 24600 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:08:34.305  INFO 24600 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 5, sort: id: DESC], 1, {}]}
+2021-12-13 11:08:34.322  INFO 24600 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 11:08:34.322  INFO 24600 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:08:36.565  INFO 24600 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 5, sort: id: DESC], 2, {}]}
+2021-12-13 11:08:36.569  INFO 24600 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 11:08:36.569  INFO 24600 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:08:38.356  INFO 24600 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 5, sort: id: DESC], 3, {}]}
+2021-12-13 11:08:38.362  INFO 24600 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 11:08:38.362  INFO 24600 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:08:40.035  INFO 24600 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 5, sort: id: DESC], 4, {}]}
+2021-12-13 11:08:40.039  INFO 24600 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 11:08:40.040  INFO 24600 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:08:42.105  INFO 24600 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypesByTypeId', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypesByType', args=[Page request [number: 0, size 5, sort: id: DESC], 1, {}]}
+2021-12-13 11:08:42.109  INFO 24600 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes :: subTypeList
+2021-12-13 11:08:42.109  INFO 24600 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:08:46.515  INFO 24600 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/index', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.AdminController.admin', args=[]}
+2021-12-13 11:08:46.522  INFO 24600 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/adminIndex
+2021-12-13 11:08:46.522  INFO 24600 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:08:47.365  INFO 24600 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/index', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.AdminController.admin', args=[]}
+2021-12-13 11:08:47.366  INFO 24600 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/adminIndex
+2021-12-13 11:08:47.366  INFO 24600 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:09:35.750  INFO 24600 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 10, sort: id: DESC], {}]}
+2021-12-13 11:09:35.762  INFO 24600 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 11:09:35.763  INFO 24600 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:09:37.326  INFO 24600 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.TypeController.types', args=[Page request [number: 0, size 3, sort: id: DESC], {}]}
+2021-12-13 11:09:37.341  INFO 24600 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/types
+2021-12-13 11:09:37.341  INFO 24600 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:09:39.651  INFO 24600 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/index', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.AdminController.admin', args=[]}
+2021-12-13 11:09:39.652  INFO 24600 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/adminIndex
+2021-12-13 11:09:39.652  INFO 24600 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:09:44.064  INFO 24600 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.ArticlePage', args=[]}
+2021-12-13 11:09:44.069  INFO 24600 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/articles
+2021-12-13 11:09:44.069  INFO 24600 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:10:39.926  INFO 24600 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.ArticlePage', args=[]}
+2021-12-13 11:10:39.926  INFO 24600 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/articles
+2021-12-13 11:10:39.926  INFO 24600 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:38:27.280  INFO 24600 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.TypeController.types', args=[Page request [number: 0, size 3, sort: id: DESC], {}]}
+2021-12-13 11:38:27.287  INFO 24600 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/types
+2021-12-13 11:38:27.287  INFO 24600 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:38:28.787  INFO 24600 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/type/input', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.TypeController.typeInput', args=[{}]}
+2021-12-13 11:38:28.788  INFO 24600 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/type-input
+2021-12-13 11:38:28.788  INFO 24600 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:48:03.199  INFO 24600 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.ArticlePage', args=[]}
+2021-12-13 11:48:03.201  INFO 24600 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/articles
+2021-12-13 11:48:03.202  INFO 24600 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:48:28.348  INFO 24600 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.ArticlePage', args=[]}
+2021-12-13 11:48:28.349  INFO 24600 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/articles
+2021-12-13 11:48:28.349  INFO 24600 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 11:48:30.745  INFO 24600 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.ArticlePage', args=[]}
+2021-12-13 11:48:30.746  INFO 24600 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/articles
+2021-12-13 11:48:30.746  INFO 24600 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 12:21:04.090  INFO 24600 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.loginPage', args=[{}]}
+2021-12-13 12:21:04.091  INFO 24600 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/login
+2021-12-13 12:21:04.091  INFO 24600 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 12:21:34.893  INFO 11828 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Starting GuanwangApplication using Java 1.8.0_65 on DESKTOP-0R0PQ9E with PID 11828 (E:\workplace\fzjk_guanwang\target\classes started by hushizhi0121 in E:\workplace\fzjk_guanwang)
+2021-12-13 12:21:34.893 DEBUG 11828 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-12-13 12:21:34.893  INFO 11828 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : The following profiles are active: dev
+2021-12-13 12:21:35.080  INFO 11828 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-13 12:21:35.080  INFO 11828 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-13 12:21:37.782  INFO 11828 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-13 12:21:37.892  INFO 11828 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88 ms. Found 4 JPA repository interfaces.
+2021-12-13 12:21:39.313  INFO 11828 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-13 12:21:39.318  INFO 11828 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-13 12:21:39.318  INFO 11828 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-13 12:21:39.499  INFO 11828 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-13 12:21:39.499  INFO 11828 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4419 ms
+2021-12-13 12:21:39.749  INFO 11828 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-13 12:21:39.937  INFO 11828 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-12-13 12:21:40.156  INFO 11828 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-13 12:21:40.359  INFO 11828 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-13 12:21:40.655  INFO 11828 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-13 12:21:40.671  INFO 11828 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-12-13 12:21:41.749  INFO 11828 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-13 12:21:41.765  INFO 11828 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-13 12:21:42.624  WARN 11828 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-13 12:21:43.077  INFO 11828 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-13 12:21:43.467  INFO 11828 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-13 12:21:43.499  INFO 11828 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-13 12:21:43.514  INFO 11828 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Started GuanwangApplication in 10.412 seconds (JVM running for 13.322)
+2021-12-13 12:21:51.896  INFO 11828 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-13 12:21:51.896  INFO 11828 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-13 12:21:51.899  INFO 11828 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-12-13 12:21:51.948  INFO 11828 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.login', args=[15979594979, fzjk2016, org.apache.catalina.session.StandardSessionFacade@d4b761, {}]}
+2021-12-13 12:21:52.052  INFO 11828 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/adminIndex
+2021-12-13 12:21:52.052  INFO 11828 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 12:21:55.111  INFO 11828 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/subTypes', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.SubTypeController.subTypes', args=[Page request [number: 0, size 10, sort: id: DESC], {}]}
+2021-12-13 12:21:55.218  INFO 11828 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/subTypes
+2021-12-13 12:21:55.218  INFO 11828 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 12:21:59.401  INFO 11828 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.ArticlePage', args=[]}
+2021-12-13 12:21:59.409  INFO 11828 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/articles
+2021-12-13 12:21:59.409  INFO 11828 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 12:22:00.602  INFO 11828 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles/input', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.typeInput', args=[{}]}
+2021-12-13 12:22:00.603  INFO 11828 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/article-input
+2021-12-13 12:22:00.603  INFO 11828 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 12:22:00.733 ERROR 11828 --- [http-nio-8080-exec-8] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-8] Exception processing template "admin/article-input": An error happened during template parsing (template: "class path resource [templates/admin/article-input.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/admin/article-input.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1400)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.attoparser.ParseException: Could not parse as expression: "/lib/bootstrap-select/bootstrap-select.min.css" (template: "admin/article-input" - line 16, col 110)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "/lib/bootstrap-select/bootstrap-select.min.css" (template: "admin/article-input" - line 16, col 110)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleStandaloneElementEnd(TemplateHandlerAdapterMarkupHandler.java:260)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleStandaloneElementEnd(InlinedOutputExpressionMarkupHandler.java:256)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleStandaloneElementEnd(OutputExpressionInlinePreProcessorHandler.java:169)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleStandaloneElementEnd(InlinedOutputExpressionMarkupHandler.java:104)
+	at org.attoparser.HtmlElement.handleStandaloneElementEnd(HtmlElement.java:79)
+	at org.attoparser.HtmlMarkupHandler.handleStandaloneElementEnd(HtmlMarkupHandler.java:241)
+	at org.attoparser.MarkupEventProcessorHandler.handleStandaloneElementEnd(MarkupEventProcessorHandler.java:327)
+	at org.attoparser.ParsingElementMarkupUtil.parseStandaloneElement(ParsingElementMarkupUtil.java:96)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:706)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 50 common frames omitted
+
+2021-12-13 12:22:00.737 ERROR 11828 --- [http-nio-8080-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/admin/article-input.html]")] with root cause
+
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "/lib/bootstrap-select/bootstrap-select.min.css" (template: "admin/article-input" - line 16, col 110)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleStandaloneElementEnd(TemplateHandlerAdapterMarkupHandler.java:260)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleStandaloneElementEnd(InlinedOutputExpressionMarkupHandler.java:256)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleStandaloneElementEnd(OutputExpressionInlinePreProcessorHandler.java:169)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleStandaloneElementEnd(InlinedOutputExpressionMarkupHandler.java:104)
+	at org.attoparser.HtmlElement.handleStandaloneElementEnd(HtmlElement.java:79)
+	at org.attoparser.HtmlMarkupHandler.handleStandaloneElementEnd(HtmlMarkupHandler.java:241)
+	at org.attoparser.MarkupEventProcessorHandler.handleStandaloneElementEnd(MarkupEventProcessorHandler.java:327)
+	at org.attoparser.ParsingElementMarkupUtil.parseStandaloneElement(ParsingElementMarkupUtil.java:96)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:706)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1400)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2021-12-13 12:23:04.792  INFO 11828 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles/input', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.typeInput', args=[{}]}
+2021-12-13 12:23:04.793  INFO 11828 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/article-input
+2021-12-13 12:23:04.794  INFO 11828 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 12:23:12.908  INFO 11828 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles/input', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.typeInput', args=[{}]}
+2021-12-13 12:23:12.909  INFO 11828 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/article-input
+2021-12-13 12:23:12.909  INFO 11828 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 12:25:23.512  INFO 11828 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/index', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.AdminController.admin', args=[]}
+2021-12-13 12:25:23.516  INFO 11828 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/adminIndex
+2021-12-13 12:25:23.516  INFO 11828 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 12:25:41.134  INFO 11828 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.ArticlePage', args=[]}
+2021-12-13 12:25:41.135  INFO 11828 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/articles
+2021-12-13 12:25:41.135  INFO 11828 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 12:40:25.455  WARN 11828 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m44s263ms24µs800ns).
+2021-12-13 14:33:15.066  WARN 11828 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h48m49s521ms316µs400ns).
+2021-12-13 14:53:39.936  WARN 11828 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m54s753ms405µs600ns).
+2021-12-13 15:27:56.132  WARN 11828 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m45s838ms377µs).
+2021-12-13 18:33:14.974  WARN 11828 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h20m18s76ms653µs700ns).
+2021-12-13 20:21:32.670  WARN 11828 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h2m52s354ms400µs800ns).
+2021-12-13 21:02:36.879  INFO 11828 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.loginPage', args=[{}]}
+2021-12-13 21:02:36.881  INFO 11828 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/login
+2021-12-13 21:02:36.881  INFO 11828 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 21:02:45.644  INFO 11828 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.login', args=[15979594979, 123456, org.apache.catalina.session.StandardSessionFacade@5d4ca1, {}]}
+2021-12-13 21:02:45.684  INFO 11828 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Result : {}redirect:/admin
+2021-12-13 21:02:45.685  INFO 11828 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 21:02:45.787  INFO 11828 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.loginPage', args=[{message=用户名和密码错误}]}
+2021-12-13 21:02:45.787  INFO 11828 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/login
+2021-12-13 21:02:45.787  INFO 11828 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 21:02:53.313  INFO 11828 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.login', args=[15979594979, fzjk2016, org.apache.catalina.session.StandardSessionFacade@5d4ca1, {}]}
+2021-12-13 21:02:53.324  INFO 11828 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/adminIndex
+2021-12-13 21:02:53.324  INFO 11828 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 21:02:56.397  INFO 11828 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.ArticlePage', args=[]}
+2021-12-13 21:02:56.398  INFO 11828 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/articles
+2021-12-13 21:02:56.400  INFO 11828 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 21:03:19.581  INFO 11828 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.ArticlePage', args=[]}
+2021-12-13 21:03:19.581  INFO 11828 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/articles
+2021-12-13 21:03:19.581  INFO 11828 --- [http-nio-8080-exec-4] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 21:03:21.996  INFO 11828 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles/input', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.typeInput', args=[{}]}
+2021-12-13 21:03:21.996  INFO 11828 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/article-input
+2021-12-13 21:03:21.997  INFO 11828 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 21:50:43.653  INFO 11828 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.loginPage', args=[{}]}
+2021-12-13 21:50:43.657  INFO 11828 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/login
+2021-12-13 21:50:43.659  INFO 11828 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 21:53:58.640  INFO 11828 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.login', args=[15979594979, fzjk2016, org.apache.catalina.session.StandardSessionFacade@12ed161, {}]}
+2021-12-13 21:53:58.650  INFO 11828 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/adminIndex
+2021-12-13 21:53:58.650  INFO 11828 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 21:54:01.288  INFO 11828 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.ArticlePage', args=[]}
+2021-12-13 21:54:01.288  INFO 11828 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/articles
+2021-12-13 21:54:01.289  INFO 11828 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-13 22:00:48.656  INFO 10984 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Starting GuanwangApplication using Java 1.8.0_65 on DESKTOP-0R0PQ9E with PID 10984 (E:\workplace\fzjk_guanwang\target\classes started by hushizhi0121 in E:\workplace\fzjk_guanwang)
+2021-12-13 22:00:48.657 DEBUG 10984 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-12-13 22:00:48.657  INFO 10984 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : The following profiles are active: dev
+2021-12-13 22:00:48.768  INFO 10984 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-13 22:00:48.769  INFO 10984 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-13 22:00:50.334  INFO 10984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-13 22:00:50.442  INFO 10984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88 ms. Found 4 JPA repository interfaces.
+2021-12-13 22:00:51.580  INFO 10984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-13 22:00:51.593  INFO 10984 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-13 22:00:51.593  INFO 10984 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-13 22:00:51.727  INFO 10984 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-13 22:00:51.728  INFO 10984 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2957 ms
+2021-12-13 22:00:52.046  INFO 10984 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-13 22:00:52.105  INFO 10984 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-12-13 22:00:52.245  INFO 10984 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-13 22:00:52.533  INFO 10984 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-13 22:00:52.736  INFO 10984 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-13 22:00:52.795  INFO 10984 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-12-13 22:00:54.330  INFO 10984 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-13 22:00:54.341  INFO 10984 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-13 22:00:55.529  WARN 10984 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-13 22:00:55.930  INFO 10984 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-13 22:00:56.345  INFO 10984 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-13 22:00:56.389  INFO 10984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-13 22:00:56.405  INFO 10984 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Started GuanwangApplication in 8.786 seconds (JVM running for 11.145)

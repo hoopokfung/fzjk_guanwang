@@ -267,41 +267,28 @@
                                             </tr>
                                             </thead>
                                             <tbody>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>金控担保集团顺利召开全市融资担保工作会</td>
-                                                <td>集团动态</td>
-                                                <td>发布</td>
-                                                <td>2010/07/14</td>
+                                            <tr th:each="article,iterStat : ${page.content}">
+                                                <td th:text="${iterStat.count}">1</td>
+                                                <td th:text="${article.title}">金控担保集团顺利召开全市融资担保工作会</td>
+                                                <td th:text="${article.subType.name}">集团动态</td>
+                                                <td th:text="${article.published} ? '发布' : '草稿' ">草稿</td>
+                                                <td th:text="${article.updateTime}">2010/07/14</td>
                                                 <td>
-                                                    <a class="btn btn-primary">编辑</a>
-                                                    <a class="btn btn-danger">删除</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>金控担保集团顺利召开全市融资担保工作会</td>
-                                                <td>集团动态</td>
-                                                <td>草稿</td>
-                                                <td>2010/07/14</td>
-                                                <td>
-                                                    <a class="btn btn-primary">编辑</a>
-                                                    <a class="btn btn-danger">删除</a>
+                                                    <a th:href="@{/admin/articles/{id}/input(id=${article.id})}" class="btn btn-primary">编辑</a>
+                                                    <a th:href="@{/admin/articles/{id}/delete(id=${article.id})}" class="btn btn-danger">删除</a>
                                                 </td>
                                             </tr>
                                             </tbody>
                                             <tfoot>
                                             <tr>
                                                 <th colspan="5">
-                                                    <div class=" ">
-                                                        <a class="btn btn-success round">上一页</a>
-                                                        <a class="btn btn-success round">下一页</a>
-
+                                                    <div th:if="${page.totalPages}>1">
+                                                        <a onclick="page(this)" th:attr="data-page=${page.number}-1" class="btn btn-success round" th:unless="${page.first}">上一页</a>
+                                                        <a onclick="page(this)" th:attr="data-page=${page.number}+1" class="btn btn-success round" th:unless="${page.last}">下一页</a>
                                                     </div>
                                                 </th>
                                                 <th class="text-center">
-
-                                                    <a href="article-input.html" class="btn btn-primary round ">新增</a>
+                                                    <a href="article-input.html" th:href="@{/admin/articles/input}" class="btn btn-primary round ">新增</a>
                                                 </th>
                                             </tr>
                                             </tfoot>
@@ -346,5 +333,26 @@
     <script type="text/javascript" src="../../static/js/jquery.slimscroll.js" th:src="@{/js/jquery.slimscroll.js}"></script>
     <script type="text/javascript" src="../../static/js/functions.js" th:src="@{/js/functions.js}"></script>
     <!-- End Script   -->
+    <script>
+        function page(object) {
+            $("[name='page']").val($(object).data("page"));
+            loaddata();
+        }
+
+        $("#search-btn").click(function () {
+            $("[name='page']").val(0);
+            loaddata();
+        });
+
+        function loaddata() {
+            $("#table-responsive").load("/admin/articles",{
+                title : $("[name='title']").val(),
+                typeId : $("[name='typeId']").val(),
+                published : $("[name='published']").prop('checked'),
+                page : $("[name='page']").val()
+            });
+        }
+    </script>
+
 </body>
 </html>
