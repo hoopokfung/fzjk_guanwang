@@ -56,7 +56,7 @@
                                <ul class="clearfix">
                                    <li class="fl"><a href="list/about_1.html" target="_parent" >集团简介</a></li>
                                    <li class="fl"><a href="list/about_2.html" target="_parent" >集团领导</a></li>
-                                   <li class="fl"><a href="list/about_3.html" >成员企业</a></li>
+                                   <li class="fl"><a href="list/about_3.html" >合作企业</a></li>
                                    <li class="fl"><a href="list/about_4.html" >组织架构</a></li>
                                </ul>
                            </div>
@@ -167,7 +167,7 @@
                     <ul>
                         <li><a href="list/about_1.html" class="tran300">集团简介</a></li>
                         <li><a href="list/about_2.html" class="tran300">集团领导</a></li>
-                        <li><a href="list/about_3.html" class="tran300">成员企业</a></li>
+                        <li><a href="list/about_3.html" class="tran300">合作企业</a></li>
                         <li><a href="list/about_4.html" class="tran300">组织架构</a></li>
                     </ul>
                 </li>
@@ -312,39 +312,15 @@
                                 <div class="tab-content">
                                     <div class="tab-pane fade active in" id="contentOne-1">
                                         <ul>
-                                            <li>
-                                                <a href="#" class="">
+                                            <li th:each="article : ${groupInfo}">
+                                                <a href="#" th:href="@{/Article/articleShow/{id}(id=${article.id})}">
                                                     <div class="date text-center">
-                                                        <em>14</em>
-                                                        <span>2021-09</span>
+                                                        <em th:text="${#dates.format(article.updateTime,'dd')}">14</em>
+                                                        <span th:text="${#dates.format(article.updateTime,'yyyy-MM')}">2021-09</span>
                                                     </div>
                                                     <div class="text">
-                                                        <h5 class="title">金控担保集团顺利召开全市融资担保工作会</h5>
-                                                        <p class="content">2021年7月16日，金控担保集团组织召开了全市融资担保工作会。 省融担高级经理罗慎、市金融办市场科邓志辉、市金 融控股有限公司副总经理刘文平、各县（区）担保子公司主要负责同志、财务负责 人和</p>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="">
-                                                    <div class="date text-center">
-                                                        <em>14</em>
-                                                        <span>2021-09</span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <h5 class="title">金控担保集团顺利召开全市融资担保工作会</h5>
-                                                        <p class="content">2021年7月16日，金控担保集团组织召开了全市融资担保工作会。 省融担高级经理罗慎、市金融办市场科邓志辉、市金 融控股有限公司副总经理刘文平、各县（区）担保子公司主要负责同志、财务负责 人和</p>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="">
-                                                    <div class="date text-center">
-                                                        <em>14</em>
-                                                        <span>2021-09</span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <h5 class="title">金控担保集团顺利召开全市融资担保工作会</h5>
-                                                        <p class="content">2021年7月16日，金控担保集团组织召开了全市融资担保工作会。 省融担高级经理罗慎、市金融办市场科邓志辉、市金 融控股有限公司副总经理刘文平、各县（区）担保子公司主要负责同志、财务负责 人和</p>
+                                                        <h5 class="title" th:text="${article.title}">金控担保集团顺利召开全市融资担保工作会</h5>
+                                                        <p class="content" th:text="${article.description}">2021年7月16日，金控担保集团组织召开了全市融资担保工作会。 省融担高级经理罗慎、市金融办市场科邓志辉、市金 融控股有限公司副总经理刘文平、各县（区）担保子公司主要负责同志、财务负责 人和</p>
                                                     </div>
                                                 </a>
                                             </li>
@@ -1051,10 +1027,10 @@
                     <div class="row">
                         <div class="col-md-6 col-lg-6">
                             <div class="thumbnail clearfix">
-                                <a href="#"><img class="img-responsive" src="../static/images/img-offer-1.jpg" alt="Image" th:src="@{images/img-offer-1.jpg}"></a>
+                                <a href="#" th:href="@{/list/9}"><img class="img-responsive" src="../static/images/img-offer-1.jpg" alt="Image" th:src="@{images/img-offer-1.jpg}"></a>
 
                                 <div class="caption">
-                                    <h3><a href="#">基金</a></h3>
+                                    <h3><a href="#" th:href="@{/list/9}">基金管理</a></h3>
 
                                     <p>基金，英文是fund，广义是指为了某种目的而设立的具有一定数量的资金。
                                         主要包括信托投资基金、公积金、保险基金、退休基金，各种基金会的基金。
@@ -1064,10 +1040,10 @@
                         </div>
                         <div class="col-md-6">
                             <div class="thumbnail clearfix">
-                                <a href="#"><img class="img-responsive" src="../static/images/img-offer-2.jpg" alt="Image" th:src="@{images/img-offer-2.jpg}"></a>
+                                <a href="#" th:href="@{/list/10}"><img class="img-responsive" src="../static/images/img-offer-2.jpg" alt="Image" th:src="@{images/img-offer-2.jpg}"></a>
 
                                 <div class="caption">
-                                    <h3><a href="#">融资担保</a></h3>
+                                    <h3><a href="#" th:href="@{/list/10}">融资担保</a></h3>
 
                                     <p>融资担保是担保业务中最主要的品种之一，是随着商业信用、金融信用的发展需要和担保对象的融资需求而产生的一种信用中介行为。
                                         信用担保机构通过介入包括银行在内的金融机构、企业或个人这些资金出借方与主要为企业和个人的资金需求方之间，
@@ -1081,10 +1057,10 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="thumbnail clearfix">
-                                <a href="#"><img class="img-responsive" src="../static/images/img-offer-3.jpg" alt="Image" th:src="@{images/img-offer-3.jpg}"></a>
+                                <a href="#" th:href="@{/list/14}"><img class="img-responsive" src="../static/images/img-offer-3.jpg" alt="Image" th:src="@{images/img-offer-3.jpg}"></a>
 
                                 <div class="caption">
-                                    <h3><a href="#">供应链</a></h3>
+                                    <h3><a href="#" th:href="@{/list/14}">供应链服务</a></h3>
 
                                     <p>供应链（Supply chain）是指生产及流通过程中，涉及将产品或服务提供给最终用户活动的上游与下游企业所形成的网链结构。</p>
                                 </div>
@@ -1092,10 +1068,10 @@
                         </div>
                         <div class="col-md-6">
                             <div class="thumbnail clearfix">
-                                <a href="#"><img class="img-responsive" src="../static/images/img-offer-4.jpg" alt="Image" th:src="@{images/img-offer-4.jpg}"></a>
+                                <a href="#" th:href="@{/list/12}"><img class="img-responsive" src="../static/images/img-offer-4.jpg" alt="Image" th:src="@{images/img-offer-4.jpg}"></a>
 
                                 <div class="caption">
-                                    <h3><a href="#">投资</a></h3>
+                                    <h3><a href="#" th:href="@{/list/12}">资产管理</a></h3>
 
                                     <p>投资，指国家或企业以及个人，为了特定目的，与对方签订协议，促进社会发展，实现互惠互利，输送资金的过程。
                                         又是特定经济主体为了在未来可预见的时期内获得收益或是资金增值，在一定时期内向一定领域投放足够数额的资金或实物的货币等价物的经济行为。</p>
@@ -1171,13 +1147,13 @@
 
                 <div class="fBtm">
                     <div class="container clearfix">
-                        <p class="copy fl pt-10">Copyright © 2021  抚州市金融控股有限公司 ALL RIGHT RESERVED   <a href="https://beian.miit.gov.cn/" target="_blank">赣ICP备18010030号</a></p>
-                        <ul class="contact pull-right list-inline pt-10">
+                        <p class="copy fl">Copyright © 2021  抚州市金融控股有限公司 ALL RIGHT RESERVED   <a href="https://beian.miit.gov.cn/" target="_blank">赣ICP备18010030号</a></p>
+                        <ul class="list-inline fr">
                             <li>
-                                <a href="contact.html">加入我们</a>
+                                <a href="contact.html" th:href="@{/list/20}">加入我们</a>
                             </li>
                             <li>
-                                <a href="contact.html">联系我们</a>
+                                <a href="contact.html" th:href="@{/list/20}">联系我们</a>
                             </li>
                         </ul>
                     </div>

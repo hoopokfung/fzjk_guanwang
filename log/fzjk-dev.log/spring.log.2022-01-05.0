@@ -1,0 +1,109 @@
+2022-01-05 09:06:41.832  WARN 18680 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10h33m30s56ms93µs200ns).
+2022-01-05 10:01:37.741  INFO 18680 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-05 10:01:38.002  INFO 18680 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-01-05 10:01:38.008  INFO 18680 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-01-05 10:01:38.746  INFO 18680 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Starting GuanwangApplication using Java 1.8.0_65 on DESKTOP-0R0PQ9E with PID 18680 (E:\workplace\fzjk_guanwang\target\classes started by hushizhi0121 in E:\workplace\fzjk_guanwang)
+2022-01-05 10:01:38.746 DEBUG 18680 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Running with Spring Boot v2.5.6, Spring v5.3.12
+2022-01-05 10:01:38.746  INFO 18680 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : The following profiles are active: dev
+2022-01-05 10:01:40.633  INFO 18680 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-05 10:01:40.683  INFO 18680 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 4 JPA repository interfaces.
+2022-01-05 10:01:41.377  INFO 18680 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-01-05 10:01:41.380  INFO 18680 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-05 10:01:41.382  INFO 18680 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-01-05 10:01:41.459  INFO 18680 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-05 10:01:41.459  INFO 18680 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2708 ms
+2022-01-05 10:01:41.576  INFO 18680 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-05 10:01:41.581  INFO 18680 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-01-05 10:01:41.589  INFO 18680 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-01-05 10:01:41.589  INFO 18680 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-01-05 10:01:41.923  INFO 18680 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-05 10:01:41.924  INFO 18680 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-05 10:01:42.552  WARN 18680 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-05 10:01:42.763  INFO 18680 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-01-05 10:01:43.286  INFO 18680 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-01-05 10:01:43.305  INFO 18680 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-05 10:01:43.312  INFO 18680 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Started GuanwangApplication in 4.722 seconds (JVM running for 429345.317)
+2022-01-05 10:01:43.315  INFO 18680 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-01-05 10:01:45.057  INFO 18680 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-05 10:01:45.059  INFO 18680 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-01-05 10:01:45.062  INFO 18680 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-01-05 10:01:45.206  INFO 18680 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Starting GuanwangApplication using Java 1.8.0_65 on DESKTOP-0R0PQ9E with PID 18680 (E:\workplace\fzjk_guanwang\target\classes started by hushizhi0121 in E:\workplace\fzjk_guanwang)
+2022-01-05 10:01:45.207 DEBUG 18680 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Running with Spring Boot v2.5.6, Spring v5.3.12
+2022-01-05 10:01:45.207  INFO 18680 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : The following profiles are active: dev
+2022-01-05 10:01:45.465  INFO 18680 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-05 10:01:45.482  INFO 18680 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 4 JPA repository interfaces.
+2022-01-05 10:01:45.690  INFO 18680 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-01-05 10:01:45.691  INFO 18680 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-05 10:01:45.691  INFO 18680 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-01-05 10:01:45.741  INFO 18680 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-05 10:01:45.741  INFO 18680 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 531 ms
+2022-01-05 10:01:45.808  INFO 18680 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-05 10:01:45.813  INFO 18680 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2022-01-05 10:01:45.817  INFO 18680 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2022-01-05 10:01:45.817  INFO 18680 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-01-05 10:01:46.026  INFO 18680 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-05 10:01:46.027  INFO 18680 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-05 10:01:46.704  WARN 18680 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-05 10:01:46.905  INFO 18680 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-01-05 10:01:47.175  INFO 18680 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-01-05 10:01:47.191  INFO 18680 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-05 10:01:47.195  INFO 18680 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Started GuanwangApplication in 2.032 seconds (JVM running for 429349.201)
+2022-01-05 10:01:47.197  INFO 18680 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-01-05 10:01:48.964  INFO 18680 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-05 10:01:48.966  INFO 18680 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-05 10:01:48.968  INFO 18680 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-01-05 11:31:23.802  INFO 18680 --- [Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-05 11:31:23.802  INFO 18680 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2022-01-05 11:31:23.802  INFO 18680 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2022-01-05 11:31:24.118  INFO 18680 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Starting GuanwangApplication using Java 1.8.0_65 on DESKTOP-0R0PQ9E with PID 18680 (E:\workplace\fzjk_guanwang\target\classes started by hushizhi0121 in E:\workplace\fzjk_guanwang)
+2022-01-05 11:31:24.118 DEBUG 18680 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Running with Spring Boot v2.5.6, Spring v5.3.12
+2022-01-05 11:31:24.118  INFO 18680 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : The following profiles are active: dev
+2022-01-05 11:31:24.782  INFO 18680 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-05 11:31:24.804  INFO 18680 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 4 JPA repository interfaces.
+2022-01-05 11:31:25.152  INFO 18680 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-01-05 11:31:25.152  INFO 18680 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-05 11:31:25.152  INFO 18680 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-01-05 11:31:25.205  INFO 18680 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-05 11:31:25.205  INFO 18680 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1087 ms
+2022-01-05 11:31:25.337  INFO 18680 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-05 11:31:25.341  INFO 18680 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2022-01-05 11:31:25.345  INFO 18680 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2022-01-05 11:31:25.346  INFO 18680 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-01-05 11:31:25.571  INFO 18680 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-05 11:31:25.572  INFO 18680 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-05 11:31:26.250  WARN 18680 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-05 11:31:26.532  INFO 18680 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-01-05 11:31:26.855  INFO 18680 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-01-05 11:31:26.876  INFO 18680 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-05 11:31:26.883  INFO 18680 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Started GuanwangApplication in 2.845 seconds (JVM running for 434728.888)
+2022-01-05 11:31:26.885  INFO 18680 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-01-05 11:31:28.507  INFO 18680 --- [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-05 11:31:28.507  INFO 18680 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2022-01-05 11:31:28.507  INFO 18680 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2022-01-05 11:31:28.607  INFO 18680 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Starting GuanwangApplication using Java 1.8.0_65 on DESKTOP-0R0PQ9E with PID 18680 (E:\workplace\fzjk_guanwang\target\classes started by hushizhi0121 in E:\workplace\fzjk_guanwang)
+2022-01-05 11:31:28.607 DEBUG 18680 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Running with Spring Boot v2.5.6, Spring v5.3.12
+2022-01-05 11:31:28.607  INFO 18680 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : The following profiles are active: dev
+2022-01-05 11:31:28.823  INFO 18680 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-05 11:31:28.839  INFO 18680 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 4 JPA repository interfaces.
+2022-01-05 11:31:28.993  INFO 18680 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-01-05 11:31:28.993  INFO 18680 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-05 11:31:28.993  INFO 18680 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-01-05 11:31:29.008  INFO 18680 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-05 11:31:29.008  INFO 18680 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 401 ms
+2022-01-05 11:31:29.071  INFO 18680 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-05 11:31:29.071  INFO 18680 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2022-01-05 11:31:29.071  INFO 18680 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2022-01-05 11:31:29.071  INFO 18680 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-01-05 11:31:29.240  INFO 18680 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-05 11:31:29.240  INFO 18680 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-05 11:31:29.658  WARN 18680 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-05 11:31:29.867  INFO 18680 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-01-05 11:31:30.067  INFO 18680 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-01-05 11:31:30.085  INFO 18680 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-05 11:31:30.093  INFO 18680 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Started GuanwangApplication in 1.505 seconds (JVM running for 434732.099)
+2022-01-05 11:31:30.095  INFO 18680 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-01-05 11:31:30.706  INFO 18680 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-05 11:31:30.707  INFO 18680 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-05 11:31:30.708  INFO 18680 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-01-05 15:45:55.858  WARN 18680 --- [HikariPool-5 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Thread starvation or clock leap detected (housekeeper delta=4h4m26s291ms35µs400ns).
+2022-01-05 16:39:26.970  WARN 18680 --- [HikariPool-5 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Thread starvation or clock leap detected (housekeeper delta=5m334ms164µs800ns).

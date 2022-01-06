@@ -2099,3 +2099,14 @@ footer {
     width: 10%;
     margin-left: 20px;
 }
+.file-input{
+    width: 90%;
+}
+
+#editor-select .bootstrap-select>.dropdown-toggle{
+    height: 40px;
+}
+
+#editor-select .bootstrap-select .dropdown-toggle .filter-option-inner-inner{
+
+}

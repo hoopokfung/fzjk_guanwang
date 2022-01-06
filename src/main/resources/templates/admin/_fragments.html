@@ -33,26 +33,32 @@
 
             </li>
 
-            <li class="menu-list"><a href="#"><i class="fa fa-newspaper-o"></i> <span>新闻中心</span></a>
+            <li class="menu-list" ><a href="#"><i class="fa fa-newspaper-o"></i> <span>新闻中心</span></a>
                 <ul class="sub-menu-list">
-                    <li><a href="articles.html" th:href="@{/admin/articles}"> 集团动态</a></li>
-                    <li><a href="#"> 一线快讯</a></li>
-                    <li><a href="#">行业动态</a></li>
+                    <li><a href="articles.html" th:href="@{/admin/articles/{subTypeId}(subTypeId=${session.typeList.get(0).subTypes.get(0).id})}"> 集团动态</a></li>
+                    <li><a href="#" th:href="@{/admin/articles/{subTypeId}(subTypeId=${session.typeList.get(0).subTypes.get(1).id})}"> 一线快讯</a></li>
+                    <li><a href="#" th:href="@{/admin/articles/{subTypeId}(subTypeId=${session.typeList.get(0).subTypes.get(2).id})}">行业动态</a></li>
                 </ul>
             </li>
 
             <li class="menu-list"><a href="#"><i class="fa fa-star"></i> <span>党的建设</span></a>
                 <ul class="sub-menu-list">
-                    <li><a href="#"> 党建工作</a></li>
-                    <li><a href="#">在线学习</a></li>
-                    <li><a href="#">群团工作</a></li>
+                    <li><a href="#" th:href="@{/admin/articles/{subTypeId}(subTypeId=${session.typeList.get(1).subTypes.get(0).id})}"> 党建工作</a></li>
+                    <li><a href="#" th:href="@{/admin/articles/{subTypeId}(subTypeId=${session.typeList.get(1).subTypes.get(1).id})}">在线学习</a></li>
+                    <li><a href="#" th:href="@{/admin/articles/{subTypeId}(subTypeId=${session.typeList.get(1).subTypes.get(2).id})}">群团工作</a></li>
                 </ul>
             </li>
 
             <li class="menu-list"><a href="#"><i class="fa fa-bullhorn"></i> <span>通知公告</span></a>
                 <ul class="sub-menu-list">
-                    <li><a href="#"> 公示公告</a></li>
-                    <li><a href="#"> 消息披露 </a></li>
+                    <li><a href="#" th:href="@{/admin/articles/{subTypeId}(subTypeId=${session.typeList.get(2).subTypes.get(0).id})}"> 公示公告</a></li>
+                    <li><a href="#" th:href="@{/admin/articles/{subTypeId}(subTypeId=${session.typeList.get(2).subTypes.get(1).id})}"> 消息披露 </a></li>
+                </ul>
+            </li>
+
+            <li class="menu-list"><a href="#"><i class="fa fa-bullhorn"></i> <span>关于金控</span></a>
+                <ul class="sub-menu-list">
+                    <li><a href="#" th:href="@{/admin/articles/{subTypeId}(subTypeId=${session.typeList.get(4).subTypes.get(0).id})}"> 集团领导</a></li>
                 </ul>
             </li>
 

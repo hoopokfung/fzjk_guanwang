@@ -72,7 +72,7 @@
     <div class="main-content" >
 
         <!-- header section start-->
-        <div class="header-section ">
+        <div th:replace="admin/_fragments :: header" class="header-section ">
 
             <a class="toggle-btn"><i class="fa fa-bars"></i></a>
 
@@ -254,13 +254,14 @@
                             <div class="white-box">
                                 <h2 class="header-title"> 集团动态列表 </h2>
                                 <div class="">
-                                    <div class="table-responsive">
+                                    <div id="table-responsive">
                                         <table id="example" class="display table text-center">
                                             <thead>
                                             <tr>
                                                 <th class="text-center">#</th>
                                                 <th class="text-center">标题</th>
-                                                <th class="text-center">分栏</th>
+                                                <th class="text-center">属类</th>
+                                                <th class="text-center">子栏</th>
                                                 <th class="text-center">状态</th>
                                                 <th class="text-center">更新时间</th>
                                                 <th  class="text-center">操作</th>
@@ -270,6 +271,7 @@
                                             <tr th:each="article,iterStat : ${page.content}">
                                                 <td th:text="${iterStat.count}">1</td>
                                                 <td th:text="${article.title}">金控担保集团顺利召开全市融资担保工作会</td>
+                                                <td th:text="${article.type.name}">新闻中心</td>
                                                 <td th:text="${article.subType.name}">集团动态</td>
                                                 <td th:text="${article.published} ? '发布' : '草稿' ">草稿</td>
                                                 <td th:text="${article.updateTime}">2010/07/14</td>
@@ -281,10 +283,10 @@
                                             </tbody>
                                             <tfoot>
                                             <tr>
-                                                <th colspan="5">
+                                                <th colspan="6">
                                                     <div th:if="${page.totalPages}>1">
-                                                        <a onclick="page(this)" th:attr="data-page=${page.number}-1" class="btn btn-success round" th:unless="${page.first}">上一页</a>
-                                                        <a onclick="page(this)" th:attr="data-page=${page.number}+1" class="btn btn-success round" th:unless="${page.last}">下一页</a>
+                                                        <a th:href="@{/admin/articles/{subTypeId}(subTypeId=${subTypeId},page=${page.number}-1)}" class="btn btn-success round" th:unless="${page.first}">上一页</a>
+                                                        <a th:href="@{/admin/articles/{subTypeId}(subTypeId=${subTypeId},page=${page.number}+1)}" class="btn btn-success round" th:unless="${page.last}">下一页</a>
                                                     </div>
                                                 </th>
                                                 <th class="text-center">
@@ -295,10 +297,10 @@
                                         </table>
                                     </div>
 
-                                    <div class="alert alert-success alert-dismissible" role="alert">
+                                    <div class="alert alert-success alert-dismissible" role="alert" th:unless="${#strings.isEmpty(message)}">
                                         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
                                         <h3 class="header-title">提示: </h3>
-                                        <strong>恭喜!</strong> <span>操作成功!</span>
+                                        <strong th:text="${message}"> 操作成功!</strong>
                                     </div>
                                 </div>
                             </div>
@@ -334,24 +336,7 @@
     <script type="text/javascript" src="../../static/js/functions.js" th:src="@{/js/functions.js}"></script>
     <!-- End Script   -->
     <script>
-        function page(object) {
-            $("[name='page']").val($(object).data("page"));
-            loaddata();
-        }
 
-        $("#search-btn").click(function () {
-            $("[name='page']").val(0);
-            loaddata();
-        });
-
-        function loaddata() {
-            $("#table-responsive").load("/admin/articles",{
-                title : $("[name='title']").val(),
-                typeId : $("[name='typeId']").val(),
-                published : $("[name='published']").prop('checked'),
-                page : $("[name='page']").val()
-            });
-        }
     </script>
 
 </body>

@@ -97,6 +97,9 @@
     position: absolute;
     bottom: 0;
 }
+.news-log small a{
+    text-decoration: none;
+}
 
 .news-meta small a,
 .news-meta small {
@@ -126,6 +129,7 @@
     font-size: 12px;
     margin: 0 -2px 0 0;
 }
+
 .news-meta small.firstsmall:after {
     content: "" !important;
     padding-left: 0;
@@ -304,3 +308,4 @@
 .news-card .border:hover{
     box-shadow: 0 0 10px 0 #8c8c8c;
 }
+

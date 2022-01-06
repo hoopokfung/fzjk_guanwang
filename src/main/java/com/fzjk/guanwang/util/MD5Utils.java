@@ -35,6 +35,6 @@ public class MD5Utils {
 
 
     public static void main(String[] args) {
-        System.out.println(code("fzjk2016"));
+        System.out.println(code("fzjk2016"));//07a6f8db065a8a13f275a51e0ac1301a
     }
 }

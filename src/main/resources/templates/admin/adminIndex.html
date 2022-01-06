@@ -69,7 +69,7 @@
     <!--左侧菜单结束 -->
 
     <!-- header section start-->
-    <div class="header-section ">
+    <div th:replace="admin/_fragments :: header" class="header-section ">
 
         <a class="toggle-btn"><i class="fa fa-bars"></i></a>
 
@@ -253,8 +253,7 @@
                             <div class="white-box">
                                 <h2 class="header-title"> 首页 </h2>
                                 <div class="field ">
-                                    <h2>欢迎管理员登录系统~</h2>
-
+                                    <h2>欢迎管理员<span th:text="${session.user.nickname}"></span>登录系统~</h2>
                                 </div>
                             </div>
                         </div>

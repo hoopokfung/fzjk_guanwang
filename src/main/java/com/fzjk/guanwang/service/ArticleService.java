@@ -1,6 +1,7 @@
 package com.fzjk.guanwang.service;
 
 import com.fzjk.guanwang.pojo.Article;
+import com.fzjk.guanwang.vo.PreAndNextArticle;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
@@ -14,13 +15,23 @@ public interface ArticleService {
 
     Article findById(Long id);
 
+    List<Article> findTop(Long subTypeId);
+
     Page<Article> listArticlesByTypeId(Pageable pageable, Long id);
+
+    Page<Article> listArticlesBySubTypeId(Pageable pageable, Long id);
 
     Page<Article> listArticle(Pageable pageable);
 
     List<Article> findAll();
 
+    int updateViews(Long id);
+
     Article update(Long id, Article article);
 
     void delete(Long id);
+
+    PreAndNextArticle getPreArticle(Long id, Long subTypeId);
+
+    PreAndNextArticle getNextArticle(Long id,Long subTypeId);
 }

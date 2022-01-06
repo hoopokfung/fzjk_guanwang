@@ -30,7 +30,6 @@ public class SubTypeController {
     @Autowired
     private TypeService typeService;
 
-
     @Autowired
     private SubTypeService subTypeService;
 

@@ -355,6 +355,28 @@ hr.invis3 {
     margin-top: 30px;
 }
 
+.ml-5{
+    margin-left: 5px;
+}
+.ml-10{
+    margin-left: 10px;
+}
+.ml-20{
+    margin-left: 20px;
+}
+.ml-30{
+    margin-left: 30px;
+}
+
+.mr-10{
+    margin-right: 10px;
+}
+.mr-20{
+    margin-right: 20px;
+}
+.mr-30{
+    margin-right: 30px;
+}
 /********************************************
     Padding
 ********************************************/
@@ -1644,6 +1666,11 @@ news-box start
     font-size: 15px;
 }
 
+.fBtm .container ul{
+    margin: 18px 0;
+    line-height: normal;
+}
+
 /************************************************
      toTop
  ***********************************************/
@@ -1657,7 +1684,7 @@ news-box start
     width: 50px;
     background-color: #0076ab;
     border-radius: 50%;
-    padding: 3px 5px;
+    padding: 4px 5px;
 }
 
 .toTop a:hover{
@@ -2107,9 +2134,9 @@ news-box start
     box-sizing: border-box;
     padding: 15px;
     border: 1px solid #e0dfdf;
-    -moz-box-shadow: 2.5px 5px 5px 0 #e6e6e6;
-    -webkit-box-shadow: 2.5px 5px 5px 0 #e6e6e6;
-    box-shadow: 2.5px 5px 5px 0 #e6e6e6;
+    /*-moz-box-shadow: 2.5px 5px 5px 0 #e6e6e6;*/
+    /*-webkit-box-shadow: 2.5px 5px 5px 0 #e6e6e6;*/
+    /*box-shadow: 2.5px 5px 5px 0 #e6e6e6;*/
 }
 
 .party-list ul li a .date {
@@ -2129,6 +2156,11 @@ news-box start
 .party-list ul li:hover p {
     color: #fff;
 }
+
+.party-list ul .list-item a h4{
+    font-size: 18px;
+}
+
 
 /***************************************
 testimonialSlider
@@ -2244,13 +2276,19 @@ testimonialSlider
     margin-right: 10px;
 }
 
-.view-passage .info span {
-    margin-right: 30px;
-}
 
 .view-passage .info a,
 .view-passage .info .share a {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 30px;
     color: #777777;
+    background: none;
+    height: 30px;
     text-decoration: none;
 }
 
@@ -3375,6 +3413,7 @@ testimonialSlider
         display: none;
     }
 }
+
 
 
 

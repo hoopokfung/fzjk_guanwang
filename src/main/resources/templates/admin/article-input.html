@@ -14,6 +14,7 @@
     <link href="../../static/lib/summernote-master/summernote.css" rel="stylesheet" type="text/css" th:href="@{/lib/summernote-master/summernote.css}"/>
     <link href="../../static/lib/summernote-master/summernote-bs2.css" rel="stylesheet" type="text/css" th:href="@{/lib/summernote-master/summernote-bs2.css}"/>
     <link href="../../static/lib/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" type="text/css" th:href="@{/lib/bootstrap-select/bootstrap-select.min.css}"/>
+    <link href="../../static/lib/bootstrap-fileinput/css/fileinput.min.css" rel="stylesheet" type="text/css" th:href="@{/lib/bootstrap-fileinput/css/fileinput.min.css}"/>
     <link href="../../static/css/backstage.css" rel="stylesheet" th:href="@{/css/backstage.css}">
     <link href="../../static/css/responsive.css" rel="stylesheet" th:href="@{/css/responsive.css}">
 
@@ -76,7 +77,7 @@
     <div class="main-content" >
 
         <!-- header section start-->
-        <div class="header-section ">
+        <div th:replace="admin/_fragments :: header" class="header-section ">
 
             <a class="toggle-btn"><i class="fa fa-bars"></i></a>
 
@@ -257,25 +258,23 @@
                         <div class="col-md-12">
                             <div class="white-box">
                                 <h2 class="header-title">文章编辑 </h2>
-                                <form id="article-form" class="form" action="#" method="post">
+                                <form id="article-form" th:object="${Article}" method="post" th:action="@{/admin/articles}"  enctype="multipart/form-data">
                                     <div class="form-group">
-                                        <input type="hidden" name="id">
-
+                                        <input type="hidden" name="published">
+                                        <input type="hidden" name="id" th:value="*{id}">
                                         <div class="field">
-                                            <div class="btn-group" style="width: 100%;">
-                                                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 15%;height: 40px">
-                                                    原创 <span class="caret"></span>
-                                                </button>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="#">原创</a></li>
-                                                    <li><a href="#">转载</a></li>
-                                                    <li role="separator" class="divider"></li>
-                                                </ul>
-                                                <input type="text" name="title" placeholder="标题" style="height: 40px;width: 85%;">
+                                            <div id="editor-select" style="width: 100%;display: inline-flex">
+                                                <select name="editor" class="selectpicker" data-style="btn-success">
+                                                    <option th:value="金控集团" data-subtext="编辑人">金控集团</option>
+                                                    <option th:value="金控基金" data-subtext="编辑人">金控基金</option>
+                                                    <option th:value="金控担保" data-subtext="编辑人">金控担保</option>
+                                                    <option th:value="金控资管" data-subtext="编辑人">金控资管</option>
+                                                </select>
+                                                <input type="text" name="title" placeholder="标题" th:value="*{title}" style="height: 40px;width: 85%;">
                                             </div>
                                         </div>
                                         <div class="field">
-                                            <div id="summernote">开始编辑文章...</div>
+                                            <textarea id="summernote" name="content" placeholder="开始编辑文章..." th:text="*{content}"></textarea>
                                         </div>
 
 
@@ -288,20 +287,20 @@
                                             </div>
                                             <div class="field-half" style="float: right">
                                                 <label class="btn btn-success">分栏</label>
-                                                <select name="subType.id" class="selectpicker"  data-width="415px" >
+                                                <select name="subType.id" class="selectpicker" data-width="415px" >
                                                     <option th:each="subType : ${subTypes}" th:value="${subType.id}" th:text="${subType.name}">集团动态</option>
                                                 </select>
                                             </div>
                                         </div>
                                         <div class="field">
                                             <div class="input-group" style="width: 100%;display: inline-flex">
-                                                <label class="btn btn-success" for="firstPicture" style="width: 10%">首图</label>
-                                                <input type="text" id="firstPicture" name="firstPicture" placeholder="首图引用地址" style="width: 90%;height: 35px;">
+                                                <label class="btn btn-success" for="image" style="width: 10%">首图</label>
+                                                <input id="image" name="image" type="file" class="file" data-show-preview="false" data-language="zh" accept="image/*"  placeholder="首图引用地址">
                                             </div>
                                         </div>
 
                                         <div class="field">
-                                            <textarea class="description" name="description" placeholder="描述..." maxlength="200"></textarea>
+                                            <textarea class="description" name="description" placeholder="描述..." th:text="*{description}" maxlength="200"></textarea>
                                         </div>
 
                                     </div>
@@ -344,18 +343,31 @@
     <script type="text/javascript" src="../../static/lib/moment/moment.js" th:src="@{/lib/moment/moment.js}"></script>
     <script type="text/javascript" src="../../static/js/jquery.nicescroll.js" th:src="@{/js/jquery.nicescroll.js}"></script>
     <script type="text/javascript" src="../../static/js/jquery.slimscroll.js" th:src="@{/js/jquery.slimscroll.js}"></script>
-    <script type="text/javascript" src="../../static/js/functions.js" th:src="@{/js/jquery.slimscroll.js}"></script>
+    <script type="text/javascript" src="../../static/js/functions.js" th:src="@{/js/functions.js}"></script>
     <!-- End Script   -->
     <!-- BEGIN PAGE LEVEL SCRIPTS -->
     <script type="text/javascript" src="../../static/lib/bootstrap-wysihtml5/wysihtml5-0.3.0.min.js" th:src="@{/lib/bootstrap-wysihtml5/wysihtml5-0.3.0.min.js}"></script>
     <script type="text/javascript" src="../../static/lib/bootstrap-select/bootstrap-select.min.js" th:src="@{/lib/bootstrap-select/bootstrap-select.min.js}"></script>
     <script type="text/javascript" src="../../static/lib/bootstrap-wysihtml5/bootstrap-wysihtml5.js" th:src="@{/lib/bootstrap-wysihtml5/bootstrap-wysihtml5.js}"></script>
     <script type="text/javascript" src="../../static/lib/summernote-master/summernote.min.js" th:src="@{/lib/summernote-master/summernote.min.js}"></script>
+    <script type="text/javascript" src="../../static/lib/bootstrap-fileinput/js/fileinput.min.js" th:src="@{/lib/bootstrap-fileinput/js/fileinput.min.js}"></script>
+    <script type="text/javascript" src="../../static/lib/bootstrap-fileinput/js/locales/zh.js" th:src="@{/lib/bootstrap-fileinput/js/locales/zh.js}"></script>
     <script>
         $('.textarea').wysihtml5();
         $(document).ready(function() {
             $('#summernote').summernote();
         });
+
+        //保存&发布按钮
+        $('#save-btn').click(function () {
+            $('[name=published]').val(false);
+            $('#article-form').submit();
+        });
+        $('#publish-btn').click(function () {
+            $('[name=published]').val(true);
+            $('#article-form').submit();
+        });
+
     </script>
     <!-- BEGIN PAGE LEVEL SCRIPTS -->
 </body>

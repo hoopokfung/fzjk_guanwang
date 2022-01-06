@@ -1,0 +1,1284 @@
+2021-12-16 08:49:56.101  WARN 14448 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9h51m55s355ms777µs900ns).
+2021-12-16 11:46:08.510  WARN 14448 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m8s600ms433µs700ns).
+2021-12-16 12:28:35.749  WARN 14448 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=40m57s212ms163µs).
+2021-12-16 14:32:20.514  WARN 14448 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h54m41s293ms850µs400ns).
+2021-12-16 14:34:51.112  WARN 14448 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m30s489ms596µs100ns).
+2021-12-16 15:37:00.940  INFO 32220 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Starting GuanwangApplication using Java 1.8.0_65 on DESKTOP-0R0PQ9E with PID 32220 (E:\workplace\fzjk_guanwang\target\classes started by hushizhi0121 in E:\workplace\fzjk_guanwang)
+2021-12-16 15:37:00.941 DEBUG 32220 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-12-16 15:37:00.942  INFO 32220 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : The following profiles are active: dev
+2021-12-16 15:37:01.072  INFO 32220 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-16 15:37:01.072  INFO 32220 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-16 15:37:02.413  INFO 32220 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-16 15:37:02.511  INFO 32220 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 4 JPA repository interfaces.
+2021-12-16 15:37:03.682  INFO 32220 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-16 15:37:03.695  INFO 32220 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-16 15:37:03.696  INFO 32220 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-16 15:37:03.787  INFO 32220 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-16 15:37:03.787  INFO 32220 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2714 ms
+2021-12-16 15:37:04.270  INFO 32220 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-16 15:37:04.429  INFO 32220 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-12-16 15:37:04.708  INFO 32220 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-16 15:37:05.184  INFO 32220 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-16 15:37:05.534  INFO 32220 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-16 15:37:05.558  INFO 32220 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-12-16 15:37:06.612  INFO 32220 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-16 15:37:06.624  INFO 32220 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-16 15:37:06.649  WARN 32220 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myMvcConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'servlet.multipart.location' in value "${servlet.multipart.location}"
+2021-12-16 15:37:06.649  INFO 32220 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-16 15:37:06.654  INFO 32220 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-16 15:37:06.661  INFO 32220 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-16 15:37:06.663  INFO 32220 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-12-16 15:37:06.672  INFO 32220 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-16 15:37:06.705 ERROR 32220 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myMvcConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'servlet.multipart.location' in value "${servlet.multipart.location}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.fzjk.guanwang.GuanwangApplication.main(GuanwangApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'servlet.multipart.location' in value "${servlet.multipart.location}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 22 common frames omitted
+
+2021-12-16 15:37:43.741  INFO 34516 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Starting GuanwangApplication using Java 1.8.0_65 on DESKTOP-0R0PQ9E with PID 34516 (E:\workplace\fzjk_guanwang\target\classes started by hushizhi0121 in E:\workplace\fzjk_guanwang)
+2021-12-16 15:37:43.742 DEBUG 34516 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-12-16 15:37:43.742  INFO 34516 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : The following profiles are active: dev
+2021-12-16 15:37:43.795  INFO 34516 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-16 15:37:43.796  INFO 34516 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-16 15:37:44.556  INFO 34516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-16 15:37:44.641  INFO 34516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 4 JPA repository interfaces.
+2021-12-16 15:37:45.405  INFO 34516 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-16 15:37:45.413  INFO 34516 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-16 15:37:45.413  INFO 34516 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-16 15:37:45.495  INFO 34516 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-16 15:37:45.495  INFO 34516 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1699 ms
+2021-12-16 15:37:45.689  INFO 34516 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-16 15:37:45.743  INFO 34516 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-12-16 15:37:45.865  INFO 34516 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-16 15:37:45.958  INFO 34516 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-16 15:37:46.121  INFO 34516 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-16 15:37:46.137  INFO 34516 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-12-16 15:37:46.875  INFO 34516 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-16 15:37:46.884  INFO 34516 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-16 15:37:47.893  WARN 34516 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'articleController': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'servlet.multipart.location' in value "${servlet.multipart.location}"
+2021-12-16 15:37:47.894  INFO 34516 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-16 15:37:47.901  INFO 34516 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-16 15:37:47.906  INFO 34516 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-16 15:37:47.908  INFO 34516 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-12-16 15:37:47.919  INFO 34516 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-16 15:37:47.942 ERROR 34516 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'articleController': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'servlet.multipart.location' in value "${servlet.multipart.location}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.fzjk.guanwang.GuanwangApplication.main(GuanwangApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'servlet.multipart.location' in value "${servlet.multipart.location}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 22 common frames omitted
+
+2021-12-16 15:38:19.607  INFO 32964 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Starting GuanwangApplication using Java 1.8.0_65 on DESKTOP-0R0PQ9E with PID 32964 (E:\workplace\fzjk_guanwang\target\classes started by hushizhi0121 in E:\workplace\fzjk_guanwang)
+2021-12-16 15:38:19.608 DEBUG 32964 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-12-16 15:38:19.608  INFO 32964 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : The following profiles are active: dev
+2021-12-16 15:38:19.682  INFO 32964 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-16 15:38:19.683  INFO 32964 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-16 15:38:20.559  INFO 32964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-16 15:38:20.645  INFO 32964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 4 JPA repository interfaces.
+2021-12-16 15:38:21.454  INFO 32964 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-16 15:38:21.461  INFO 32964 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-16 15:38:21.462  INFO 32964 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-16 15:38:21.550  INFO 32964 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-16 15:38:21.550  INFO 32964 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1866 ms
+2021-12-16 15:38:21.742  INFO 32964 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-16 15:38:21.792  INFO 32964 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-12-16 15:38:21.890  INFO 32964 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-16 15:38:21.989  INFO 32964 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-16 15:38:22.148  INFO 32964 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-16 15:38:22.161  INFO 32964 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-12-16 15:38:22.917  INFO 32964 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-16 15:38:22.924  INFO 32964 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-16 15:38:23.971  WARN 32964 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-16 15:38:24.358  INFO 32964 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-16 15:38:24.829  INFO 32964 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-16 15:38:24.875  INFO 32964 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-16 15:38:24.892  INFO 32964 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Started GuanwangApplication in 5.975 seconds (JVM running for 7.203)
+2021-12-16 15:38:36.140  INFO 32964 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-16 15:38:36.140  INFO 32964 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-16 15:38:36.141  INFO 32964 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-12-16 15:38:36.202  INFO 32964 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.loginPage', args=[{}]}
+2021-12-16 15:38:36.217  INFO 32964 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/login
+2021-12-16 15:38:36.217  INFO 32964 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 15:38:46.572  INFO 32964 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.login', args=[15979594979, fzjk2016, org.apache.catalina.session.StandardSessionFacade@11636d7, {}]}
+2021-12-16 15:38:46.815  INFO 32964 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/adminIndex
+2021-12-16 15:38:46.815  INFO 32964 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 15:38:49.343  INFO 32964 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles/9', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.ArticlePage', args=[Page request [number: 0, size 5, sort: updateTime: DESC], com.fzjk.guanwang.vo.ArticleQuery@109719b, 9, {articleQuery=com.fzjk.guanwang.vo.ArticleQuery@109719b, org.springframework.validation.BindingResult.articleQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]}
+2021-12-16 15:38:49.495  INFO 32964 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/articles
+2021-12-16 15:38:49.496  INFO 32964 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 15:38:51.190  INFO 32964 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles/input', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.articleInput', args=[{}]}
+2021-12-16 15:38:51.206  INFO 32964 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/article-input
+2021-12-16 15:38:51.206  INFO 32964 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 15:39:12.872  WARN 32964 --- [http-nio-8080-exec-3] org.apache.catalina.connector.Request    : Creating the temporary upload location [C:\Users\hushizhi0121\AppData\Local\Temp\tomcat.8080.5675259155597643360\work\Tomcat\localhost\ROOT\upload] as it is required by the servlet [dispatcherServlet]
+2021-12-16 15:39:12.966 ERROR 32964 --- [http-nio-8080-exec-3] c.f.g.h.ControllerExceptionHandler       : Requst URL : http://localhost:8080/admin/articles, Exception: {}
+
+org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'article' on field 'firstPicture': rejected value [org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@32e3be]; codes [typeMismatch.article.firstPicture,typeMismatch.firstPicture,typeMismatch.java.lang.String,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [article.firstPicture,firstPicture]; arguments []; default message [firstPicture]]; default message [Failed to convert property value of type 'org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile' to required type 'java.lang.String' for property 'firstPicture'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile' to required type 'java.lang.String' for property 'firstPicture': no matching editors or conversion strategy found]
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:175)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2021-12-16 15:39:12.967  WARN 32964 --- [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors<LF>Field error in object 'article' on field 'firstPicture': rejected value [org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@32e3be]; codes [typeMismatch.article.firstPicture,typeMismatch.firstPicture,typeMismatch.java.lang.String,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [article.firstPicture,firstPicture]; arguments []; default message [firstPicture]]; default message [Failed to convert property value of type 'org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile' to required type 'java.lang.String' for property 'firstPicture'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile' to required type 'java.lang.String' for property 'firstPicture': no matching editors or conversion strategy found]]
+2021-12-16 15:49:02.907  INFO 32636 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Starting GuanwangApplication using Java 1.8.0_65 on DESKTOP-0R0PQ9E with PID 32636 (E:\workplace\fzjk_guanwang\target\classes started by hushizhi0121 in E:\workplace\fzjk_guanwang)
+2021-12-16 15:49:02.908 DEBUG 32636 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-12-16 15:49:02.908  INFO 32636 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : The following profiles are active: dev
+2021-12-16 15:49:02.980  INFO 32636 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-16 15:49:02.980  INFO 32636 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-16 15:49:03.665  INFO 32636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-16 15:49:03.734  INFO 32636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 4 JPA repository interfaces.
+2021-12-16 15:49:04.549  INFO 32636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-16 15:49:04.556  INFO 32636 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-16 15:49:04.556  INFO 32636 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-16 15:49:04.630  INFO 32636 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-16 15:49:04.631  INFO 32636 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1650 ms
+2021-12-16 15:49:04.857  INFO 32636 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-16 15:49:04.919  INFO 32636 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-12-16 15:49:05.055  INFO 32636 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-16 15:49:05.149  INFO 32636 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-16 15:49:05.318  INFO 32636 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-16 15:49:05.332  INFO 32636 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-12-16 15:49:06.028  INFO 32636 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-16 15:49:06.036  INFO 32636 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-16 15:49:06.931  WARN 32636 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-16 15:49:07.270  INFO 32636 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-16 15:49:07.588  INFO 32636 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-16 15:49:07.627  INFO 32636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-16 15:49:07.635  INFO 32636 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Started GuanwangApplication in 5.397 seconds (JVM running for 6.536)
+2021-12-16 15:49:13.095  INFO 32636 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-16 15:49:13.096  INFO 32636 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-16 15:49:13.098  INFO 32636 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-12-16 15:49:18.990  INFO 32636 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.loginPage', args=[{}]}
+2021-12-16 15:49:18.999  INFO 32636 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/login
+2021-12-16 15:49:18.999  INFO 32636 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 15:49:24.544  INFO 32636 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.login', args=[15979594979, fzjk2016, org.apache.catalina.session.StandardSessionFacade@14b9990, {}]}
+2021-12-16 15:49:24.636  INFO 32636 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/adminIndex
+2021-12-16 15:49:24.637  INFO 32636 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 15:49:27.224  INFO 32636 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles/9', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.ArticlePage', args=[Page request [number: 0, size 5, sort: updateTime: DESC], com.fzjk.guanwang.vo.ArticleQuery@1401e98, 9, {articleQuery=com.fzjk.guanwang.vo.ArticleQuery@1401e98, org.springframework.validation.BindingResult.articleQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]}
+2021-12-16 15:49:27.272  INFO 32636 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/articles
+2021-12-16 15:49:27.273  INFO 32636 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 15:49:28.200  INFO 32636 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles/input', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.articleInput', args=[{}]}
+2021-12-16 15:49:28.223  INFO 32636 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/article-input
+2021-12-16 15:49:28.224  INFO 32636 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 15:49:47.894  WARN 32636 --- [http-nio-8080-exec-7] org.apache.catalina.connector.Request    : Creating the temporary upload location [C:\Users\hushizhi0121\AppData\Local\Temp\tomcat.8080.3258958775455537035\work\Tomcat\localhost\ROOT\upload] as it is required by the servlet [dispatcherServlet]
+2021-12-16 15:49:47.977 ERROR 32636 --- [http-nio-8080-exec-7] c.f.g.h.ControllerExceptionHandler       : Requst URL : http://localhost:8080/admin/articles, Exception: {}
+
+org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'article' on field 'firstPicture': rejected value [org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@1712291]; codes [typeMismatch.article.firstPicture,typeMismatch.firstPicture,typeMismatch.java.lang.String,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [article.firstPicture,firstPicture]; arguments []; default message [firstPicture]]; default message [Failed to convert property value of type 'org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile' to required type 'java.lang.String' for property 'firstPicture'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile' to required type 'java.lang.String' for property 'firstPicture': no matching editors or conversion strategy found]
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:175)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2021-12-16 15:49:47.978  WARN 32636 --- [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors<LF>Field error in object 'article' on field 'firstPicture': rejected value [org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@1712291]; codes [typeMismatch.article.firstPicture,typeMismatch.firstPicture,typeMismatch.java.lang.String,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [article.firstPicture,firstPicture]; arguments []; default message [firstPicture]]; default message [Failed to convert property value of type 'org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile' to required type 'java.lang.String' for property 'firstPicture'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile' to required type 'java.lang.String' for property 'firstPicture': no matching editors or conversion strategy found]]
+2021-12-16 15:52:37.517  INFO 23500 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Starting GuanwangApplication using Java 1.8.0_65 on DESKTOP-0R0PQ9E with PID 23500 (E:\workplace\fzjk_guanwang\target\classes started by hushizhi0121 in E:\workplace\fzjk_guanwang)
+2021-12-16 15:52:37.521 DEBUG 23500 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-12-16 15:52:37.522  INFO 23500 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : The following profiles are active: dev
+2021-12-16 15:52:37.644  INFO 23500 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-16 15:52:37.644  INFO 23500 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-16 15:52:38.467  INFO 23500 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-16 15:52:38.524  INFO 23500 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 4 JPA repository interfaces.
+2021-12-16 15:52:39.359  INFO 23500 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-16 15:52:39.368  INFO 23500 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-16 15:52:39.368  INFO 23500 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-16 15:52:39.441  INFO 23500 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-16 15:52:39.441  INFO 23500 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1796 ms
+2021-12-16 15:52:39.662  INFO 23500 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-16 15:52:39.709  INFO 23500 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-12-16 15:52:39.803  INFO 23500 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-16 15:52:39.879  INFO 23500 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-16 15:52:40.031  INFO 23500 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-16 15:52:40.045  INFO 23500 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-12-16 15:52:40.722  INFO 23500 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-16 15:52:40.734  INFO 23500 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-16 15:52:41.628  WARN 23500 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-16 15:52:41.940  INFO 23500 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-16 15:52:42.354  INFO 23500 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-16 15:52:42.396  INFO 23500 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-16 15:52:42.404  INFO 23500 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Started GuanwangApplication in 5.607 seconds (JVM running for 6.937)
+2021-12-16 15:52:55.692  INFO 23500 --- [http-nio-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-16 15:52:55.692  INFO 23500 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-16 15:52:55.693  INFO 23500 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-12-16 15:52:59.156  INFO 23500 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.loginPage', args=[{}]}
+2021-12-16 15:52:59.181  INFO 23500 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/login
+2021-12-16 15:52:59.182  INFO 23500 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 15:53:07.756  INFO 23500 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.login', args=[15979594979, fzjk2016, org.apache.catalina.session.StandardSessionFacade@1be68ac, {}]}
+2021-12-16 15:53:07.854  INFO 23500 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/adminIndex
+2021-12-16 15:53:07.855  INFO 23500 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 15:53:10.918  INFO 23500 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles/9', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.ArticlePage', args=[Page request [number: 0, size 5, sort: updateTime: DESC], com.fzjk.guanwang.vo.ArticleQuery@3f725b, 9, {articleQuery=com.fzjk.guanwang.vo.ArticleQuery@3f725b, org.springframework.validation.BindingResult.articleQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]}
+2021-12-16 15:53:10.956  INFO 23500 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/articles
+2021-12-16 15:53:10.956  INFO 23500 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 15:53:12.360  INFO 23500 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles/input', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.articleInput', args=[{}]}
+2021-12-16 15:53:12.372  INFO 23500 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/article-input
+2021-12-16 15:53:12.372  INFO 23500 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 15:53:28.866  WARN 23500 --- [http-nio-8080-exec-2] org.apache.catalina.connector.Request    : Creating the temporary upload location [C:\Users\hushizhi0121\AppData\Local\Temp\tomcat.8080.2288519048579164658\work\Tomcat\localhost\ROOT\upload] as it is required by the servlet [dispatcherServlet]
+2021-12-16 15:53:28.943 ERROR 23500 --- [http-nio-8080-exec-2] c.f.g.h.ControllerExceptionHandler       : Requst URL : http://localhost:8080/admin/articles, Exception: {}
+
+org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'article' on field 'firstPicture': rejected value [org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@17bc82]; codes [typeMismatch.article.firstPicture,typeMismatch.firstPicture,typeMismatch.java.lang.String,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [article.firstPicture,firstPicture]; arguments []; default message [firstPicture]]; default message [Failed to convert property value of type 'org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile' to required type 'java.lang.String' for property 'firstPicture'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile' to required type 'java.lang.String' for property 'firstPicture': no matching editors or conversion strategy found]
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:175)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2021-12-16 15:53:28.944  WARN 23500 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors<LF>Field error in object 'article' on field 'firstPicture': rejected value [org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@17bc82]; codes [typeMismatch.article.firstPicture,typeMismatch.firstPicture,typeMismatch.java.lang.String,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [article.firstPicture,firstPicture]; arguments []; default message [firstPicture]]; default message [Failed to convert property value of type 'org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile' to required type 'java.lang.String' for property 'firstPicture'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile' to required type 'java.lang.String' for property 'firstPicture': no matching editors or conversion strategy found]]
+2021-12-16 16:18:52.819  INFO 13092 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Starting GuanwangApplication using Java 1.8.0_65 on DESKTOP-0R0PQ9E with PID 13092 (E:\workplace\fzjk_guanwang\target\classes started by hushizhi0121 in E:\workplace\fzjk_guanwang)
+2021-12-16 16:18:52.820 DEBUG 13092 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-12-16 16:18:52.820  INFO 13092 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : The following profiles are active: dev
+2021-12-16 16:18:52.879  INFO 13092 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-16 16:18:52.879  INFO 13092 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-16 16:18:53.589  INFO 13092 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-16 16:18:53.647  INFO 13092 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 4 JPA repository interfaces.
+2021-12-16 16:18:54.482  INFO 13092 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-16 16:18:54.489  INFO 13092 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-16 16:18:54.490  INFO 13092 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-16 16:18:54.574  INFO 13092 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-16 16:18:54.574  INFO 13092 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1694 ms
+2021-12-16 16:18:54.726  INFO 13092 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-16 16:18:54.768  INFO 13092 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-12-16 16:18:54.871  INFO 13092 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-16 16:18:54.953  INFO 13092 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-16 16:18:55.103  INFO 13092 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-16 16:18:55.161  INFO 13092 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-12-16 16:18:55.871  INFO 13092 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-16 16:18:55.879  INFO 13092 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-16 16:18:56.726  WARN 13092 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-16 16:18:57.013  INFO 13092 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-16 16:18:57.338  INFO 13092 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-16 16:18:57.382  INFO 13092 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-16 16:18:57.390  INFO 13092 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Started GuanwangApplication in 5.252 seconds (JVM running for 6.483)
+2021-12-16 16:19:03.440  INFO 13092 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-16 16:19:03.441  INFO 13092 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-16 16:19:03.443  INFO 13092 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-12-16 16:19:06.433  INFO 13092 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.loginPage', args=[{}]}
+2021-12-16 16:19:06.453  INFO 13092 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/login
+2021-12-16 16:19:06.453  INFO 13092 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 16:19:12.306  INFO 13092 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.login', args=[15979594979, fzjk2016, org.apache.catalina.session.StandardSessionFacade@1122aa2, {}]}
+2021-12-16 16:19:12.398  INFO 13092 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/adminIndex
+2021-12-16 16:19:12.398  INFO 13092 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 16:19:15.988  INFO 13092 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles/9', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.ArticlePage', args=[Page request [number: 0, size 5, sort: updateTime: DESC], com.fzjk.guanwang.vo.ArticleQuery@df9b9f, 9, {articleQuery=com.fzjk.guanwang.vo.ArticleQuery@df9b9f, org.springframework.validation.BindingResult.articleQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]}
+2021-12-16 16:19:16.030  INFO 13092 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/articles
+2021-12-16 16:19:16.030  INFO 13092 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 16:19:17.306  INFO 13092 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles/input', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.articleInput', args=[{}]}
+2021-12-16 16:19:17.324  INFO 13092 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/article-input
+2021-12-16 16:19:17.324  INFO 13092 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 16:19:39.918  WARN 13092 --- [http-nio-8080-exec-1] org.apache.catalina.connector.Request    : Creating the temporary upload location [C:\Users\hushizhi0121\AppData\Local\Temp\tomcat.8080.5400219593014295160\work\Tomcat\localhost\ROOT\upload] as it is required by the servlet [dispatcherServlet]
+2021-12-16 16:19:39.993  INFO 13092 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.post', args=[Article{id=null, title='测试文章12', content='<p>1231231wqe4234radasdWR&nbsp;&nbsp;&nbsp;&nbsp;</p>', firstPicture='null', editor='金控集团', published=false, status=null, views=null, description='', createTime=null, updateTime=null}, {}, org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@28d898]}
+2021-12-16 16:19:40.241  INFO 13092 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Result : {}redirect:/admin/articles/9
+2021-12-16 16:19:40.241  INFO 13092 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 16:19:40.279  INFO 13092 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles/9', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.ArticlePage', args=[Page request [number: 0, size 5, sort: updateTime: DESC], com.fzjk.guanwang.vo.ArticleQuery@1f6b3f4, 9, {message=操作成功, subTypeId=9, articleQuery=com.fzjk.guanwang.vo.ArticleQuery@1f6b3f4, org.springframework.validation.BindingResult.articleQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]}
+2021-12-16 16:19:40.286  INFO 13092 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/articles
+2021-12-16 16:19:40.287  INFO 13092 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 16:51:38.686  INFO 19508 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Starting GuanwangApplication using Java 1.8.0_65 on DESKTOP-0R0PQ9E with PID 19508 (E:\workplace\fzjk_guanwang\target\classes started by hushizhi0121 in E:\workplace\fzjk_guanwang)
+2021-12-16 16:51:38.687 DEBUG 19508 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-12-16 16:51:38.687  INFO 19508 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : The following profiles are active: dev
+2021-12-16 16:51:38.726  INFO 19508 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-16 16:51:38.726  INFO 19508 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-16 16:51:39.768  INFO 19508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-16 16:51:39.848  INFO 19508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 4 JPA repository interfaces.
+2021-12-16 16:51:40.728  INFO 19508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-16 16:51:40.741  INFO 19508 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-16 16:51:40.742  INFO 19508 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-16 16:51:40.830  INFO 19508 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-16 16:51:40.830  INFO 19508 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2104 ms
+2021-12-16 16:51:41.030  INFO 19508 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-16 16:51:41.197  INFO 19508 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-12-16 16:51:41.411  INFO 19508 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-16 16:51:41.565  INFO 19508 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-16 16:51:41.721  INFO 19508 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-16 16:51:41.738  INFO 19508 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-12-16 16:51:42.730  INFO 19508 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-16 16:51:42.739  INFO 19508 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-16 16:51:43.651  WARN 19508 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-16 16:51:44.029  INFO 19508 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-16 16:51:44.317  INFO 19508 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-16 16:51:44.355  INFO 19508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-16 16:51:44.363  INFO 19508 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Started GuanwangApplication in 6.429 seconds (JVM running for 7.785)
+2021-12-16 16:52:11.035  INFO 19508 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-16 16:52:11.036  INFO 19508 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-16 16:52:11.039  INFO 19508 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2021-12-16 16:52:11.088  INFO 19508 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.loginPage', args=[{}]}
+2021-12-16 16:52:11.098  INFO 19508 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/login
+2021-12-16 16:52:11.099  INFO 19508 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 16:52:16.516  INFO 19508 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.login', args=[15979594979, fzjk2017, org.apache.catalina.session.StandardSessionFacade@fb9473, {}]}
+2021-12-16 16:52:16.627  INFO 19508 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Result : {}redirect:/admin
+2021-12-16 16:52:16.627  INFO 19508 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 16:52:16.646  INFO 19508 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.loginPage', args=[{message=用户名和密码错误}]}
+2021-12-16 16:52:16.647  INFO 19508 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/login
+2021-12-16 16:52:16.647  INFO 19508 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 16:52:22.249  INFO 19508 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.login', args=[15979594979, fzjk2016, org.apache.catalina.session.StandardSessionFacade@fb9473, {}]}
+2021-12-16 16:52:22.258  INFO 19508 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/adminIndex
+2021-12-16 16:52:22.259  INFO 19508 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 16:52:24.593  INFO 19508 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles/9', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.ArticlePage', args=[Page request [number: 0, size 5, sort: updateTime: DESC], com.fzjk.guanwang.vo.ArticleQuery@1d3687, 9, {articleQuery=com.fzjk.guanwang.vo.ArticleQuery@1d3687, org.springframework.validation.BindingResult.articleQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]}
+2021-12-16 16:52:24.637  INFO 19508 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/articles
+2021-12-16 16:52:24.637  INFO 19508 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 16:52:25.947  INFO 19508 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles/input', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.articleInput', args=[{}]}
+2021-12-16 16:52:25.960  INFO 19508 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/article-input
+2021-12-16 16:52:25.960  INFO 19508 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 16:52:42.684  WARN 19508 --- [http-nio-8080-exec-6] org.apache.catalina.connector.Request    : Creating the temporary upload location [C:\Users\hushizhi0121\AppData\Local\Temp\tomcat.8080.8072767207441689621\work\Tomcat\localhost\ROOT\upload] as it is required by the servlet [dispatcherServlet]
+2021-12-16 16:52:42.771  INFO 19508 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.post', args=[Article{id=null, title='测试文章13', content='12312312dssfwexczxcvzxv', firstPicture='null', editor='金控集团', published=true, status=null, views=null, description='asdfaszxczxva', createTime=null, updateTime=null}, {}, org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@a4340c]}
+2021-12-16 16:52:42.810  INFO 19508 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Result : {}redirect:/admin/articles/9
+2021-12-16 16:52:42.810  INFO 19508 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 16:52:42.819  INFO 19508 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles/9', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.ArticlePage', args=[Page request [number: 0, size 5, sort: updateTime: DESC], com.fzjk.guanwang.vo.ArticleQuery@73cde6, 9, {message=操作成功, subTypeId=9, articleQuery=com.fzjk.guanwang.vo.ArticleQuery@73cde6, org.springframework.validation.BindingResult.articleQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]}
+2021-12-16 16:52:42.827  INFO 19508 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/articles
+2021-12-16 16:52:42.827  INFO 19508 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 17:02:10.185  INFO 16052 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Starting GuanwangApplication using Java 1.8.0_65 on DESKTOP-0R0PQ9E with PID 16052 (E:\workplace\fzjk_guanwang\target\classes started by hushizhi0121 in E:\workplace\fzjk_guanwang)
+2021-12-16 17:02:10.185 DEBUG 16052 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-12-16 17:02:10.186  INFO 16052 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : The following profiles are active: dev
+2021-12-16 17:02:10.252  INFO 16052 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-16 17:02:10.252  INFO 16052 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-16 17:02:10.915  INFO 16052 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-16 17:02:11.004  INFO 16052 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 4 JPA repository interfaces.
+2021-12-16 17:02:11.737  INFO 16052 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-16 17:02:11.744  INFO 16052 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-16 17:02:11.744  INFO 16052 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-16 17:02:11.826  INFO 16052 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-16 17:02:11.826  INFO 16052 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1574 ms
+2021-12-16 17:02:12.031  INFO 16052 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-16 17:02:12.084  INFO 16052 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-12-16 17:02:12.186  INFO 16052 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-16 17:02:12.271  INFO 16052 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-16 17:02:12.418  INFO 16052 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-16 17:02:12.433  INFO 16052 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-12-16 17:02:13.143  INFO 16052 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-16 17:02:13.151  INFO 16052 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-16 17:02:13.957  WARN 16052 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-16 17:02:14.285  INFO 16052 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-16 17:02:14.669  INFO 16052 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-16 17:02:14.707  INFO 16052 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-16 17:02:14.715  INFO 16052 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Started GuanwangApplication in 5.168 seconds (JVM running for 6.252)
+2021-12-16 17:02:20.945  INFO 16052 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-16 17:02:20.945  INFO 16052 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-16 17:02:20.947  INFO 16052 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-12-16 17:07:14.483  INFO 35492 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Starting GuanwangApplication using Java 1.8.0_65 on DESKTOP-0R0PQ9E with PID 35492 (E:\workplace\fzjk_guanwang\target\classes started by hushizhi0121 in E:\workplace\fzjk_guanwang)
+2021-12-16 17:07:14.484 DEBUG 35492 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-12-16 17:07:14.484  INFO 35492 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : The following profiles are active: dev
+2021-12-16 17:07:14.571  INFO 35492 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-16 17:07:14.571  INFO 35492 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-16 17:07:15.277  INFO 35492 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-16 17:07:15.339  INFO 35492 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 4 JPA repository interfaces.
+2021-12-16 17:07:16.141  INFO 35492 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-16 17:07:16.149  INFO 35492 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-16 17:07:16.150  INFO 35492 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-16 17:07:16.228  INFO 35492 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-16 17:07:16.229  INFO 35492 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1657 ms
+2021-12-16 17:07:16.457  INFO 35492 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-16 17:07:16.504  INFO 35492 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-12-16 17:07:16.648  INFO 35492 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-16 17:07:16.792  INFO 35492 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-16 17:07:16.955  INFO 35492 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-16 17:07:16.970  INFO 35492 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-12-16 17:07:17.796  INFO 35492 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-16 17:07:17.807  INFO 35492 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-16 17:07:18.728  WARN 35492 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-16 17:07:19.155  INFO 35492 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-16 17:07:19.492  INFO 35492 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-16 17:07:19.539  INFO 35492 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-16 17:07:19.548  INFO 35492 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Started GuanwangApplication in 5.814 seconds (JVM running for 7.003)
+2021-12-16 17:07:26.349  INFO 35492 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-16 17:07:26.350  INFO 35492 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-16 17:07:26.351  INFO 35492 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-12-16 17:07:26.379  INFO 35492 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.loginPage', args=[{}]}
+2021-12-16 17:07:26.398  INFO 35492 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/login
+2021-12-16 17:07:26.399  INFO 35492 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 17:07:34.470  INFO 35492 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.login', args=[15979594979, fzjk2016, org.apache.catalina.session.StandardSessionFacade@1d24a77, {}]}
+2021-12-16 17:07:34.561  INFO 35492 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/adminIndex
+2021-12-16 17:07:34.561  INFO 35492 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 17:07:40.055  INFO 35492 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles/9', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.ArticlePage', args=[Page request [number: 0, size 5, sort: updateTime: DESC], com.fzjk.guanwang.vo.ArticleQuery@78d601, 9, {articleQuery=com.fzjk.guanwang.vo.ArticleQuery@78d601, org.springframework.validation.BindingResult.articleQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]}
+2021-12-16 17:07:40.095  INFO 35492 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/articles
+2021-12-16 17:07:40.095  INFO 35492 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 17:07:41.507  INFO 35492 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles/input', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.articleInput', args=[{}]}
+2021-12-16 17:07:41.521  INFO 35492 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/article-input
+2021-12-16 17:07:41.521  INFO 35492 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 17:08:01.203  WARN 35492 --- [http-nio-8080-exec-7] org.apache.catalina.connector.Request    : Creating the temporary upload location [C:\Users\hushizhi0121\AppData\Local\Temp\tomcat.8080.7580735633330043398\work\Tomcat\localhost\ROOT\upload] as it is required by the servlet [dispatcherServlet]
+2021-12-16 17:08:01.282  INFO 35492 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.post', args=[Article{id=null, title='测试文章14', content='123saadfasd2312123r23fadfasda', firstPicture='null', editor='金控集团', published=true, status=null, views=null, description='123dasfewadfasdfsdaf', createTime=null, updateTime=null}, {}, org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@11b26d0]}
+2021-12-16 17:08:01.326  INFO 35492 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Result : {}redirect:/admin/articles/9
+2021-12-16 17:08:01.327  INFO 35492 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 17:08:01.343  INFO 35492 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles/9', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.ArticlePage', args=[Page request [number: 0, size 5, sort: updateTime: DESC], com.fzjk.guanwang.vo.ArticleQuery@162e97d, 9, {message=操作成功, subTypeId=9, articleQuery=com.fzjk.guanwang.vo.ArticleQuery@162e97d, org.springframework.validation.BindingResult.articleQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]}
+2021-12-16 17:08:01.349  INFO 35492 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/articles
+2021-12-16 17:08:01.349  INFO 35492 --- [http-nio-8080-exec-7] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 17:10:04.818  INFO 21776 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Starting GuanwangApplication using Java 1.8.0_65 on DESKTOP-0R0PQ9E with PID 21776 (E:\workplace\fzjk_guanwang\target\classes started by hushizhi0121 in E:\workplace\fzjk_guanwang)
+2021-12-16 17:10:04.819 DEBUG 21776 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-12-16 17:10:04.819  INFO 21776 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : The following profiles are active: dev
+2021-12-16 17:10:04.877  INFO 21776 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-16 17:10:04.877  INFO 21776 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-16 17:10:05.501  INFO 21776 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-16 17:10:05.576  INFO 21776 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 4 JPA repository interfaces.
+2021-12-16 17:10:06.420  INFO 21776 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-16 17:10:06.427  INFO 21776 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-16 17:10:06.427  INFO 21776 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-16 17:10:06.503  INFO 21776 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-16 17:10:06.503  INFO 21776 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1626 ms
+2021-12-16 17:10:06.680  INFO 21776 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-16 17:10:06.741  INFO 21776 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-12-16 17:10:06.859  INFO 21776 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-16 17:10:06.966  INFO 21776 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-16 17:10:07.146  INFO 21776 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-16 17:10:07.159  INFO 21776 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-12-16 17:10:07.853  INFO 21776 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-16 17:10:07.865  INFO 21776 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-16 17:10:08.756  WARN 21776 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-16 17:10:09.070  INFO 21776 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-16 17:10:09.461  INFO 21776 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-16 17:10:09.516  INFO 21776 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-16 17:10:09.528  INFO 21776 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Started GuanwangApplication in 5.346 seconds (JVM running for 6.458)
+2021-12-16 17:10:26.180  INFO 21776 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-16 17:10:26.180  INFO 21776 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-16 17:10:26.181  INFO 21776 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-12-16 17:10:26.207  INFO 21776 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.loginPage', args=[{}]}
+2021-12-16 17:10:26.221  INFO 21776 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/login
+2021-12-16 17:10:26.221  INFO 21776 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 17:10:33.231  INFO 21776 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.login', args=[15979594979, fzjk2016, org.apache.catalina.session.StandardSessionFacade@189eec1, {}]}
+2021-12-16 17:10:33.331  INFO 21776 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/adminIndex
+2021-12-16 17:10:33.331  INFO 21776 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 17:10:35.280  INFO 21776 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles/9', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.ArticlePage', args=[Page request [number: 0, size 5, sort: updateTime: DESC], com.fzjk.guanwang.vo.ArticleQuery@1b65f11, 9, {articleQuery=com.fzjk.guanwang.vo.ArticleQuery@1b65f11, org.springframework.validation.BindingResult.articleQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]}
+2021-12-16 17:10:35.321  INFO 21776 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/articles
+2021-12-16 17:10:35.321  INFO 21776 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 17:10:38.619  INFO 21776 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles/input', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.articleInput', args=[{}]}
+2021-12-16 17:10:38.634  INFO 21776 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/article-input
+2021-12-16 17:10:38.634  INFO 21776 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 17:11:00.112  WARN 21776 --- [http-nio-8080-exec-9] org.apache.catalina.connector.Request    : Creating the temporary upload location [C:\Users\hushizhi0121\AppData\Local\Temp\tomcat.8080.350773347230064903\work\Tomcat\localhost\ROOT\upload] as it is required by the servlet [dispatcherServlet]
+2021-12-16 17:11:00.199  INFO 21776 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.post', args=[Article{id=null, title='测试文章15', content='oiasjdfhiuebiuqnjadsndf', firstPicture='null', editor='金控集团', published=true, status=null, views=null, description='asdfqwuehiuhdinafoifnoijf', createTime=null, updateTime=null}, {}, org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@dc0834]}
+2021-12-16 17:11:00.242  INFO 21776 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Result : {}redirect:/admin/articles/9
+2021-12-16 17:11:00.242  INFO 21776 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 17:11:00.266  INFO 21776 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles/9', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.ArticlePage', args=[Page request [number: 0, size 5, sort: updateTime: DESC], com.fzjk.guanwang.vo.ArticleQuery@b38ff1, 9, {message=操作成功, subTypeId=9, articleQuery=com.fzjk.guanwang.vo.ArticleQuery@b38ff1, org.springframework.validation.BindingResult.articleQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]}
+2021-12-16 17:11:00.272  INFO 21776 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/articles
+2021-12-16 17:11:00.272  INFO 21776 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 17:30:48.262  INFO 26900 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Starting GuanwangApplication using Java 1.8.0_65 on DESKTOP-0R0PQ9E with PID 26900 (E:\workplace\fzjk_guanwang\target\classes started by hushizhi0121 in E:\workplace\fzjk_guanwang)
+2021-12-16 17:30:48.263 DEBUG 26900 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-12-16 17:30:48.263  INFO 26900 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : The following profiles are active: dev
+2021-12-16 17:30:48.315  INFO 26900 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-16 17:30:48.315  INFO 26900 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-16 17:30:49.326  INFO 26900 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-16 17:30:49.514  INFO 26900 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 180 ms. Found 4 JPA repository interfaces.
+2021-12-16 17:30:50.429  INFO 26900 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-16 17:30:50.437  INFO 26900 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-16 17:30:50.437  INFO 26900 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-16 17:30:50.529  INFO 26900 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-16 17:30:50.529  INFO 26900 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2213 ms
+2021-12-16 17:30:50.725  INFO 26900 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-16 17:30:50.861  INFO 26900 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-12-16 17:30:51.138  INFO 26900 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-16 17:30:51.275  INFO 26900 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-16 17:30:51.388  INFO 26900 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-16 17:30:51.470  INFO 26900 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-12-16 17:30:52.390  INFO 26900 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-16 17:30:52.400  INFO 26900 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-16 17:30:53.369  WARN 26900 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-16 17:30:53.680  INFO 26900 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-16 17:30:54.027  INFO 26900 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-16 17:30:54.070  INFO 26900 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-16 17:30:54.079  INFO 26900 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Started GuanwangApplication in 6.413 seconds (JVM running for 7.71)
+2021-12-16 17:31:04.811  INFO 26900 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-16 17:31:04.812  INFO 26900 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-16 17:31:04.814  INFO 26900 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-12-16 17:31:04.859  INFO 26900 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.loginPage', args=[{}]}
+2021-12-16 17:31:04.877  INFO 26900 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/login
+2021-12-16 17:31:04.877  INFO 26900 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 17:31:13.302  INFO 26900 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.login', args=[15979594979, fzjk2016, org.apache.catalina.session.StandardSessionFacade@1e691c0, {}]}
+2021-12-16 17:31:13.419  INFO 26900 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/adminIndex
+2021-12-16 17:31:13.419  INFO 26900 --- [http-nio-8080-exec-9] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 17:31:15.739  INFO 26900 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles/11', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.ArticlePage', args=[Page request [number: 0, size 5, sort: updateTime: DESC], com.fzjk.guanwang.vo.ArticleQuery@13b3c35, 11, {articleQuery=com.fzjk.guanwang.vo.ArticleQuery@13b3c35, org.springframework.validation.BindingResult.articleQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]}
+2021-12-16 17:31:15.782  INFO 26900 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/articles
+2021-12-16 17:31:15.782  INFO 26900 --- [http-nio-8080-exec-2] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 17:31:17.612  INFO 26900 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles/9', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.ArticlePage', args=[Page request [number: 0, size 5, sort: updateTime: DESC], com.fzjk.guanwang.vo.ArticleQuery@f360b4, 9, {articleQuery=com.fzjk.guanwang.vo.ArticleQuery@f360b4, org.springframework.validation.BindingResult.articleQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]}
+2021-12-16 17:31:17.630  INFO 26900 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/articles
+2021-12-16 17:31:17.630  INFO 26900 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 17:31:18.994  INFO 26900 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles/input', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.articleInput', args=[{}]}
+2021-12-16 17:31:19.014  INFO 26900 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/article-input
+2021-12-16 17:31:19.014  INFO 26900 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 17:31:32.360  INFO 26900 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.post', args=[Article{id=null, title='测试文章16', content='12313123', firstPicture='null', editor='金控集团', published=true, status=null, views=null, description='1231231231', createTime=null, updateTime=null}, {}, org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@1afd2ae]}
+2021-12-16 17:31:32.412  INFO 26900 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : Result : {}redirect:/admin/articles/9
+2021-12-16 17:31:32.412  INFO 26900 --- [http-nio-8080-exec-1] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 17:31:32.432  INFO 26900 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles/9', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.ArticlePage', args=[Page request [number: 0, size 5, sort: updateTime: DESC], com.fzjk.guanwang.vo.ArticleQuery@895a37, 9, {message=操作成功, subTypeId=9, articleQuery=com.fzjk.guanwang.vo.ArticleQuery@895a37, org.springframework.validation.BindingResult.articleQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]}
+2021-12-16 17:31:32.439  INFO 26900 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/articles
+2021-12-16 17:31:32.439  INFO 26900 --- [http-nio-8080-exec-5] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 17:34:59.040 ERROR 26900 --- [http-nio-8080-exec-2] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-2] Exception processing template "/list/news_1": An error happened during template parsing (template: "class path resource [templates//list/news_1.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates//list/news_1.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1400)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "article.firstPicture" (template: "/list/news_1" - line 244, col 3)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "article.firstPicture" (template: "/list/news_1" - line 244, col 3)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.performInlining(OutputExpressionInlinePreProcessorHandler.java:440)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleText(OutputExpressionInlinePreProcessorHandler.java:146)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleText(InlinedOutputExpressionMarkupHandler.java:80)
+	at org.attoparser.HtmlMarkupHandler.handleText(HtmlMarkupHandler.java:208)
+	at org.attoparser.AbstractChainedMarkupHandler.handleText(AbstractChainedMarkupHandler.java:203)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:662)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 50 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'firstPicture' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:213)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	... 68 common frames omitted
+
+2021-12-16 17:34:59.044 ERROR 26900 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates//list/news_1.html]")] with root cause
+
+org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'firstPicture' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:213)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.performInlining(OutputExpressionInlinePreProcessorHandler.java:440)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleText(OutputExpressionInlinePreProcessorHandler.java:146)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleText(InlinedOutputExpressionMarkupHandler.java:80)
+	at org.attoparser.HtmlMarkupHandler.handleText(HtmlMarkupHandler.java:208)
+	at org.attoparser.AbstractChainedMarkupHandler.handleText(AbstractChainedMarkupHandler.java:203)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:662)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1400)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2021-12-16 17:34:59.072 ERROR 26900 --- [http-nio-8080-exec-2] s.e.ErrorMvcAutoConfiguration$StaticView : Cannot render error page for request [/list/5] and exception [An error happened during template parsing (template: "class path resource [templates//list/news_1.html]")] as the response has already been committed. As a result, the response may have the wrong status code.
+2021-12-16 17:40:37.323 ERROR 26900 --- [http-nio-8080-exec-10] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-10] Exception processing template "/list/news_1": An error happened during template parsing (template: "class path resource [templates//list/news_1.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates//list/news_1.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1400)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "article.firstPicture" (template: "/list/news_1" - line 244, col 3)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "article.firstPicture" (template: "/list/news_1" - line 244, col 3)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.performInlining(OutputExpressionInlinePreProcessorHandler.java:440)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleText(OutputExpressionInlinePreProcessorHandler.java:146)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleText(InlinedOutputExpressionMarkupHandler.java:80)
+	at org.attoparser.HtmlMarkupHandler.handleText(HtmlMarkupHandler.java:208)
+	at org.attoparser.AbstractChainedMarkupHandler.handleText(AbstractChainedMarkupHandler.java:203)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:662)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 50 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'firstPicture' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:213)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	... 68 common frames omitted
+
+2021-12-16 17:40:37.325 ERROR 26900 --- [http-nio-8080-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates//list/news_1.html]")] with root cause
+
+org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'firstPicture' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:213)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.performInlining(OutputExpressionInlinePreProcessorHandler.java:440)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleText(OutputExpressionInlinePreProcessorHandler.java:146)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleText(InlinedOutputExpressionMarkupHandler.java:80)
+	at org.attoparser.HtmlMarkupHandler.handleText(HtmlMarkupHandler.java:208)
+	at org.attoparser.AbstractChainedMarkupHandler.handleText(AbstractChainedMarkupHandler.java:203)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:662)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1400)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2021-12-16 17:40:37.349 ERROR 26900 --- [http-nio-8080-exec-10] s.e.ErrorMvcAutoConfiguration$StaticView : Cannot render error page for request [/list/5] and exception [An error happened during template parsing (template: "class path resource [templates//list/news_1.html]")] as the response has already been committed. As a result, the response may have the wrong status code.
+2021-12-16 17:40:43.871 ERROR 26900 --- [http-nio-8080-exec-8] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-8] Exception processing template "/list/news_1": An error happened during template parsing (template: "class path resource [templates//list/news_1.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates//list/news_1.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1400)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "article.firstPicture" (template: "/list/news_1" - line 244, col 3)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "article.firstPicture" (template: "/list/news_1" - line 244, col 3)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.performInlining(OutputExpressionInlinePreProcessorHandler.java:440)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleText(OutputExpressionInlinePreProcessorHandler.java:146)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleText(InlinedOutputExpressionMarkupHandler.java:80)
+	at org.attoparser.HtmlMarkupHandler.handleText(HtmlMarkupHandler.java:208)
+	at org.attoparser.AbstractChainedMarkupHandler.handleText(AbstractChainedMarkupHandler.java:203)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:662)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 50 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'firstPicture' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:213)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	... 68 common frames omitted
+
+2021-12-16 17:40:43.873 ERROR 26900 --- [http-nio-8080-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates//list/news_1.html]")] with root cause
+
+org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'firstPicture' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:213)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.performInlining(OutputExpressionInlinePreProcessorHandler.java:440)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleText(OutputExpressionInlinePreProcessorHandler.java:146)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleText(InlinedOutputExpressionMarkupHandler.java:80)
+	at org.attoparser.HtmlMarkupHandler.handleText(HtmlMarkupHandler.java:208)
+	at org.attoparser.AbstractChainedMarkupHandler.handleText(AbstractChainedMarkupHandler.java:203)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:662)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1400)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2021-12-16 17:40:43.887 ERROR 26900 --- [http-nio-8080-exec-8] s.e.ErrorMvcAutoConfiguration$StaticView : Cannot render error page for request [/list/5] and exception [An error happened during template parsing (template: "class path resource [templates//list/news_1.html]")] as the response has already been committed. As a result, the response may have the wrong status code.
+2021-12-16 17:41:10.351  INFO 32488 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Starting GuanwangApplication using Java 1.8.0_65 on DESKTOP-0R0PQ9E with PID 32488 (E:\workplace\fzjk_guanwang\target\classes started by hushizhi0121 in E:\workplace\fzjk_guanwang)
+2021-12-16 17:41:10.352 DEBUG 32488 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-12-16 17:41:10.352  INFO 32488 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : The following profiles are active: dev
+2021-12-16 17:41:10.408  INFO 32488 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-16 17:41:10.409  INFO 32488 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-16 17:41:11.134  INFO 32488 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-16 17:41:11.228  INFO 32488 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 4 JPA repository interfaces.
+2021-12-16 17:41:12.070  INFO 32488 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-16 17:41:12.081  INFO 32488 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-16 17:41:12.081  INFO 32488 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-16 17:41:12.176  INFO 32488 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-16 17:41:12.177  INFO 32488 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1768 ms
+2021-12-16 17:41:12.349  INFO 32488 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-16 17:41:12.390  INFO 32488 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-12-16 17:41:12.518  INFO 32488 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-16 17:41:12.619  INFO 32488 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-16 17:41:12.784  INFO 32488 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-16 17:41:12.806  INFO 32488 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-12-16 17:41:14.729  INFO 32488 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-16 17:41:14.740  INFO 32488 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-16 17:41:15.644  WARN 32488 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-16 17:41:15.964  INFO 32488 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-16 17:41:16.322  INFO 32488 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-16 17:41:16.378  INFO 32488 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-16 17:41:16.388  INFO 32488 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Started GuanwangApplication in 6.626 seconds (JVM running for 8.972)
+2021-12-16 17:41:30.777  INFO 32488 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-16 17:41:30.777  INFO 32488 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-16 17:41:30.778  INFO 32488 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-12-16 17:50:49.543  INFO 22020 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Starting GuanwangApplication using Java 1.8.0_65 on DESKTOP-0R0PQ9E with PID 22020 (E:\workplace\fzjk_guanwang\target\classes started by hushizhi0121 in E:\workplace\fzjk_guanwang)
+2021-12-16 17:50:49.544 DEBUG 22020 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-12-16 17:50:49.544  INFO 22020 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : The following profiles are active: dev
+2021-12-16 17:50:49.598  INFO 22020 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-16 17:50:49.598  INFO 22020 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-16 17:50:50.259  INFO 22020 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-16 17:50:50.317  INFO 22020 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 4 JPA repository interfaces.
+2021-12-16 17:50:51.068  INFO 22020 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-16 17:50:51.076  INFO 22020 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-16 17:50:51.077  INFO 22020 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-16 17:50:51.162  INFO 22020 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-16 17:50:51.162  INFO 22020 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1563 ms
+2021-12-16 17:50:51.379  INFO 22020 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-16 17:50:51.418  INFO 22020 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-12-16 17:50:51.508  INFO 22020 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-16 17:50:51.584  INFO 22020 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-16 17:50:51.744  INFO 22020 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-16 17:50:51.758  INFO 22020 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-12-16 17:50:52.424  INFO 22020 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-16 17:50:52.431  INFO 22020 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-16 17:50:53.296  WARN 22020 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-16 17:50:53.655  INFO 22020 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-16 17:50:53.958  INFO 22020 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-16 17:50:53.997  INFO 22020 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-16 17:50:54.006  INFO 22020 --- [restartedMain] com.fzjk.guanwang.GuanwangApplication    : Started GuanwangApplication in 5.156 seconds (JVM running for 6.284)
+2021-12-16 17:50:58.661  INFO 22020 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-16 17:50:58.661  INFO 22020 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-16 17:50:58.662  INFO 22020 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-12-16 17:52:02.730  INFO 22020 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.loginPage', args=[{}]}
+2021-12-16 17:52:02.738  INFO 22020 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/login
+2021-12-16 17:52:02.739  INFO 22020 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 17:52:17.543  INFO 22020 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.LoginController.login', args=[15979594979, fzjk2016, org.apache.catalina.session.StandardSessionFacade@17ab27c, {}]}
+2021-12-16 17:52:17.569  INFO 22020 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/adminIndex
+2021-12-16 17:52:17.569  INFO 22020 --- [http-nio-8080-exec-6] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 17:52:20.528  INFO 22020 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles/9', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.ArticlePage', args=[Page request [number: 0, size 5, sort: updateTime: DESC], com.fzjk.guanwang.vo.ArticleQuery@112f03c, 9, {articleQuery=com.fzjk.guanwang.vo.ArticleQuery@112f03c, org.springframework.validation.BindingResult.articleQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]}
+2021-12-16 17:52:20.540  INFO 22020 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/articles
+2021-12-16 17:52:20.540  INFO 22020 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 17:52:22.643  INFO 22020 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles/input', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.articleInput', args=[{}]}
+2021-12-16 17:52:22.657  INFO 22020 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/article-input
+2021-12-16 17:52:22.657  INFO 22020 --- [http-nio-8080-exec-10] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 17:52:40.018  INFO 22020 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.post', args=[Article{id=null, title='测试文章17', content='1231212sasdfwedfqefqwefqwe', firstPicture='null', editor='金控集团', published=true, status=null, views=null, description='asdfazxcdfwefeqwef', createTime=null, updateTime=null}, {}, org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@110f4ff]}
+2021-12-16 17:52:40.046  INFO 22020 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : Result : {}redirect:/admin/articles/9
+2021-12-16 17:52:40.046  INFO 22020 --- [http-nio-8080-exec-8] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 17:52:40.064  INFO 22020 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Request : RequestLog{url='http://localhost:8080/admin/articles/9', ip='0:0:0:0:0:0:0:1', ClassMethod='com.fzjk.guanwang.controller.admin.ArticleController.ArticlePage', args=[Page request [number: 0, size 5, sort: updateTime: DESC], com.fzjk.guanwang.vo.ArticleQuery@14bfc7a, 9, {message=操作成功, subTypeId=9, articleQuery=com.fzjk.guanwang.vo.ArticleQuery@14bfc7a, org.springframework.validation.BindingResult.articleQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]}
+2021-12-16 17:52:40.071  INFO 22020 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : Result : {}admin/articles
+2021-12-16 17:52:40.071  INFO 22020 --- [http-nio-8080-exec-3] com.fzjk.guanwang.aspect.LogAspect       : ---------doAfter--------
+2021-12-16 18:50:45.780  WARN 22020 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=57m23s915ms648µs900ns).

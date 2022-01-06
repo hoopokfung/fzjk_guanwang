@@ -228,7 +228,7 @@
                     <a href="news_1.html" th:href="@{/list/5}" class="tran300">集团动态</a>
                 </li>
                 <li class=''>
-                    <a href="news_2.html" th:href="@{/list/6}" class="tran300">一线快讯</a>
+                    <a href="news_2.html" th:href="@{/list/6}" class="tran300">领导要闻</a>
                 </li>
                 <li class=''>
                     <a href="news_3.html" th:href="@{/list/7}" class="tran300">行业动态</a>
@@ -241,24 +241,27 @@
             <div class="view-passage">
                 <div class="container">
                     <div class="row">
-                        <h5 class="text-center">新闻标题XXXXXXX</h5>
+                        <h5 class="text-center" th:text="${Article.title}">新闻标题XXXXXXX</h5>
                         <div class="info clearfix">
-                            <span class="date pull-left"><i class="fa fa-clock-o" aria-hidden="true"></i>2021-08-31</span>
-                            <span class="views pull-left"> <i class="fa fa-eye" aria-hidden="true"></i>362</span>
+                            <span class="pull-left"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                            <span class="date pull-left mr-30" th:text="${#dates.format(Article.updateTime,'yyyy-MM-dd')}">2021-08-31</span>
+                            <span class="pull-left"><i class="fa fa-eye" aria-hidden="true"></i></span>
+                            <span class="views pull-left mr-30" th:text="${Article.views}"> 362</span>
                             <span class="share pull-left">
-                        <div class="bdsharebuttonbox bdshare-button-style2-24" data-bd-bind="1630566847957">
-                            <a href="#" class="bds_more" data-cmd="more">
-                                <i class="fa fa-share-alt" aria-hidden="true"></i>分享</a>
-                        </div>
-                    </span>
+                                <div class="bdsharebuttonbox" >
+                                    <a href="#" class="bds_more" data-cmd="more">
+                                        <i class="fa fa-share-alt" aria-hidden="true"></i>分享</a>
+                                </div>
+                            </span>
                             <div class="fontSize pull-left">
                                 [<em class="small">小</em>
                                 <em class="mid">中</em>
                                 <em class="big">大</em>]
                             </div>
-                            <a href="news_1.html" class="toList pull-right"> <i class="fa fa-undo" aria-hidden="true"></i>返回列表</a>
+
+                            <a class="toList btn pull-right" onclick="window.history.go(-1)"> <i class="fa fa-undo" aria-hidden="true"></i>返回列表</a>
                         </div>
-                        <div class="content">
+                        <div class="content" th:utext="${Article.content}">
                             <p style="text-indent: 4rem">8月30日下午，集团党委书记、董事长谌赞雄接待硚口区区长苏海峰一行，双方就有关项目合作进行座谈交流。</p>
 
                             <p style="text-indent: 4rem">谌赞雄董事长对苏海峰区长一行的来访表示热烈欢迎，并简要介绍了集团改革发展最新情况。谌董事长表示，硚口区作为武汉市的重要中心城区，近年来在产业升级、招商引资等方面取得显著成绩，集团将充分发挥多金融牌照的综合优势，与硚口区进一步加强沟通对接，深化交流合作，助力硚口区实现高质量发展。</p>
@@ -271,8 +274,8 @@
                             </p>
                         </div>
                         <div class="link">
-                            <p class="text_id"><span>上一篇：</span><a>全市经济发展，硚口区希望与集团</a></p>
-                            <p class="text_id"><span>下一篇：</span><a>全市经济发展，硚口区希望与集团</a></p>
+                            <p class="text_id"><span>上一篇：</span><a th:href="@{/Article/articleShow/{id}(id=${pre.id})}" th:text="${pre.title}">全市经济发展，硚口区希望与集团</a></p>
+                            <p class="text_id"><span>下一篇：</span><a th:href="@{/Article/articleShow/{id}(id=${next.id})}" th:text="${next.title}">全市经济发展，硚口区希望与集团</a></p>
                         </div>
                     </div>
                 </div>
@@ -424,7 +427,34 @@
     </script>
     <!--End Script -->
 </div>
+<script type="text/javascript" th:inline="none">
+    window._bd_share_config = {
+    "common": {
+        "bdSnsKey": {},
+        "bdText": "",
+        "bdMini": "1",
+        "bdMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"],
+        "bdPic": "",
+        "bdStyle": "2",
+        "bdSize": "24"
+    }, "share": {}
+};
+with (document)0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+</script>
 
+<script type="text/javascript">
+    $(function(){
+        $('.nyMain .view-passage .info .fontSize em').click(function(){
+            if($(this).hasClass('small')){
+                $('.nyMain  .view-passage .content p span').removeClass('font-middle').removeClass('font-large').addClass('font-small');
+            }else if($(this).hasClass('mid')){
+                $('.nyMain .view-passage .content p span').removeClass('font-small').removeClass('font-large').addClass('font-middle');
+            }else if($(this).hasClass('big')){
+                $('.nyMain .view-passage .content p span').removeClass('font-small').removeClass('font-middle').addClass('font-large');
+            }
+        })
+    })
+</script>
 
 
 </body>
