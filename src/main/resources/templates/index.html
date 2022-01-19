@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable = 0">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../static/images/logo2.png" type="image/png" th:src="@{/images/logo2.png}">
+    <meta name="keywords" content="抚州市金融控股有限公司,抚州金控,抚州金控集团,抚州金融控股,抚金控,抚州融资担保,抚州融资担保集团">
+    <meta name="description" content="抚州市金融控股有限公司成立于2016年4月18日，是抚州市唯一一家金融控股性质的国有独资公司，属市政府直管企业，
+                        目的是为了做抚州市地方金融的主力军和龙头企业，通过不断完善公司金融体系，提升企业的金融竞争力，提升金融市
+                        场水平和辐射吸收能力，为抚州市经济社会发展提供更多、更好和更安全的金融服务。">
+    <meta name="author" content="hoopokfung@163.com">
+    <link rel="icon" href="../static/images/logo2.png" type="image/png" th:href="@{/images/logo2.png}">
     <title>抚州市金融控股有限公司</title>
         <link href="../static/lib/bootstrap-3.4.1/css/bootstrap.css" rel="stylesheet" th:href="@{lib/bootstrap-3.4.1/css/bootstrap.css}">
         <link href="../static/css/animate.min.css" rel="stylesheet" th:href="@{css/animate.min.css}">
@@ -221,63 +223,53 @@
                     <li data-target="#banner-carousel" data-slide-to="2"></li>
                     <li data-target="#banner-carousel" data-slide-to="3"></li>
                     <li data-target="#banner-carousel" data-slide-to="4"></li>
-                    <li data-target="#banner-carousel" data-slide-to="5"></li>
                 </ol>
 
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <img src="../static/images/banner1.jpg" alt="Banner Slide" th:src="@{images/banner1.jpg}">
+                        <img src="../static/images/banner1.jpg" alt="Banner Slide" th:src="${showPics.get(2).pic} ? ${showPics.get(2).pic} : ${showPics.get(2).url}">
 
                         <div class="carousel-caption">
                             <h1>履行国企职责 体现市场价值</h1>
 
-                            <p>Intrinsicly</p>
+                            <p>抚州金融控股集团</p>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="../static/images/banner2.jpg" alt="..." th:src="@{images/banner2.jpg}">
+                        <img src="../static/images/banner2.jpg" alt="..." th:src="${showPics.get(3).pic} ? ${showPics.get(3).pic} : ${showPics.get(3).url}">
 
                         <div class="carousel-caption">
                             <h1>坚持党的领导 加强党的建设</h1>
 
-                            <p>Synergistically</p>
+                            <p>抚州金融控股集团</p>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="../static/images/banner3.jpg" alt="..." th:src="@{images/banner3.jpg}">
+                        <img src="../static/images/banner3.jpg" alt="..." th:src="${showPics.get(4).pic} ? ${showPics.get(4).pic} : ${showPics.get(4).url}">
 
                         <div class="carousel-caption">
-                            <h1>尽职尽责 聚智慧争作为</h1>
+                            <h1>用户至上 用心服务</h1>
 
-                            <p>Monotonectally</p>
+                            <p>创造多元的金融服务方式 满足各类客户的业务需求 用心提供专业的金融服务</p>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="../static/images/banner4.jpg" alt="..." th:src="@{images/banner4.jpg}">
+                        <img src="../static/images/banner5.jpg" alt="..." th:src="${showPics.get(5).pic} ? ${showPics.get(5).pic} : ${showPics.get(5).url}">
 
                         <div class="carousel-caption">
-                            <h1>转观念 破积习 追标杆 强基础</h1>
+                            <h1>注重社会责任 回报当地经济</h1>
 
-                            <p>Monotonectally</p>
+                            <p>抚州金融控股集团</p>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="../static/images/banner5.jpg" alt="..." th:src="@{images/banner5.jpg}">
+                        <img src="../static/images/banner6.jpg" alt="..." th:src="${showPics.get(6).pic} ? ${showPics.get(6).pic} : ${showPics.get(6).url}">
 
                         <div class="carousel-caption">
-                            <h1>服务实体经济发展 引领综合金融创新</h1>
+                            <h1>稳健 责任 共赢</h1>
 
-                            <p>Monotonectally</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="../static/images/banner6.jpg" alt="..." th:src="@{images/banner6.jpg}">
-
-                        <div class="carousel-caption">
-                            <h1>实施大战略 把握大机遇 推动大发展</h1>
-
-                            <p>Monotonectally</p>
+                            <p>以风险控制为底线 注重社会责任 服务企业互利共赢</p>
                         </div>
                     </div>
                 </div>
@@ -299,12 +291,14 @@
                 <div class="container ">
                     <div class="row">
                         <div class="col-md-8 col-sm-12 news-box">
-                            <h3 class="h3">新闻中心</h3>
+                            <h3 class="h3">新闻中心
+                                <a href="#" th:href="@{/list/5}" class="pull-right font-middle pt-10">更多 >></a>
+                            </h3>
                             <div role="tabpanel">
                                 <!-- Nav tabs -->
                                 <ul id="tabOne" class="nav nav-tabs nav-justified">
                                     <li class="active"><a href="#contentOne-1" data-toggle="tab" aria-expanded="true">集团动态</a></li>
-                                    <li class=""><a href="#contentOne-2" data-toggle="tab" aria-expanded="false">一线快讯</a></li>
+                                    <li class=""><a href="#contentOne-2" data-toggle="tab" aria-expanded="false">领导动态</a></li>
                                     <li class=""><a href="#contentOne-3" data-toggle="tab" aria-expanded="false">行业动态</a></li>
                                 </ul>
 
@@ -328,39 +322,15 @@
                                     </div>
                                     <div class="tab-pane fade" id="contentOne-2">
                                         <ul>
-                                            <li>
-                                                <a href="#" class="">
+                                            <li th:each="article : ${leaderInfo}">
+                                                <a href="#" th:href="@{/Article/articleShow/{id}(id=${article.id})}">
                                                     <div class="date text-center">
-                                                        <em>14</em>
-                                                        <span>2021-09</span>
+                                                        <em th:text="${#dates.format(article.updateTime,'dd')}">14</em>
+                                                        <span th:text="${#dates.format(article.updateTime,'yyyy-MM')}">2021-09</span>
                                                     </div>
                                                     <div class="text">
-                                                        <h5 class="title">金控担保集团顺利召开全市融资担保工作会</h5>
-                                                        <p class="content">2021年7月16日，金控担保集团组织召开了全市融资担保工作会。 省融担高级经理罗慎、市金融办市场科邓志辉、市金 融控股有限公司副总经理刘文平、各县（区）担保子公司主要负责同志、财务负责 人和</p>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="">
-                                                    <div class="date text-center">
-                                                        <em>14</em>
-                                                        <span>2021-09</span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <h5 class="title">金控担保集团顺利召开全市融资担保工作会</h5>
-                                                        <p class="content">2021年7月16日，金控担保集团组织召开了全市融资担保工作会。 省融担高级经理罗慎、市金融办市场科邓志辉、市金 融控股有限公司副总经理刘文平、各县（区）担保子公司主要负责同志、财务负责 人和</p>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="">
-                                                    <div class="date text-center">
-                                                        <em>14</em>
-                                                        <span>2021-09</span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <h5 class="title">金控担保集团顺利召开全市融资担保工作会</h5>
-                                                        <p class="content">2021年7月16日，金控担保集团组织召开了全市融资担保工作会。 省融担高级经理罗慎、市金融办市场科邓志辉、市金 融控股有限公司副总经理刘文平、各县（区）担保子公司主要负责同志、财务负责 人和</p>
+                                                        <h5 class="title" th:text="${article.title}">金控担保集团顺利召开全市融资担保工作会</h5>
+                                                        <p class="content" th:text="${article.description}">2021年7月16日，金控担保集团组织召开了全市融资担保工作会。 省融担高级经理罗慎、市金融办市场科邓志辉、市金 融控股有限公司副总经理刘文平、各县（区）担保子公司主要负责同志、财务负责 人和</p>
                                                     </div>
                                                 </a>
                                             </li>
@@ -368,39 +338,15 @@
                                     </div>
                                     <div class="tab-pane fade" id="contentOne-3">
                                         <ul>
-                                            <li>
-                                                <a href="#" class="">
+                                            <li th:each="article : ${industryInfo}">
+                                                <a href="#" th:href="@{/Article/articleShow/{id}(id=${article.id})}">
                                                     <div class="date text-center">
-                                                        <em>14</em>
-                                                        <span>2021-09</span>
+                                                        <em th:text="${#dates.format(article.updateTime,'dd')}">14</em>
+                                                        <span th:text="${#dates.format(article.updateTime,'yyyy-MM')}">2021-09</span>
                                                     </div>
                                                     <div class="text">
-                                                        <h5 class="title">金控担保集团顺利召开全市融资担保工作会</h5>
-                                                        <p class="content">2021年7月16日，金控担保集团组织召开了全市融资担保工作会。 省融担高级经理罗慎、市金融办市场科邓志辉、市金 融控股有限公司副总经理刘文平、各县（区）担保子公司主要负责同志、财务负责 人和</p>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="">
-                                                    <div class="date text-center">
-                                                        <em>14</em>
-                                                        <span>2021-09</span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <h5 class="title">金控担保集团顺利召开全市融资担保工作会</h5>
-                                                        <p class="content">2021年7月16日，金控担保集团组织召开了全市融资担保工作会。 省融担高级经理罗慎、市金融办市场科邓志辉、市金 融控股有限公司副总经理刘文平、各县（区）担保子公司主要负责同志、财务负责 人和</p>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="">
-                                                    <div class="date text-center">
-                                                        <em>14</em>
-                                                        <span>2021-09</span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <h5 class="title">金控担保集团顺利召开全市融资担保工作会</h5>
-                                                        <p class="content">2021年7月16日，金控担保集团组织召开了全市融资担保工作会。 省融担高级经理罗慎、市金融办市场科邓志辉、市金 融控股有限公司副总经理刘文平、各县（区）担保子公司主要负责同志、财务负责 人和</p>
+                                                        <h5 class="title" th:text="${article.title}">金控担保集团顺利召开全市融资担保工作会</h5>
+                                                        <p class="content" th:text="${article.description}">2021年7月16日，金控担保集团组织召开了全市融资担保工作会。 省融担高级经理罗慎、市金融办市场科邓志辉、市金 融控股有限公司副总经理刘文平、各县（区）担保子公司主要负责同志、财务负责 人和</p>
                                                     </div>
                                                 </a>
                                             </li>
@@ -411,20 +357,21 @@
                             </div> <!--.tabpanel-->
                         </div>
                         <div class="col-md-4 col-sm-12 accordion">
-                            <h3 class="h3">通知公告</h3>
+                            <h3 class="h3">通知公告
+                                <a href="#" th:href="@{/list/18}" class="pull-right font-middle pt-10">更多 >></a>
+                            </h3>
                             <div class="panel-group" id="accordionSixLeft">
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
                                         <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordionSixLeft" href="#collapseSixLeftone" aria-expanded="false" class="collapsed">
-                                                通知公告1
-                                                <span class="date pull-right">2021-9-16</span>
+                                            <a data-toggle="collapse" data-parent="#accordionSixLeft" href="#collapseSixLeftone" aria-expanded="false" class="collapsed" >
+                                                <span class="title pull-left" th:text="${informInfo.get(0).title}">通知公告1</span>
+                                                <span class="date pull-right" th:text="${#dates.format(informInfo.get(0).updateTime,'yyyy-MM-dd')}">2021-9-16</span>
                                             </a>
-
                                         </h4>
                                     </div>
                                     <div id="collapseSixLeftone" class="panel-collapse collapse" aria-expanded="false" >
-                                        <div class="panel-body">
+                                        <div class="panel-body" th:text="${informInfo.get(0).description}">
                                             规定，抚州市金融控股有限公司依法依规向社会公开遴选聘任法律顾问及诉讼代理律师。公开聘任坚持“公开、公正、择优”的原则，综合考虑专业素养、行业影响、品德口碑等因素择优聘任。
                                         </div>
                                     </div>
@@ -433,13 +380,13 @@
                                     <div class="panel-heading">
                                         <h4 class="panel-title">
                                             <a class="collapsed" data-toggle="collapse" data-parent="#accordionSixLeft" href="#collapseSixLeftTwo" aria-expanded="false">
-                                                通知公告2<span class="date pull-right">2021-9-16</span>
+                                                <span class="title pull-left" th:text="${informInfo.get(1).title}">通知公告2</span>
+                                                <span class="date pull-right" th:text="${#dates.format(informInfo.get(1).updateTime,'yyyy-MM-dd')}">2021-9-16</span>
                                             </a>
                                         </h4>
                                     </div>
                                     <div id="collapseSixLeftTwo" class="panel-collapse collapse" aria-expanded="false">
-                                        <div class="panel-body">
-                                            2021年7月9日（本周五）下午四点在局九楼会议室901召开抚金控2021年度第二次业务合法合规性专题集中培训学习会议。请公司全体员工准时参会，请假需经董事长批准。会议具体详情见《组织培训流程安排》。
+                                        <div class="panel-body" th:text="${informInfo.get(1).description}">
                                         </div>
                                     </div>
                                 </div><!-- /.panel-default -->
@@ -447,13 +394,13 @@
                                     <div class="panel-heading">
                                         <h4 class="panel-title">
                                             <a class="" data-toggle="collapse" data-parent="#accordionSixLeft" href="#collapseSixLeftThree" aria-expanded="true">
-                                                通知公告3<span class="date pull-right">2021-9-16</span>
+                                                <span class="title pull-left" th:text="${informInfo.get(2).title}">通知公告3</span>
+                                                <span class="date pull-right" th:text="${#dates.format(informInfo.get(2).updateTime,'yyyy-MM-dd')}">2021-9-16</span>
                                             </a>
                                         </h4>
                                     </div>
                                     <div id="collapseSixLeftThree" class="panel-collapse collapse in" aria-expanded="true">
-                                        <div class="panel-body">
-                                            2021年7月9日（本周五）下午四点在局九楼会议室901召开抚金控2021年度第二次业务合法合规性专题集中培训学习会议。请公司全体员工准时参
+                                        <div class="panel-body" th:text="${informInfo.get(2).description}">
                                         </div>
                                     </div>
                                 </div><!-- /.panel-default -->
@@ -473,13 +420,13 @@
             <section class="party-column">
                 <div class="section-title">
                     <div class="container">
-                        <img class="img-top" src="../static/images/dangshi.5eb802fb.jpg"  alt="" th:src="@{images/dangshi.5eb802fb.jpg}">
+                        <img class="img-top" src="../static/images/dangshi.5eb802fb.jpg"  alt="" th:src="${showPics.get(7).pic} ? ${showPics.get(7).pic} : ${showPics.get(7).url}">
                     </div>
                 </div>
                 <div class="party-mid container">
                     <div class="row">
                         <div class="col-md-5 img-left">
-                            <img class="img-responsive" src="../static/images/xidada.jpg" alt="" th:src="@{images/xidada.jpg}">
+                            <img class="img-responsive" src="../static/images/xidada.jpg" alt="" th:src=" ${showPics.get(0).pic} ? ${showPics.get(0).pic} : ${showPics.get(0).url}">
                         </div>
                         <div class="col-md-7">
                             <div class="promo-block-wrapper clearfix">
@@ -487,24 +434,23 @@
                                     <i class="fa fa-external-link-square "></i>
                                 </div>
                                 <div class="promo-content">
-                                    <h3>习近平：在庆祝中国共产党成立100周年大会上的讲话</h3>
-
-                                    <p>　7月1日，庆祝中国共产党成立100周年大会在北京天安门广场隆重举行。中共中央总书记、国家主席、中央军委主席习近平发表重要讲话。</p>
+                                    <h3><a href="#" th:href="${relays.get(0).url}" th:text="${relays.get(0).title}" target="_blank">习近平：在庆祝中国共产党成立100周年大会上的讲话</a></h3>
+                                    <p th:text="${relays.get(0).description}">　7月1日，庆祝中国共产党成立100周年大会在北京天安门广场隆重举行。中共中央总书记、国家主席、中央军委主席习近平发表重要讲话。</p>
                                 </div>
                             </div>
                             <!-- /.promo-block-wrapper -->
 
                             <div class="promo-block-wrapper clearfix">
                                 <div class="promo-icon">
-                                    <i class="fa fa-external-link-square "></i>
+                                    <i class="fa fa-external-link-square"></i>
                                 </div>
                                 <div class="promo-content">
-                                    <h3>庆祝中国共产党成立100周年理论研讨会举行 王沪宁出席并讲话</h3>
-
-                                    <p>
+                                    <h3><a href="#" th:href="${relays.get(1).url}" th:text="${relays.get(1).title}" target="_blank">庆祝中国共产党成立100周年理论研讨会举行 王沪宁出席并讲话</a></h3>
+                                    <p th:text="${relays.get(1).description}">
                                         2日上午，中共中央政治局常委、中央书记处书记王沪宁出席研讨会并讲话。
                                         他表示，要认真学习贯彻习近平总书记在庆祝中国共产党成立100周年大会上的重要讲话精神，
-                                        推动把党史学习研究宣传引向深入，更好激发全党全国各族人民为全面建成社会主义现代化强国而奋斗的信心和力量。</p>
+                                        推动把党史学习研究宣传引向深入，更好激发全党全国各族人民为全面建成社会主义现代化强国而奋斗的信心和力量。
+                                    </p>
                                 </div>
                             </div>
                             <!-- /.promo-block-wrapper -->
@@ -514,9 +460,9 @@
                                     <i class="fa fa-external-link-square  "></i>
                                 </div>
                                 <div class="promo-content last-type">
-                                    <h3>中共中央 国务院关于加强基层治理体系和治理能力现代化建设的意见</h3>
+                                    <h3><a href="#" th:href="${relays.get(2).url}" th:text="${relays.get(2).title}" target="_blank">中共中央 国务院关于加强基层治理体系和治理能力现代化建设的意见</a></h3>
 
-                                    <p>　基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理，是实现国家治理体系和治理能力现代化的基础工程。
+                                    <p th:text="${relays.get(2).description}">　基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理，是实现国家治理体系和治理能力现代化的基础工程。
                                         为深入贯彻党的十九大和十九届二中、三中、四中、五中全会精神，夯实国家治理根基，现就加强基层治理体系和治理能力现代化建设提出如下意见。</p>
                                 </div>
                             </div>
@@ -531,8 +477,8 @@
                             <div role="tabpanel">
                                 <!-- Nav tabs -->
                                 <ul id="tabTwo" class="nav nav-tabs nav-justified">
-                                    <li class="active"><a href="#contentTwo-1" data-toggle="tab" aria-expanded="true">党史学习</a></li>
-                                    <li class=""><a href="#contentTwo-2" data-toggle="tab" aria-expanded="false">组织建设</a></li>
+                                    <li class="active"><a href="#contentTwo-1" data-toggle="tab" aria-expanded="true">党建工作</a></li>
+                                    <li class=""><a href="#contentTwo-2" data-toggle="tab" aria-expanded="false">党的法规</a></li>
                                     <li class=""><a href="#contentTwo-3" data-toggle="tab" aria-expanded="false">群团工作</a></li>
                                 </ul>
 
@@ -540,468 +486,223 @@
                                 <div class="tab-content">
                                     <div class="tab-pane fade active in" id="contentTwo-1">
                                         <div class="column-top" >
-                                            <a href="#">
+                                            <a href="#" th:href="@{/Article/articleShow/{id}(id=${partySmallCard.get(0).id})}">
                                                 <div class="image">
-                                                    <img src="../static/images/会议图片1.jpg" alt="" th:src="@{images/会议图片1.jpg}">
+                                                    <img th:if="${partySmallCard.get(0).firstPicture}" src="../static/images/会议图片1.jpg" alt="" th:src="@{${partySmallCard.get(0).firstPicture}}">
+                                                    <div th:unless="${partySmallCard.get(0).firstPicture}" class="date">
+                                                        <strong th:text="${#dates.format(partySmallCard.get(0).updateTime,'dd')}"></strong>
+                                                        <span th:text="${#dates.format(partySmallCard.get(0).updateTime,'yyyy-MM')}"></span>
+                                                    </div>
                                                 </div>
                                                 <div class="text">
-                                                    <h5 class="title">热烈庆祝建党一百周年</h5>
-                                                    <span class="date">2021-9-15</span>
+                                                    <h5 class="title" th:text="${partySmallCard.get(0).title}">热烈庆祝建党一百周年</h5>
+                                                    <span class="date" th:text="${#dates.format(partySmallCard.get(0).updateTime,'yyyy-MM-dd')}">2021-9-15</span>
                                                 </div>
                                             </a>
                                         </div>
                                         <ul class="column-list">
-                                            <li>
+                                            <li th:each="a : ${partySmallCard}">
                                                 <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
+                                                <a href="#" th:href="@{/Article/articleShow/{id}(id=${a.id})}" th:text="${a.title}">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
+                                                <span th:text="${#dates.format(a.updateTime,'yyyy-MM-dd')}">2021-9-16</span>
                                             </li>
                                         </ul>
                                         <div class="more">
-                                            <a href="#">更多<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                            <a href="#" th:href="@{/list/15}">更多<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                     <div class="tab-pane fade" id="contentTwo-2">
                                         <div class="column-top" >
-                                            <a href="#">
+                                            <a href="#" th:href="@{/Article/articleShow/{id}(id=${lawSmallCard.get(0).id})}">
                                                 <div class="image">
-                                                    <img src="../static/images/会议图片1.jpg" alt="" th:src="@{images/会议图片1.jpg}">
+                                                    <img th:if="${lawSmallCard.get(0).firstPicture}" src="../static/images/会议图片1.jpg" alt="" th:src="@{${lawSmallCard.get(0).firstPicture}}">
+                                                    <div th:unless="${lawSmallCard.get(0).firstPicture}" class="date">
+                                                        <strong th:text="${#dates.format(lawSmallCard.get(0).updateTime,'dd')}"></strong>
+                                                        <span th:text="${#dates.format(lawSmallCard.get(0).updateTime,'yyyy-MM')}"></span>
+                                                    </div>
                                                 </div>
                                                 <div class="text">
-                                                    <h5 class="title">热烈庆祝建党一百周年</h5>
-                                                    <span class="date">2021-9-15</span>
+                                                    <h5 class="title" th:text="${lawSmallCard.get(0).title}">热烈庆祝建党一百周年</h5>
+                                                    <span class="date" th:text="${#dates.format(lawSmallCard.get(0).updateTime,'yyyy-MM-dd')}">2021-9-15</span>
                                                 </div>
                                             </a>
                                         </div>
                                         <ul class="column-list">
-                                            <li>
+                                            <li th:each="a : ${lawSmallCard}">
                                                 <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
+                                                <a href="#" th:href="@{/Article/aritcleShow/{id}(id=${a.id})}" th:text="${a.title}">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
+                                                <span th:text="${#dates.format(a.updateTime,'yyyy-MM-dd')}">2021-9-16</span>
                                             </li>
                                         </ul>
                                         <div class="more">
-                                            <a href="#">更多<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                            <a href="#" th:href="@{/list/16}">更多<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                                         </div>
-
 
                                     </div>
                                     <div class="tab-pane fade" id="contentTwo-3">
                                         <div class="column-top" >
-                                            <a href="#">
+                                            <a href="#" th:href="@{/Article/articleShow/{id}(id=${massSmallCard.get(0).id})}">
                                                 <div class="image">
-                                                    <img src="../static/images/会议图片1.jpg" alt="" th:src="@{images/会议图片1.jpg}">
+                                                    <img th:if="${massSmallCard.get(0).firstPicture}" src="../static/images/会议图片1.jpg" alt="" th:src="@{${massSmallCard.get(0).firstPicture}}">
+                                                    <div th:unless="${massSmallCard.get(0).firstPicture}" class="date">
+                                                        <strong th:text="${#dates.format(massSmallCard.get(0).updateTime,'dd')}"></strong>
+                                                        <span th:text="${#dates.format(massSmallCard.get(0).updateTime,'yyyy-MM')}"></span>
+                                                    </div>
                                                 </div>
                                                 <div class="text">
-                                                    <h5 class="title">热烈庆祝建党一百周年</h5>
-                                                    <span class="date">2021-9-15</span>
+                                                    <h5 class="title" th:text="${massSmallCard.get(0).title}">热烈庆祝建党一百周年</h5>
+                                                    <span class="date" th:text="${#dates.format(massSmallCard.get(0).updateTime,'yyyy-MM-dd')}">2021-9-15</span>
                                                 </div>
                                             </a>
                                         </div>
                                         <ul class="column-list">
-                                            <li>
+                                            <li th:each="a : ${massSmallCard}">
                                                 <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
+                                                <a href="#" th:href="@{/Article/aritcleShow/{id}(id=${a.id})}" th:text="${a.title}">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
+                                                <span th:text="${#dates.format(a.updateTime,'yyyy-MM-dd')}">2021-9-16</span>
                                             </li>
                                         </ul>
                                         <div class="more">
-                                            <a href="#">更多<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                            <a href="#" th:href="@{/list/17}">更多<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                                         </div>
 
                                     </div>
                                 </div>
-
                             </div> <!--.tabpanel-->
                         </div>
                         <div class="col-md-4 tabTwo">
-                            <div role="tabpanel">
-                                <!-- Nav tabs -->
-                                <ul id="tabThree" class="nav nav-tabs nav-justified">
-                                    <li class="active"><a href="#contentThree-1" data-toggle="tab" aria-expanded="true">专题专栏</a></li>
-                                    <li class=""><a href="#contentThree-2" data-toggle="tab" aria-expanded="false">工会工作</a></li>
-                                    <li class=""><a href="#contentThree-3" data-toggle="tab" aria-expanded="false">团委工作</a></li>
-                                </ul>
+                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                </ol>
 
-                                <!-- Tab panes -->
-                                <div class="tab-content">
-                                    <div class="tab-pane fade active in" id="contentThree-1">
-                                        <div class="column-top" >
-                                            <a href="#">
-                                                <div class="image">
-                                                    <img src="../static/images/会议图片1.jpg" alt="" th:src="@{images/会议图片1.jpg}">
-                                                </div>
-                                                <div class="text">
-                                                    <h5 class="title">热烈庆祝建党一百周年</h5>
-                                                    <span class="date">2021-9-15</span>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <ul class="column-list">
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                        </ul>
-                                        <div class="more">
-                                            <a href="#">更多<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <img src="../static/images/party1.jpg" th:src="${showPics.get(8).pic} ? ${showPics.get(8).pic} : ${showPics.get(8).url}" alt="...">
+                                        <div class="carousel-caption">
+                                            ...
                                         </div>
                                     </div>
-                                    <div class="tab-pane fade" id="contentThree-2">
-                                        <div class="column-top" >
-                                            <a href="#">
-                                                <div class="image">
-                                                    <img src="../static/images/会议图片1.jpg" alt="" th:src="@{images/会议图片1.jpg}">
-                                                </div>
-                                                <div class="text">
-                                                    <h5 class="title">热烈庆祝建党一百周年</h5>
-                                                    <span class="date">2021-9-15</span>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <ul class="column-list">
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                        </ul>
-                                        <div class="more">
-                                            <a href="#">更多<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                    <div class="item">
+                                        <img src="../static/images/party3.jpg" th:src="${showPics.get(9).pic} ? ${showPics.get(9).pic} : ${showPics.get(9).url}" alt="...">
+                                        <div class="carousel-caption">
+                                            ...
                                         </div>
                                     </div>
-                                    <div class="tab-pane fade" id="contentThree-3">
-                                        <div class="column-top" >
-                                            <a href="#">
-                                                <div class="image">
-                                                    <img src="../static/images/会议图片1.jpg" alt="" th:src="@{images/会议图片1.jpg}">
-                                                </div>
-                                                <div class="text">
-                                                    <h5 class="title">热烈庆祝建党一百周年</h5>
-                                                    <span class="date">2021-9-15</span>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <ul class="column-list">
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                        </ul>
-                                        <div class="more">
-                                            <a href="#">更多<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                    <div class="item">
+                                        <img src="../static/images/party4.jpg" th:src="${showPics.get(10).pic} ? ${showPics.get(10).pic} : ${showPics.get(10).url}" alt="...">
+                                        <div class="carousel-caption">
+                                            ...
                                         </div>
                                     </div>
                                 </div>
 
-                            </div> <!--.tabpanel-->
+                                <!-- Controls -->
+                                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
                         </div>
                         <div class="col-md-4 tabTwo">
                             <div role="tabpanel">
                                 <!-- Nav tabs -->
                                 <ul id="tabFour" class="nav nav-tabs nav-justified">
-                                    <li class="active"><a href="#contentFour-1" data-toggle="tab" aria-expanded="true">信息披露</a></li>
-                                    <li class=""><a href="#contentFour-2" data-toggle="tab" aria-expanded="false">人才招聘</a></li>
-                                    <li class=""><a href="#contentFour-3" data-toggle="tab" aria-expanded="false">电子刊物</a></li>
+                                    <li class="active"><a href="#contentFour-1" data-toggle="tab" aria-expanded="true">公示公告</a></li>
+                                    <li class=""><a href="#contentFour-2" data-toggle="tab" aria-expanded="false">信息披露</a></li>
+                                    <li class=""><a href="#contentFour-3" data-toggle="tab" aria-expanded="false">人才招聘</a></li>
                                 </ul>
 
                                 <!-- Tab panes -->
                                 <div class="tab-content">
                                     <div class="tab-pane fade active in" id="contentFour-1">
                                         <div class="column-top" >
-                                            <a href="#">
+                                            <a href="#" th:href="@{/Article/articleShow/{id}(id=${postSmallCard.get(0).id})}">
                                                 <div class="image">
-                                                    <img src="../static/images/会议图片1.jpg" alt="" th:src="@{images/会议图片1.jpg}">
+                                                    <img th:if="${postSmallCard.get(0).firstPicture}" src="../static/images/会议图片1.jpg" alt="" th:src="@{${postSmallCard.get(0).firstPicture}}">
+                                                    <div th:unless="${postSmallCard.get(0).firstPicture}" class="date">
+                                                        <strong th:text="${#dates.format(postSmallCard.get(0).updateTime,'dd')}"></strong>
+                                                        <span th:text="${#dates.format(postSmallCard.get(0).updateTime,'yyyy-MM')}"></span>
+                                                    </div>
                                                 </div>
                                                 <div class="text">
-                                                    <h5 class="title">热烈庆祝建党一百周年</h5>
-                                                    <span class="date">2021-9-15</span>
+                                                    <h5 class="title" th:text="${postSmallCard.get(0).title}">热烈庆祝建党一百周年</h5>
+                                                    <span class="date" th:text="${#dates.format(postSmallCard.get(0).updateTime,'yyyy-MM-dd')}">2021-9-15</span>
                                                 </div>
                                             </a>
                                         </div>
                                         <ul class="column-list">
-                                            <li>
+                                            <li th:each="a : ${postSmallCard}">
                                                 <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
+                                                <a href="#" th:href="@{/Article/aritcleShow/{id}(id=${a.id})}" th:text="${a.title}">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
+                                                <span th:text="${#dates.format(a.updateTime,'yyyy-MM-dd')}">2021-9-16</span>
                                             </li>
                                         </ul>
                                         <div class="more">
-                                            <a href="#">更多<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                            <a href="#" th:href="@{/list/18}">更多<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                                         </div>
 
                                     </div>
                                     <div class="tab-pane fade" id="contentFour-2">
                                         <div class="column-top" >
-                                            <a href="#">
+                                            <a href="#" th:href="@{/Article/articleShow/{id}(id=${publicSmallCard.get(0).id})}">
                                                 <div class="image">
-                                                    <img src="../static/images/会议图片1.jpg" alt="" th:src="@{images/会议图片1.jpg}">
+                                                    <img th:if="${publicSmallCard.get(0).firstPicture}" src="../static/images/会议图片1.jpg" alt="" th:src="@{${publicSmallCard.get(0).firstPicture}}">
+                                                    <div th:unless="${publicSmallCard.get(0).firstPicture}" class="date">
+                                                        <strong th:text="${#dates.format(publicSmallCard.get(0).updateTime,'dd')}"></strong>
+                                                        <span th:text="${#dates.format(publicSmallCard.get(0).updateTime,'yyyy-MM')}"></span>
+                                                    </div>
                                                 </div>
                                                 <div class="text">
-                                                    <h5 class="title">热烈庆祝建党一百周年</h5>
-                                                    <span class="date">2021-9-15</span>
+                                                    <h5 class="title" th:text="${publicSmallCard.get(0).title}">热烈庆祝建党一百周年</h5>
+                                                    <span class="date" th:text="${#dates.format(publicSmallCard.get(0).updateTime,'yyyy-MM-dd')}">2021-9-15</span>
                                                 </div>
                                             </a>
                                         </div>
                                         <ul class="column-list">
-                                            <li>
+                                            <li th:each="a : ${publicSmallCard}">
                                                 <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
+                                                <a href="#" th:href="@{/Article/aritcleShow/{id}(id=${a.id})}" th:text="${a.title}">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
+                                                <span th:text="${#dates.format(a.updateTime,'yyyy-MM-dd')}">2021-9-16</span>
                                             </li>
                                         </ul>
                                         <div class="more">
-                                            <a href="#">更多<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                            <a href="#" th:href="@{/list/19}">更多<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                     <div class="tab-pane fade" id="contentFour-3">
                                         <div class="column-top" >
-                                            <a href="#">
+                                            <a href="#" th:href="@{/Article/articleShow/{id}(id=${RecruitmentSmallCard.get(0).id})}">
                                                 <div class="image">
-                                                    <img src="../static/images/会议图片1.jpg" alt="" th:src="@{images/会议图片1.jpg}">
+                                                    <img th:if="${RecruitmentSmallCard.get(0).firstPicture}" src="../static/images/会议图片1.jpg" alt="" th:src="@{${RecruitmentSmallCard.get(0).firstPicture}}">
+                                                    <div th:unless="${RecruitmentSmallCard.get(0).firstPicture}" class="date">
+                                                        <strong th:text="${#dates.format(RecruitmentSmallCard.get(0).updateTime,'dd')}"></strong>
+                                                        <span th:text="${#dates.format(RecruitmentSmallCard.get(0).updateTime,'yyyy-MM')}"></span>
+                                                    </div>
                                                 </div>
                                                 <div class="text">
-                                                    <h5 class="title">热烈庆祝建党一百周年</h5>
-                                                    <span class="date">2021-9-15</span>
+                                                    <h5 class="title" th:text="${RecruitmentSmallCard.get(0).title}">热烈庆祝建党一百周年</h5>
+                                                    <span class="date" th:text="${#dates.format(RecruitmentSmallCard.get(0).updateTime,'yyyy-MM-dd')}">2021-9-15</span>
                                                 </div>
                                             </a>
                                         </div>
                                         <ul class="column-list">
-                                            <li>
+                                            <li th:each="a : ${RecruitmentSmallCard}">
                                                 <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                <a href="#">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
-                                                <span>2021-9-16</span>
+                                                <a href="#" th:href="@{/Article/aritcleShow/{id}(id=${a.id})}" th:text="${a.title}">基层治理是国家治理的基石，统筹推进乡镇（街道）和城乡社区治理</a>
+                                                <span th:text="${#dates.format(a.updateTime,'yyyy-MM-dd')}">2021-9-16</span>
                                             </li>
                                         </ul>
                                         <div class="more">
-                                            <a href="#">更多<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                            <a href="#" th:href="@{/list/21}">更多<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -1025,16 +726,19 @@
 
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 col-lg-6">
+                        <div class="col-md-6">
                             <div class="thumbnail clearfix">
-                                <a href="#" th:href="@{/list/9}"><img class="img-responsive" src="../static/images/img-offer-1.jpg" alt="Image" th:src="@{images/img-offer-1.jpg}"></a>
-
+                                <a href="#" th:href="@{/list/14}">
+                                    <img  src="../static/images/img-offer-3.jpg" alt="Image" th:src="@{images/img-offer-3.jpg}" class="img-responsive">
+                                </a>
                                 <div class="caption">
-                                    <h3><a href="#" th:href="@{/list/9}">基金管理</a></h3>
+                                    <h3><a href="#" th:href="@{/list/14}">供应链服务</a></h3>
 
-                                    <p>基金，英文是fund，广义是指为了某种目的而设立的具有一定数量的资金。
-                                        主要包括信托投资基金、公积金、保险基金、退休基金，各种基金会的基金。
-                                        我们提到的基金主要是指证券投资基金。</p>
+                                    <p>
+                                        公司主要经营业务是企业供应链管理和供应链外包服务；企业管理咨询；仓储设施经营管理等。
+
+                                        公司供应链主要围绕核心企业，以原材料出发，为企业提供上下游之间的代理采购服务。公司的经营理念是从消费者的角度，通过企业间的协作，谋求供应链整体最佳化。
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -1045,36 +749,41 @@
                                 <div class="caption">
                                     <h3><a href="#" th:href="@{/list/10}">融资担保</a></h3>
 
-                                    <p>融资担保是担保业务中最主要的品种之一，是随着商业信用、金融信用的发展需要和担保对象的融资需求而产生的一种信用中介行为。
-                                        信用担保机构通过介入包括银行在内的金融机构、企业或个人这些资金出借方与主要为企业和个人的资金需求方之间，
-                                        作为第三方保证人为债务方向债权方提供信用担保——担保债务方履行合同或其他类资金约定的责任和义务。
-                                        在其业务性质上，融资担保具有金融性和中介性双重属性，属于一种特殊的金融中介服务。</p>
+                                    <p>
+                                        公司主营融资担保业务、非融资担保业务、再担保业务等，主要服务辖内中小企业融资担保需求及非融业务需求，多渠道、多层次缓解中小企业融资难、融资贵的问题，并承担全市融资担保体系的建设重任。
+
+                                        2021年担保公司将充分发挥政府性融资平台的增信、降费、分险功能，以帮助企业解决担保难、贷款难、融资难等问题为宗旨，贯彻落实中央对中小企业减费税降的政策，并不断创新金融服务方式，助力中小微企业健康发展。计划融资担保业务规模达到70亿元。
+
+                                        融资担保集团公司作为抚州市实力较强、规模较大的政府性融资担保机构，成功进入江西省政府性融资担保机构第一批名单中，并于2019年成功对接国家融资担保基金，建立了市县一体的融资担保体系。</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- row -->
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-lg-6">
                             <div class="thumbnail clearfix">
-                                <a href="#" th:href="@{/list/14}"><img class="img-responsive" src="../static/images/img-offer-3.jpg" alt="Image" th:src="@{images/img-offer-3.jpg}"></a>
+                                <a href="#" th:href="@{/list/9}"><img class="img-responsive" src="../static/images/img-offer-1.jpg" alt="Image" th:src="@{images/img-offer-1.jpg}"></a>
 
                                 <div class="caption">
-                                    <h3><a href="#" th:href="@{/list/14}">供应链服务</a></h3>
+                                    <h3><a href="#" th:href="@{/list/9}">基金管理</a></h3>
 
-                                    <p>供应链（Supply chain）是指生产及流通过程中，涉及将产品或服务提供给最终用户活动的上游与下游企业所形成的网链结构。</p>
+                                    <p>
+                                        公司主要经营项目为受托管理股权投资企业，从事投资管理及相关咨询服务。
+
+                                        主要业务是发起并管理由其设立的政府引导的册灰姑娘是发展基金、公私合作的PPP项目专项基金、PE、VC型股权投资基金、产业发展基金、并购基金和证券类投资基金等，以及相关投资咨询服务。
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="thumbnail clearfix">
-                                <a href="#" th:href="@{/list/12}"><img class="img-responsive" src="../static/images/img-offer-4.jpg" alt="Image" th:src="@{images/img-offer-4.jpg}"></a>
+                                <a href="#" th:href="@{/list/23}"><img class="img-responsive" src="../static/images/img-offer-4.jpg" alt="Image" th:src="@{images/img-offer-4.jpg}"></a>
 
                                 <div class="caption">
-                                    <h3><a href="#" th:href="@{/list/12}">资产管理</a></h3>
+                                    <h3><a href="#" th:href="@{/list/23}">其他</a></h3>
 
-                                    <p>投资，指国家或企业以及个人，为了特定目的，与对方签订协议，促进社会发展，实现互惠互利，输送资金的过程。
-                                        又是特定经济主体为了在未来可预见的时期内获得收益或是资金增值，在一定时期内向一定领域投放足够数额的资金或实物的货币等价物的经济行为。</p>
+                                    <p></p>
                                 </div>
                             </div>
                         </div>

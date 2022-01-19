@@ -1,19 +1,12 @@
 package com.fzjk.guanwang.controller.admin;
 
 
-import com.fzjk.guanwang.pojo.Admin;
 import com.fzjk.guanwang.pojo.Article;
 import com.fzjk.guanwang.service.ArticleService;
 import com.fzjk.guanwang.service.SubTypeService;
 import com.fzjk.guanwang.service.TypeService;
-import com.fzjk.guanwang.vo.ArticleQuery;
-import javafx.application.Application;
-import org.apache.tomcat.util.http.fileupload.FileItemFactory;
-import org.apache.tomcat.util.http.fileupload.disk.DiskFileItemFactory;
-import org.apache.tomcat.util.http.fileupload.servlet.ServletFileUpload;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.system.ApplicationHome;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
@@ -23,12 +16,12 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import javax.servlet.http.HttpSession;
+
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.UUID;
+
 
 @Controller
 @RequestMapping("/admin")
@@ -59,13 +52,12 @@ public class ArticleController {
     /**
      * 文章列表页面
      * @param pageable
-     * @param article
      * @param model
      * @return
      */
     @GetMapping("/articles/{subTypeId}")
     public String ArticlePage(@PageableDefault(size = 5, sort = {"updateTime"}, direction = Sort.Direction.DESC)Pageable pageable,
-                              ArticleQuery  article, @PathVariable Long subTypeId, Model model){
+                              @PathVariable Long subTypeId, Model model){
         model.addAttribute("subTypeId",subTypeId);
         model.addAttribute("page",articleService.listArticlesBySubTypeId(pageable,subTypeId));
         return LIST;
@@ -77,7 +69,7 @@ public class ArticleController {
      * @return
      */
     public String uploadImg(MultipartFile file){
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmm");//设置日期格式
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmm"); //设置日期格式
         String date = sdf.format(new Date());//得到一个类似于202112161723的string
         //换一个名字
         String name = date + "-" + file.getOriginalFilename();
@@ -117,7 +109,6 @@ public class ArticleController {
         article.setSubType(subTypeService.findById(article.getSubType().getId()));
         Article a;
         if (article.getId() == null) {
-
             a =  articleService.save(article); //id为空，执行新建操作
             attributes.addFlashAttribute("subTypeId", article.getSubType().getId());
         } else {

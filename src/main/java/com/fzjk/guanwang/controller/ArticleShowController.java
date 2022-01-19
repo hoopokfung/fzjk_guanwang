@@ -21,21 +21,40 @@ public class ArticleShowController {
 
     @GetMapping("/articleShow/{id}")
     public String articlePassage(@PathVariable Long id, Model model){
+        String targetPage = null;
         articleService.updateViews(id);
         Article a = articleService.findById(id);
+        String typeName =  a.getType().getName();
         model.addAttribute("Article",a);
         model.addAttribute("pre",articleService.getPreArticle(id,a.getSubType().getId()));
         model.addAttribute("next",articleService.getNextArticle(id,a.getSubType().getId()));
-        return "/list/news_passage";
+        switch (typeName){
+            case "新闻中心":
+                targetPage = "/list/news_passage";
+                break;
+            case "党的建设":
+                targetPage = "/list/party_passage";
+                break;
+            case "通知公告":
+                targetPage = "/list/inform_passage";
+                break;
+        }
+        return targetPage;
     }
 
-    @GetMapping("/{title}")
-    public String articlePassage(@PathVariable String title, Model model){
+
+    /**
+     * 人物详情页展示
+     * @param title
+     * @param model
+     * @return
+     */
+    @GetMapping("/figureShow/{title}")
+    public String figureShow(@PathVariable String title, Model model){
         Article a = articleService.findByTitle(title);
         model.addAttribute("Article",a);
-        return "/list/news_passage";
+        return "/list/figure";
     }
-
 
 
 }

@@ -9,8 +9,11 @@ spring:
     encoding: UTF-8
   servlet:
     multipart:
-      max-file-size: 10MB
+      max-file-size: 30MB
       location: F://upload/imgs/
-      max-request-size: 10MB
+      max-request-size: 30MB
 
-
+server:
+  tomcat:
+    max-http-form-post-size: 30MB
+    max-swallow-size: 30MB

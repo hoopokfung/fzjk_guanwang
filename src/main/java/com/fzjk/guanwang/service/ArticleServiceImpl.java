@@ -22,11 +22,15 @@ public class ArticleServiceImpl implements ArticleService {
     @Autowired
     private ArticleRepository articleRepository;
 
-    public List<Article> findTop(Long subTypeId){
-        List<Article> articles =  articleRepository.findTop(subTypeId);
+    public List<Article> findTop(Long subTypeId,int n){
+        List<Article> articles =  articleRepository.findTop(subTypeId,n);
         return articles;
     }
 
+    public List<Article> findTopByTypeId(Long typeId){
+        List<Article> articles =  articleRepository.findTopByTypeId(typeId);
+        return articles;
+    }
 
     @Transactional
     @Override
@@ -93,7 +97,7 @@ public class ArticleServiceImpl implements ArticleService {
         if (a == null){
             throw new NotFoundException("不存在该篇文章");
         }
-        //将article的值给a，MyBeanUtils工具类过滤掉属性值为空的属性，这样当属性值为空则保留原有值，执行更新操作
+        //MyBeanUtils工具类过滤掉属性值为空的属性，这样当属性值为空则保留原有值，执行更新操作
         BeanUtils.copyProperties(article,a, MyBeanUtils.getNullPropertyNames(article));// 将article里面的值赋值给a
         return articleRepository.save(a);
     }

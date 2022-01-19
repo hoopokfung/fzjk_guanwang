@@ -21,8 +21,13 @@ public interface ArticleRepository extends JpaRepository<Article, Long> {
     * 不加入nativeQuery注解时是JPQL，JPQL不支持limit函数。
     * */
     @Transactional
-    @Query(nativeQuery = true,value = "select * from t_article  where sub_type_id = ? order by update_time limit 3")
-    List<Article> findTop(Long subTypeId);
+    @Query(nativeQuery = true,value = "select * from t_article  where sub_type_id = ? order by update_time desc limit ?")
+    List<Article> findTop(Long subTypeId,int n);
+
+
+    @Transactional
+    @Query(nativeQuery = true,value = "select * from t_article  where type_id = ? order by update_time desc limit 3")
+    List<Article> findTopByTypeId(Long typeId);
 
     // select * from t_article where title like '%内容%'
     @Query("select a from Article a where a.title like ?1 or a.description like ?1")

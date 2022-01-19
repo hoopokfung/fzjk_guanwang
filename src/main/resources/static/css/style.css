@@ -441,6 +441,25 @@ hr.invis3 {
     background-color: #fff;
 }
 
+
+
+
+/********************************************
+    fa style
+********************************************/
+
+
+.fa-angle-right:before {
+    content: "\f105";
+    position: relative;
+    top: 2px;
+}
+
+
+
+
+
+
 /********************************************
     header navigate
 ********************************************/
@@ -860,10 +879,13 @@ hr.invis3 {
 /********************************************
     accordion
  ********************************************/
-
-.accordion-section {
-    background: #f9f9f9;
+.accordion h3 a{
+    text-decoration: none;
 }
+.accordion h3 a:hover{
+    color: #0076ab;
+}
+
 
 .accordion .panel-group .panel + .panel {
     margin-top: 0;
@@ -892,16 +914,39 @@ hr.invis3 {
 .accordion .panel .panel-heading a {
     display: block;
     padding: 12px 30px;
+    height: 40px;
     background: #fff;
     color: #0076ab;
     text-decoration: none;
+}
+
+.accordion .panel .panel-heading a.collapsed .title{
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .accordion .panel .panel-heading a.collapsed {
     color: #969595;
     background-color: #fff;
     padding: 12px 30px;
+    height: 40px;
 }
+
+
+.accordion .panel .panel-heading a >.title{
+    display: block;
+    background: #fff;
+    color: #0076ab;
+    width: 70%;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
 
 .accordion .panel-default > .panel-heading {
     border-radius: 0;
@@ -910,10 +955,11 @@ hr.invis3 {
 
 .accordion .panel-group .panel-heading + .panel-collapse > .panel-body {
     border-top: 0;
-    height: 240px;
+    height: 245px;
     padding: 10px 30px 30px 30px;
     background: #fff;
     color: #969595;
+    width: 360px;
 }
 
 
@@ -921,9 +967,12 @@ hr.invis3 {
 /********************************************
 news-box start
  ********************************************/
-.news-box {
+.news-box h3 a{
+    text-decoration: none;
 }
-
+.news-box h3 a:hover{
+    color: #0076ab;
+}
 .news-box .nav-tabs {
     border: 1px solid #dedddd;
     border-bottom: none;
@@ -1143,7 +1192,12 @@ news-box start
 .tabTwo .tab-pane p:last-of-type {
     margin-bottom: 0;
 }
+
 /**********卡片样式*************/
+.smallCard .tab-pane{
+    height: 100%;
+}
+
 .smallCard .tab-pane .column-top{
     margin-top: 15px;
     margin-left: 5px;
@@ -1165,8 +1219,32 @@ news-box start
     width: 100px;
     margin: 0;
 }
+.smallCard .tab-pane .column-top .image .date{
+    width: 100px;
+    font-family: NoveDemiBold;
+}
+
+.smallCard .tab-pane .column-top .image strong{
+    display: block;
+    line-height: 40px;
+    background-color: #e1e1e1;
+    text-align: center;
+    color: #5a5a5a;
+    font-size: 26px;
+}
+.smallCard .tab-pane .column-top .image span{
+    display: block;
+    text-align: center;
+    background-color: #ececec;
+    color: #9e9e9e;
+    line-height: 20px;
+    font-size: 16px;
+}
+
 .smallCard .tab-pane .column-top .text{
     height: 60px;
+    left: -10px;
+    position: relative;
 }
 .smallCard .tab-pane .column-top .text .title{
     height: 40px;
@@ -1201,7 +1279,7 @@ news-box start
 .smallCard .tab-pane .column-list  li a{
     float: left;
     color: #3c3c3c;
-    max-width: 76%;
+    max-width: 72%;
     white-space: nowrap;/*与normal值一致，不同的是会强制所有文本在同一行内显示。*/
     text-overflow: ellipsis;/*超出文本设置为...*/
     overflow: hidden;
@@ -1214,11 +1292,15 @@ news-box start
     float: right;
     color: #8c8c8c;
 }
+
+
 .smallCard .tab-pane .more{
     display:block;
     width: 100%;
-    padding-right: 15px;
+    padding-right: 40px;
     height: 24px;
+    position: absolute;
+    bottom: 0;
 }
 .smallCard .tab-pane .more a{
     color: #8c8c8c;
@@ -1249,6 +1331,7 @@ news-box start
 
 .party-column .img-top {
     width: 100%;
+    height: 190px;
 }
 
 .party-column .img-left {
@@ -1256,12 +1339,17 @@ news-box start
 }
 .party-column .img-left img{
     max-width: 100%;
+    height: 360px;
+}
+
+.party-column .party-mid .promo-block-wrapper{
+    height: 129px;
 }
 
 .party-column .promo-icon {
     float: left;
     margin-right: 25px;
-    margin-top: 15px;
+    margin-top: 23px;
     font-size: 30px;
     color: #0076ab;
 }
@@ -1270,7 +1358,6 @@ news-box start
     color: #333333;
     overflow: hidden;
     border-bottom: 1px solid rgba(157, 209, 246, 0.4);
-    padding-bottom: 10px;
 }
 
 .party-column .promo-content.last-type {
@@ -1286,8 +1373,19 @@ news-box start
     color: #333333;
 }
 
+.party-column .promo-content p{
+    height: 68px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
-
+.party-column .smallCard .carousel-inner{
+    height: 352px;
+}
+.party-column .smallCard .carousel-inner > .item > img,
+.party-column .smallCard .carousel-inner > .item > a > img{
+    height: 352px;
+}
 
 /********************************************
      Section Title Style
@@ -1350,7 +1448,27 @@ news-box start
 .business .thumbnail a img{
     margin:0;
     float: left;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
 }
+
+.business .thumbnail a:hover img{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
 .business .thumbnail .caption {
     padding: 20px;
     color: #969595;
@@ -1970,6 +2088,16 @@ news-box start
 .about .mid dd em {
     color: #0076ab;
 }
+
+
+/*    企业文化*/
+.nyMain .culture .fl{
+    width: 50%;
+}
+.nyMain .culture .fr{
+    width: 50%;
+}
+
 /********************************************
     Footer
 ********************************************/
@@ -2134,9 +2262,15 @@ news-box start
     box-sizing: border-box;
     padding: 15px;
     border: 1px solid #e0dfdf;
+    overflow: hidden;
     /*-moz-box-shadow: 2.5px 5px 5px 0 #e6e6e6;*/
     /*-webkit-box-shadow: 2.5px 5px 5px 0 #e6e6e6;*/
     /*box-shadow: 2.5px 5px 5px 0 #e6e6e6;*/
+}
+.party-list ul li a p{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .party-list ul li a .date {
@@ -2831,13 +2965,45 @@ testimonialSlider
     .news-box .tab-content ul li {
         display: inline-flex;
         width: 100%;
+        box-sizing: border-box;
     }
     .news-box .tab-content .date {
-        width: 6%;
+        width: 68px;
+        margin-left: 10px;
+    }
+
+    .news-box .tab-content .date em{
+        font-size: 40px;
+        width: 68px;
+    }
+    .news-box .tab-content .date span{
+        font-size: 16px;
+        width: 68px;
     }
     .news-box .tab-content .text{
-        width: 34%;
+        width: 82%;
+
     }
+    .news-box .tab-content .text .content {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .accordion .panel .panel-heading a.collapsed .title {
+        width: 60%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .accordion .panel .panel-heading a >.title{
+        width: 60%;
+    }
+
+    .accordion .panel-group .panel-heading + .panel-collapse > .panel-body{
+        width: 100%;
+    }
+
 
     /*首页业务板块*/
     .business .thumbnail a > img,
@@ -2934,7 +3100,6 @@ testimonialSlider
 
     .party-list ul li{
         width: 50%;
-        height: auto;
     }
     /*非首页页脚*/
 
@@ -2943,7 +3108,13 @@ testimonialSlider
         padding-left: 10px;
     }
 
-
+    /*    企业文化*/
+    .nyMain .row .culture .fl{
+        width: 50%;
+    }
+    .nyMain .row .culture .fr{
+        width: 50%;
+    }
 
 }
 
@@ -2998,15 +3169,29 @@ testimonialSlider
         width: 100%;
     }
     .news-box .tab-content .date {
-        width: 6%;
+        width: 68px;
+    }
+
+    .news-box .tab-content .date em{
+        font-size: 40px;
+        width: 68px;
+    }
+    .news-box .tab-content .date span{
+        font-size: 16px;
+        width: 68px;
     }
     .news-box .tab-content .text{
-        width: 41%;
+        width: 82%;
+
     }
     .news-box .tab-content .text .content {
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
+    }
+
+    .accordion .panel-group .panel-heading + .panel-collapse > .panel-body{
+        width: 100%;
     }
     /*首页党建板块*/
 
@@ -3035,7 +3220,10 @@ testimonialSlider
     .smallCard .tab-pane .column-list li {
         width: 100%;
     }
-
+    .party-column .smallCard .carousel-inner > .item > img,
+    .party-column .smallCard .carousel-inner > .item > a > img{
+        width: 100%;
+    }
 
     /*首页业务板块*/
     .business .thumbnail a > img,
@@ -3134,7 +3322,6 @@ testimonialSlider
     }
     .party-list ul li{
         width: 50%;
-        height: auto;
     }
 
     /*非首页页脚*/
@@ -3144,6 +3331,14 @@ testimonialSlider
     .footer .copyright-section ul{
         margin: 20px 0;
         line-height: normal;
+    }
+
+    /*    企业文化*/
+    .nyMain .culture .fl{
+        width: 100%;
+    }
+    .nyMain .culture .fr{
+        width: 100%;
     }
 }
 
@@ -3237,6 +3432,7 @@ testimonialSlider
         margin-top: 30px;
     }
 
+
     .news-box .tab-content ul li {
         display: inline-flex;
         width: 100%;
@@ -3244,11 +3440,24 @@ testimonialSlider
         text-overflow: ellipsis;
     }
     .news-box .tab-content .date {
-        width: 6%;
+        width: 68px;
+    }
+
+    .news-box .tab-content .date em{
+        font-size: 40px;
+        width: 68px;
+    }
+    .news-box .tab-content .date span{
+        font-size: 16px;
+        width: 68px;
     }
     .news-box .tab-content .text{
-        width: 44%;
+        width: 82%;
 
+    }
+
+    .accordion .panel-group .panel-heading + .panel-collapse > .panel-body{
+        width: 100%;
     }
     /*首页党建板块图片*/
     .section-title .img-top{
@@ -3375,6 +3584,10 @@ testimonialSlider
         height: 200px;
     }
 
+    .view-passage .content p>img{
+        width: 100%;
+    }
+
     /*非首页党建页面样式*/
 
     #testimonialSlider{
@@ -3397,7 +3610,6 @@ testimonialSlider
     }
     .party-list ul li{
         width: 100%;
-        height: auto;
     }
     /*非首页页脚*/
     .footer .footer-block {
@@ -3411,6 +3623,14 @@ testimonialSlider
     }
     .footer .footer-nav{
         display: none;
+    }
+
+/*    企业文化*/
+    .nyMain .culture .fl{
+        width: 100%;
+    }
+    .nyMain .culture .fr{
+        width: 100%;
     }
 }
 

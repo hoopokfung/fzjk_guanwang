@@ -6,7 +6,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../static/images/logo2.png" type="image/png">
+    <link rel="icon" href="../../static/images/logo2.png" type="image/png" th:href="@{/images/logo2.png}">
     <title>领导要闻</title>
         <link href="../../static/lib/bootstrap-3.4.1/css/bootstrap.css" rel="stylesheet" th:href="@{/lib/bootstrap-3.4.1/css/bootstrap.css}">
         <link href="../../static/css/animate.min.css" rel="stylesheet" th:href="@{/css/animate.min.css}">
@@ -239,116 +239,44 @@
         <div class="nyMain w1200">
 
             <div class="nyTit">
-                <h3>集团动态</h3>
+                <h3>领导要闻</h3>
                 <!--                <i></i>-->
             </div>
 
             <section class="news section">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-6 col-md-4 news-card">
+                        <div th:each="article : ${page.content}" class="col-xs-12 col-sm-6 col-md-4 news-card">
                             <div class="border">
-                                <a href="#"><img src="../../static/images/会议图片1.jpg" th:src="@{/images/会议图片1.jpg}" class="img-responsive" alt="Image"></a>
+                                <a href="#" th:href="@{/Article/articleShow/{id}(id=${article.id})}"><img src="../../static/images/会议图片1.jpg" th:src="@{${article.firstPicture}}" class="img-responsive" alt="Image"></a>
                                 <div class="caption">
                                     <div class="news-title ">
-                                        <h4><a href="news_passage.html" title="">金控担保集团顺利召开全市融资担保工作会</a></h4>
+                                        <h4><a href="news_passage.html" th:href="@{/Article/articleShow/{id}(id=${article.id})}" th:text="${article.title}">金控担保集团顺利召开全市融资担保工作会</a></h4>
                                     </div>
                                     <div class="card-log">
-                                        <p class="p-left"><a href="news_passage.html">了解详情+</a></p>
-                                        <P class="p-right">2021-07-23</P>
+                                        <p class="p-left"><a href="news_passage.html" th:href="@{/Article/articleShow/{id}(id=${article.id})}">了解详情+</a></p>
+                                        <P class="p-right" th:text="${#dates.format(article.updateTime,'yyyy-MM-dd')}">2021-07-23</P>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 news-card">
-                            <div class="border">
-                                <a href="#"><img src="../../static/images/会议图片1.jpg" th:src="@{/images/会议图片1.jpg}" class="img-responsive" alt="Image"></a>
-                                <div class="caption">
-                                    <div class="news-title ">
-                                        <h4><a href="news_passage.html" title="">金控担保集团顺利召开全市融资担保工作会</a></h4>
-                                    </div>
-                                    <div class="card-log">
-                                        <p class="p-left"><a href="news_passage.html">了解详情+</a></p>
-                                        <P class="p-right">2021-07-23</P>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 news-card">
-                            <div class="border">
-                                <a href="#"><img src="../../static/images/会议图片1.jpg" th:src="@{/images/会议图片1.jpg}" class="img-responsive" alt="Image"></a>
-                                <div class="caption">
-                                    <div class="news-title ">
-                                        <h4><a href="news_passage.html" title="">金控担保集团顺利召开全市融资担保工作会</a></h4>
-                                    </div>
-                                    <div class="card-log">
-                                        <p class="p-left"><a href="news_passage.html">了解详情+</a></p>
-                                        <P class="p-right">2021-07-23</P>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <hr class="invis">
-                        <div class="col-xs-12 col-sm-6 col-md-4 news-card">
-                            <div class="border">
-                                <a href="#"><img src="../../static/images/会议图片1.jpg" th:src="@{/images/会议图片1.jpg}" class="img-responsive" alt="Image"></a>
-                                <div class="caption">
-                                    <div class="news-title ">
-                                        <h4><a href="news_passage.html" title="">金控担保集团顺利召开全市融资担保工作会</a></h4>
-                                    </div>
-                                    <div class="card-log">
-                                        <p class="p-left"><a href="news_passage.html">了解详情+</a></p>
-                                        <P class="p-right">2021-07-23</P>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 news-card">
-                            <div class="border">
-                                <a href="#"><img src="../../static/images/会议图片1.jpg" th:src="@{/images/会议图片1.jpg}" class="img-responsive" alt="Image"></a>
-                                <div class="caption">
-                                    <div class="news-title ">
-                                        <h4><a href="news_passage.html" title="">金控担保集团顺利召开全市融资担保工作会</a></h4>
-                                    </div>
-                                    <div class="card-log">
-                                        <p class="p-left"><a href="news_passage.html">了解详情+</a></p>
-                                        <P class="p-right">2021-07-23</P>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 news-card">
-                            <div class="border">
-                                <a href="#"><img src="../../static/images/会议图片1.jpg" th:src="@{/images/会议图片1.jpg}" class="img-responsive" alt="Image"></a>
-                                <div class="caption">
-                                    <div class="news-title ">
-                                        <h4><a href="news_passage.html" title="">金控担保集团顺利召开全市融资担保工作会</a></h4>
-                                    </div>
-                                    <div class="card-log">
-                                        <p class="p-left"><a href="news_passage.html">了解详情+</a></p>
-                                        <P class="p-right">2021-07-23</P>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <hr class="invis">
                     <div class="row">
                         <div class="col-md-12 page-box">
                             <nav class="page" aria-label="Page navigation">
                                 <ul class="pagination justify-content-start ">
                                     <li class="page-item">
-                                        <a class="page-link" href="#" aria-label="Previous">
+                                        <a class="page-link" href="#" th:href="@{/list/6(page=${page.number}-1)}" aria-label="Previous">
                                             <span aria-hidden="true">上一页</span>
                                         </a>
                                     </li>
-                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                    <li class="page-item"><a class="page-link" href="#" th:href="@{/list/6(page=0)}">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#" th:href="@{/list/6(page=1)}">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#" th:href="@{/list/6(page=2)}">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#" th:href="@{/list/6(page=3)}">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#" th:href="@{/list/6(page=4)}">5</a></li>
                                     <li class="page-item">
-                                        <a class="page-link" href="#" aria-label="Next">
+                                        <a class="page-link" href="#" th:href="@{/list/6(page=${page.number}+1)}" aria-label="Next">
                                             <span aria-hidden="true">下一页</span>
                                         </a>
                                     </li>

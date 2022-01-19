@@ -6,7 +6,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../static/images/logo2.png" type="image/png">
+    <link rel="icon" href="../../static/images/logo2.png" type="image/png" th:href="@{/images/logo2.png}">
     <title>新闻中心</title>
     <link href="../../static/lib/bootstrap-3.4.1/css/bootstrap.css" rel="stylesheet" th:href="@{/lib/bootstrap-3.4.1/css/bootstrap.css}">
     <link href="../../static/css/animate.min.css" rel="stylesheet" th:href="@{/css/animate.min.css}">
@@ -238,7 +238,7 @@
         <!-- 主要内容 -->
         <div class="nyMain w1200">
             <div class="nyTit">
-                <h3>集团动态</h3>
+                <h3>行业动态</h3>
                 <!--                <i></i>-->
             </div>
 
@@ -246,178 +246,27 @@
                 <div class="container">
                     <div class="row">
                         <div class="news-list clearfix">
-                            <div class="news-banner row">
-                                <div class="news-pic col-xs-3 col-sm-3 col-md-3">
-                                    <div class="post-media">
-                                        <a href="news_passage.html" title="">
-                                            <img src="../../static/images/会议图片1.jpg" th:src="@{/images/会议图片1.jpg}" alt="" class="img-responsive">
-                                            <div class="hovereffect">
-
-                                            </div>
-                                        </a>
-                                    </div><!-- end media -->
-                                </div><!-- end col -->
-
-                                <div class="news-meta big-meta col-xs-9 col-sm-9 col-md-7">
-                                    <h4><a href="news_passage.html" title="">金控担保集团顺利召开全市融资担保工作会</a></h4>
-                                    <p>2021年7月16日，金控担保集团组织召开了全市融资担保工作会。
+                            <div class="news-banner row" th:each="article : ${page.content}">
+                                <div class="news-meta big-meta col-xs-9 col-sm-9 col-md-9">
+                                    <h4><a href="news_passage.html" th:href="@{/Article/articleShow/{id}(id=${article.id})}" th:text="${article.title}">金控担保集团顺利召开全市融资担保工作会</a></h4>
+                                    <p th:text="${article.description}">2021年7月16日，金控担保集团组织召开了全市融资担保工作会。
                                         省融担高级经理罗慎、市金融办市场科邓志辉、市金
                                         融控股有限公司副总经理刘文平、各县（区）担保子公司主要负责同志、财务负责
                                         人和业务经办人员参会。
                                     </p>
                                     <div class="news-log">
-                                        <small class="firstsmall"><a class="bg-orange" href="#" title="">集团动态</a></small>
-                                        <small><a href="news_source.html" title="">编辑 抚州金控</a></small>
-                                        <small><a href="news_passage.html" title=""><i class="fa fa-eye"></i> 1114</a></small>
+                                        <small class="firstsmall"><a class="bg-orange" href="#" th:text="${article.subType.name}">集团动态</a></small>
+                                        <small><a >编辑 <span th:text="${article.editor}">抚州金控</span></a></small>
+                                        <small><i class="fa fa-eye"></i><a class="ml-5" th:text="${article.views}"> 1114</a></small>
                                     </div>
                                 </div><!-- end meta -->
-                                <div class="news-time col-xs-3 col-sm-2 col-md-2">
+                                <div class="news-time col-xs-3 col-sm-3 col-md-3">
                                     <a>
-                                        <em>23</em>
-                                        <span>2021-07</span>
+                                        <em th:text="${#dates.format(article.updateTime,'dd')}">23</em>
+                                        <span th:text="${#dates.format(article.updateTime,'yyyy-MM')}">2021-07</span>
                                     </a>
                                 </div>
-
-                            </div><!-- end news-banner -->
-                            <hr class="">
-
-                            <div class="news-banner row">
-                                <div class="news-pic col-xs-3 col-sm-3 col-md-3">
-                                    <div class="post-media">
-                                        <a href="news_passage.html" title="">
-                                            <img src="../../static/images/会议图片1.jpg" th:src="@{/images/会议图片1.jpg}" alt="" class="img-responsive">
-                                            <div class="hovereffect">
-
-                                            </div>
-                                        </a>
-                                    </div><!-- end media -->
-                                </div><!-- end col -->
-
-                                <div class="news-meta big-meta col-xs-9 col-sm-9 col-md-7">
-                                    <h4><a href="news_passage.html" title="">金控担保集团顺利召开全市融资担保工作会</a></h4>
-                                    <p>2021年7月16日，金控担保集团组织召开了全市融资担保工作会。
-                                        省融担高级经理罗慎、市金融办市场科邓志辉、市金
-                                        融控股有限公司副总经理刘文平、各县（区）担保子公司主要负责同志、财务负责
-                                        人和业务经办人员参会。
-                                    </p>
-                                    <div class="news-log">
-                                        <small class="firstsmall"><a class="bg-orange" href="#" title="">集团动态</a></small>
-                                        <small><a href="news_source.html" title="">编辑 抚州金控</a></small>
-                                        <small><a href="news_passage.html" title=""><i class="fa fa-eye"></i> 1114</a></small>
-                                    </div>
-                                </div><!-- end meta -->
-                                <div class="news-time col-xs-3 col-sm-2 col-md-2">
-                                    <a>
-                                        <em>23</em>
-                                        <span>2021-07</span>
-                                    </a>
-                                </div>
-
-                            </div><!-- end news-banner -->
-                            <hr class="">
-
-                            <div class="news-banner row">
-                                <div class="news-pic col-xs-3 col-sm-3 col-md-3">
-                                    <div class="post-media">
-                                        <a href="news_passage.html" title="">
-                                            <img src="../../static/images/会议图片1.jpg" th:src="@{/images/会议图片1.jpg}" alt="" class="img-responsive">
-                                            <div class="hovereffect">
-
-                                            </div>
-                                        </a>
-                                    </div><!-- end media -->
-                                </div><!-- end col -->
-
-                                <div class="news-meta big-meta col-xs-9 col-sm-9 col-md-7">
-                                    <h4><a href="news_passage.html" title="">金控担保集团顺利召开全市融资担保工作会</a></h4>
-                                    <p>2021年7月16日，金控担保集团组织召开了全市融资担保工作会。
-                                        省融担高级经理罗慎、市金融办市场科邓志辉、市金
-                                        融控股有限公司副总经理刘文平、各县（区）担保子公司主要负责同志、财务负责
-                                        人和业务经办人员参会。
-                                    </p>
-                                    <div class="news-log">
-                                        <small class="firstsmall"><a class="bg-orange" href="#" title="">集团动态</a></small>
-                                        <small><a href="news_source.html" title="">编辑 抚州金控</a></small>
-                                        <small><a href="news_passage.html" title=""><i class="fa fa-eye"></i> 1114</a></small>
-                                    </div>
-                                </div><!-- end meta -->
-                                <div class="news-time col-xs-3 col-sm-2 col-md-2">
-                                    <a>
-                                        <em>23</em>
-                                        <span>2021-07</span>
-                                    </a>
-                                </div>
-
-                            </div><!-- end news-banner -->
-                            <hr class="">
-
-                            <div class="news-banner row">
-                                <div class="news-pic col-xs-3 col-sm-3 col-md-3">
-                                    <div class="post-media">
-                                        <a href="news_passage.html" title="">
-                                            <img src="../../static/images/会议图片1.jpg" th:src="@{/images/会议图片1.jpg}" alt="" class="img-responsive">
-                                            <div class="hovereffect">
-
-                                            </div>
-                                        </a>
-                                    </div><!-- end media -->
-                                </div><!-- end col -->
-
-                                <div class="news-meta big-meta col-xs-9 col-sm-9 col-md-7">
-                                    <h4><a href="news_passage.html" title="">金控担保集团顺利召开全市融资担保工作会</a></h4>
-                                    <p>2021年7月16日，金控担保集团组织召开了全市融资担保工作会。
-                                        省融担高级经理罗慎、市金融办市场科邓志辉、市金
-                                        融控股有限公司副总经理刘文平、各县（区）担保子公司主要负责同志、财务负责
-                                        人和业务经办人员参会。
-                                    </p>
-                                    <div class="news-log">
-                                        <small class="firstsmall"><a class="bg-orange" href="#" title="">集团动态</a></small>
-                                        <small><a href="news_source.html" title="">编辑 抚州金控</a></small>
-                                        <small><a href="news_passage.html" title=""><i class="fa fa-eye"></i> 1114</a></small>
-                                    </div>
-                                </div><!-- end meta -->
-                                <div class="news-time col-xs-3 col-sm-2 col-md-2">
-                                    <a>
-                                        <em>23</em>
-                                        <span>2021-07</span>
-                                    </a>
-                                </div>
-
-                            </div><!-- end news-banner -->
-                            <hr class="">
-
-                            <div class="news-banner row">
-                                <div class="news-pic col-xs-3 col-sm-3 col-md-3">
-                                    <div class="post-media">
-                                        <a href="news_passage.html" title="">
-                                            <img src="../../static/images/会议图片1.jpg" th:src="@{/images/会议图片1.jpg}" alt="" class="img-responsive">
-                                            <div class="hovereffect">
-
-                                            </div>
-                                        </a>
-                                    </div><!-- end media -->
-                                </div><!-- end col -->
-
-                                <div class="news-meta big-meta col-xs-9 col-sm-9 col-md-7">
-                                    <h4><a href="news_passage.html" title="">金控担保集团顺利召开全市融资担保工作会</a></h4>
-                                    <p>2021年7月16日，金控担保集团组织召开了全市融资担保工作会。
-                                        省融担高级经理罗慎、市金融办市场科邓志辉、市金
-                                        融控股有限公司副总经理刘文平、各县（区）担保子公司主要负责同志、财务负责
-                                        人和业务经办人员参会。
-                                    </p>
-                                    <div class="news-log">
-                                        <small class="firstsmall"><a class="bg-orange" href="#" title="">集团动态</a></small>
-                                        <small><a href="news_source.html" title="">编辑 抚州金控</a></small>
-                                        <small><a href="news_passage.html" title=""><i class="fa fa-eye"></i> 1114</a></small>
-                                    </div>
-                                </div><!-- end meta -->
-                                <div class="news-time col-xs-3 col-sm-2 col-md-2">
-                                    <a>
-                                        <em>23</em>
-                                        <span>2021-07</span>
-                                    </a>
-                                </div>
-
+                                <hr class="">
                             </div><!-- end news-banner -->
                             <hr class="invis">
 
@@ -426,17 +275,17 @@
                                     <nav class="page" aria-label="Page navigation">
                                         <ul class="pagination justify-content-start ">
                                             <li class="page-item">
-                                                <a class="page-link" href="#" aria-label="Previous">
+                                                <a class="page-link" href="#" th:href="@{/list/7(page=${page.number}-1)}" aria-label="Previous">
                                                     <span aria-hidden="true">上一页</span>
                                                 </a>
                                             </li>
-                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                            <li class="page-item"><a class="page-link" href="#" th:href="@{/list/7(page=0)}">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#" th:href="@{/list/7(page=1)}">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#" th:href="@{/list/7(page=2)}">3</a></li>
+                                            <li class="page-item"><a class="page-link" href="#" th:href="@{/list/7(page=3)}">4</a></li>
+                                            <li class="page-item"><a class="page-link" href="#" th:href="@{/list/7(page=4)}">5</a></li>
                                             <li class="page-item">
-                                                <a class="page-link" href="#" aria-label="Next">
+                                                <a class="page-link" href="#" th:href="@{/list/7(page=${page.number}+1)}" aria-label="Next">
                                                     <span aria-hidden="true">下一页</span>
                                                 </a>
                                             </li>

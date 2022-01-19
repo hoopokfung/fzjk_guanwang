@@ -53,6 +53,7 @@
 }
 .news-list .news-banner .news-pic .post-media img{
     height: 150px;
+    width: 262px;
 }
 
 .news-meta{
@@ -161,7 +162,7 @@
     color: #0076ab;
     font-size: 60px;
     line-height: 60px;
-    padding-top: 1rem;
+    padding-top: 3rem;
     margin-bottom: 5px;
     font-family: "HELVETI1";
 
@@ -284,6 +285,7 @@
 .caption .news-title a{
     color: #333333;
     text-decoration: none;
+    font-size: 16px;
 }
 .card-log p{
     padding-bottom: 20px;

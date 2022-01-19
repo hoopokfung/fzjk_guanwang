@@ -47,18 +47,17 @@ public class MyMvcConfig implements WebMvcConfigurer {
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-
         //浏览器访问的虚拟路径（浏览器默认无法访问工程项目外的本地文件）
         registry.addResourceHandler(imgPath).
                 addResourceLocations("file:/"+staticImgPath);//必须是file:绝对路径名
     }
 
-    //配置视图控制器
-    @Override
-    public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/").setViewName("index");
-        registry.addViewController("/index.html").setViewName("index");
-    }
+    //配置视图控制器:视图控制器作用是将前台路径不经controller直接forward到view。
+//    @Override
+//    public void addViewControllers(ViewControllerRegistry registry) {
+////        registry.addViewController("/list/1").setViewName("/list/about_1");
+////        registry.addViewController("/index.html").setViewName("index");
+//    }
 
 
     //配置管理员系统拦截器

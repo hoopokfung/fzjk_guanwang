@@ -112,6 +112,7 @@ public class SubTypeController {
     @GetMapping("/subTypes/{id}/input")
     public String editInput(@PathVariable Long id, Model model){
         //返回subType数据后要使得，select的option对应到type.id
+        model.addAttribute("types",typeService.listType());
         model.addAttribute("subType",subTypeService.findById(id));
         return "admin/subType-input";
     }

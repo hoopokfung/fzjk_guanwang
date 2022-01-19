@@ -77,13 +77,13 @@ public class ListController {
     }
 
     /**
-     * 新闻中心：一线快讯
+     * 新闻中心：领导要闻
      * @return
      */
     @GetMapping("/6")
     public String news_2(@PageableDefault(size = 5,sort = {"updateTime"}, direction = Sort.Direction.DESC)Pageable pageable,
                          Model model){
-        Long subTypeId = subTypeService.findByName("一线快讯").getId();
+        Long subTypeId = subTypeService.findByName("领导要闻").getId();
         Page<Article> articles = articleService.listArticlesBySubTypeId(pageable,subTypeId);
         model.addAttribute("page",articles);
         return "/list/news_2";
@@ -178,7 +178,7 @@ public class ListController {
      * @return
      */
     @GetMapping("/15")
-    public String party_1(@PageableDefault(size = 5,sort = {"updateTime"}, direction = Sort.Direction.DESC)Pageable pageable,
+    public String party_1(@PageableDefault(size = 6,sort = {"updateTime"}, direction = Sort.Direction.DESC)Pageable pageable,
                           Model model){
         Long subTypeId = subTypeService.findByName("党建工作").getId();
         Page<Article> articles = articleService.listArticlesBySubTypeId(pageable,subTypeId);
@@ -192,7 +192,7 @@ public class ListController {
      * @return
      */
     @GetMapping("/16")
-    public String party_2(@PageableDefault(size = 5,sort = {"updateTime"}, direction = Sort.Direction.DESC)Pageable pageable,
+    public String party_2(@PageableDefault(size = 6,sort = {"updateTime"}, direction = Sort.Direction.DESC)Pageable pageable,
                           Model model){
         Long subTypeId = subTypeService.findByName("在线学习").getId();
         Page<Article> articles = articleService.listArticlesBySubTypeId(pageable,subTypeId);
@@ -206,7 +206,7 @@ public class ListController {
      * @return
      */
     @GetMapping("/17")
-    public String party_3(@PageableDefault(size = 5,sort = {"updateTime"}, direction = Sort.Direction.DESC)Pageable pageable,
+    public String party_3(@PageableDefault(size = 6,sort = {"updateTime"}, direction = Sort.Direction.DESC)Pageable pageable,
                           Model model){
         Long subTypeId = subTypeService.findByName("群团工作").getId();
         Page<Article> articles = articleService.listArticlesBySubTypeId(pageable,subTypeId);
@@ -220,7 +220,7 @@ public class ListController {
      * @return
      */
     @GetMapping("/18")
-    public String inform_1(@PageableDefault(size = 5,sort = {"updateTime"}, direction = Sort.Direction.DESC)Pageable pageable,
+    public String inform_1(@PageableDefault(size = 6,sort = {"updateTime"}, direction = Sort.Direction.DESC)Pageable pageable,
                            Model model){
         Long subTypeId = subTypeService.findByName("公示公告").getId();
         Page<Article> articles = articleService.listArticlesBySubTypeId(pageable,subTypeId);
@@ -234,13 +234,27 @@ public class ListController {
      * @return
      */
     @GetMapping("/19")
-    public String inform_2(@PageableDefault(size = 5,sort = {"updateTime"}, direction = Sort.Direction.DESC)Pageable pageable,
+    public String inform_2(@PageableDefault(size = 6,sort = {"updateTime"}, direction = Sort.Direction.DESC)Pageable pageable,
                            Model model){
         Long subTypeId = subTypeService.findByName("消息披露").getId();
         Page<Article> articles = articleService.listArticlesBySubTypeId(pageable,subTypeId);
         model.addAttribute("page",articles);
         return "/list/inform_2";
     }
+
+    /**
+     * 人才招聘
+     * @return
+     */
+    @GetMapping("/21")
+    public String inform_3(@PageableDefault(size = 6,sort = {"updateTime"}, direction = Sort.Direction.DESC)Pageable pageable,
+                           Model model){
+        Long subTypeId = subTypeService.findByName("人才招聘").getId();
+        Page<Article> articles = articleService.listArticlesBySubTypeId(pageable,subTypeId);
+        model.addAttribute("page",articles);
+        return "/list/inform_3";
+    }
+
 
 
     /**
@@ -252,14 +266,6 @@ public class ListController {
         return "/contact";
     }
 
-    /**
-     * 人才招聘
-     * @return
-     */
-    @GetMapping("/21")
-    public String inform_3(){
-        return "/list/inform_3";
-    }
 
     /**
      * 企业文化

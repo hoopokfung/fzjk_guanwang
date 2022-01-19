@@ -270,8 +270,9 @@
 
                                     <div class="field" >
                                         <div class="input-group" style="width: 100%;display: inline-flex">
+                                            <input type="hidden" name="id" th:value="*{id}">
                                             <label class="btn btn-success" style="width: 10%">新增二级子栏</label>
-                                            <input type="text"  name="name" placeholder="输入新增加的类别名称"  style="width: 90%;height: 35px;">
+                                            <input type="text"  name="name" placeholder="输入新增加的类别名称" th:value="*{name}" style="width: 90%;height: 35px;">
                                         </div>
                                     </div>
                                 </div>

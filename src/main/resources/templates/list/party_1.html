@@ -244,48 +244,48 @@
                 <div id="testimonialSlider" class="carousel slide" data-ride="carousel">
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
-                        <div class="item active">
+                        <div th:if="${page.content.size} == 1" class="item active">
                             <blockquote>
                                 <div class="left-img">
-                                    <img src="../../static/images/会议图片1.jpg" th:src="@{/images/会议图片1.jpg}" class="img-responsive" alt=""></li>
+                                    <img src="../../static/images/会议图片1.jpg" th:src="@{${page.content.get(0).firstPicture}}" class="img-responsive" alt=""></li>
                                 </div>
                                 <div class="detail">
-                                    <a href="#">
-                                        <h4>中国共产党统一战线工作条例</h4>
-                                        <div class="date ">2021-9-1</div>
-                                        <p >
+                                    <a href="#" th:href="@{/Article/articleShow/{id}(id=${page.content.get(0).id})}">
+                                        <h4 th:text="${page.content.get(0).title}">中国共产党统一战线工作条例</h4>
+                                        <div class="date" th:text="${#dates.format(page.content.get(0).updateTime,'yyyy-MM-dd')}">2021-9-1</div>
+                                        <p th:text="${page.content.get(0).description}">
                                             (2015年4月30日中共中央政治局会议审议批准　2015年5月18日中共中央发布　2020年11月30日中共中央政治局会议修订　2020年12月21日中共中央发布)
                                         </p>
                                     </a>
                                 </div>
                             </blockquote>
                         </div>
-                        <div class="item">
+                        <div th:if="${page.content.size} == 2" class="item">
                             <blockquote>
                                 <div class="left-img">
-                                    <img src="../../static/images/会议图片1.jpg" th:src="@{/images/会议图片1.jpg}" class="img-responsive" alt=""></li>
+                                    <img src="../../static/images/会议图片1.jpg" th:src="@{${page.content.get(1).firstPicture}}" class="img-responsive" alt=""></li>
                                 </div>
                                 <div class="detail">
-                                    <a href="#">
-                                        <h4>中国共产党统一战线工作条例</h4>
-                                        <div class="date ">2021-9-1</div>
-                                        <p >
+                                    <a href="#" th:href="@{/Article/articleShow/{id}(id=${page.content.get(1).id})}">
+                                        <h4 th:text="${page.content.get(1).title}">中国共产党统一战线工作条例</h4>
+                                        <div class="date" th:text="${#dates.format(page.content.get(1).updateTime,'yyyy-MM-dd')}">2021-9-1</div>
+                                        <p th:text="${page.content.get(1).description}">
                                             (2015年4月30日中共中央政治局会议审议批准　2015年5月18日中共中央发布　2020年11月30日中共中央政治局会议修订　2020年12月21日中共中央发布)
                                         </p>
                                     </a>
                                 </div>
                             </blockquote>
                         </div>
-                        <div class="item">
+                        <div th:if="${page.content.size} == 3" class="item">
                             <blockquote>
                                 <div class="left-img">
-                                    <img src="../../static/images/会议图片1.jpg" th:src="@{/images/会议图片1.jpg}" class="img-responsive" alt=""></li>
+                                    <img src="../../static/images/会议图片1.jpg" th:src="@{${page.content.get(2).firstPicture}}" class="img-responsive" alt=""></li>
                                 </div>
                                 <div class="detail">
-                                    <a href="#">
-                                        <h4>中国共产党统一战线工作条例</h4>
-                                        <div class="date ">2021-9-1</div>
-                                        <p >
+                                    <a href="#" th:href="@{/Article/articleShow/{id}(id=${page.content.get(2).id})}">
+                                        <h4 th:text="${page.content.get(2).title}">中国共产党统一战线工作条例</h4>
+                                        <div class="date" th:text="${#dates.format(page.content.get(2).updateTime,'yyyy-MM-dd')}">2021-9-1</div>
+                                        <p th:text="${page.content.get(2).description}">
                                             (2015年4月30日中共中央政治局会议审议批准　2015年5月18日中共中央发布　2020年11月30日中共中央政治局会议修订　2020年12月21日中共中央发布)
                                         </p>
                                     </a>
@@ -306,56 +306,11 @@
                 <!-- #testimonialSlider -->
                 <div class="party-list">
                     <ul>
-                        <li class="list-item fl">
-                                <a href="#">
-                                <h4>中国共产党统一战线工作条例</h4>
-                                <div class="date ">2021-9-1</div>
-                                <p class="detail">
-                                    (2015年4月30日中共中央政治局会议审议批准　2015年5月18日中共中央发布　2020年11月30日中共中央政治局会议修订　2020年12月21日中共中央发布)
-                                </p>
-                            </a>
-                        </li>
-                        <li class="list-item fl">
-                            <a href="#">
-                                <h4>中国共产党统一战线工作条例</h4>
-                                <div class="date ">2021-9-1</div>
-                                <p class="detail">
-                                    (2015年4月30日中共中央政治局会议审议批准　2015年5月18日中共中央发布　2020年11月30日中共中央政治局会议修订　2020年12月21日中共中央发布)
-                                </p>
-                            </a>
-                        </li>
-                        <li class="list-item fl">
-                            <a href="#">
-                                <h4>中国共产党统一战线工作条例</h4>
-                                <div class="date ">2021-9-1</div>
-                                <p class="detail">
-                                    (2015年4月30日中共中央政治局会议审议批准　2015年5月18日中共中央发布　2020年11月30日中共中央政治局会议修订　2020年12月21日中共中央发布)
-                                </p>
-                            </a>
-                        </li>
-                        <li class="list-item fl">
-                            <a href="#">
-                                <h4>中国共产党统一战线工作条例</h4>
-                                <div class="date ">2021-9-1</div>
-                                <p class="detail">
-                                    (2015年4月30日中共中央政治局会议审议批准　2015年5月18日中共中央发布　2020年11月30日中共中央政治局会议修订　2020年12月21日中共中央发布)
-                                </p>
-                            </a>
-                        </li>
-                        <li class="list-item fl">
-                            <a href="#">
-                                <h4>中国共产党统一战线工作条例</h4>
-                                <div class="date ">2021-9-1</div>
-                                <p class="detail">
-                                    (2015年4月30日中共中央政治局会议审议批准　2015年5月18日中共中央发布　2020年11月30日中共中央政治局会议修订　2020年12月21日中共中央发布)
-                                </p>
-                            </a>
-                        </li>
-                        <li class="list-item fl">
-                            <a href="#">
-                                <h4>中国共产党统一战线工作条例</h4>
-                                <div class="date ">2021-9-1</div>
-                                <p class="detail">
+                        <li th:each="article : ${page.content}" class="list-item pull-left">
+                            <a href="#" th:href="@{/Article/articleShow/{id}(id=${article.id})}">
+                                <h4 th:text="${article.title}">中国共产党统一战线工作条例</h4>
+                                <div class="date" th:text="${#dates.format(article.updateTime,'yyyy-MM-dd')}">2021-9-1</div>
+                                <p class="detail" th:text="${article.description}">
                                     (2015年4月30日中共中央政治局会议审议批准　2015年5月18日中共中央发布　2020年11月30日中共中央政治局会议修订　2020年12月21日中共中央发布)
                                 </p>
                             </a>
@@ -369,17 +324,17 @@
                         <nav class="page" aria-label="Page navigation">
                             <ul class="pagination justify-content-start ">
                                 <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Previous">
+                                    <a class="page-link" href="#" th:href="@{/list/15(page=${page.number}-1)}" aria-label="Previous">
                                         <span aria-hidden="true">上一页</span>
                                     </a>
                                 </li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                <li class="page-item"><a class="page-link" href="#" th:href="@{/list/15(page=0)}">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#" th:href="@{/list/15(page=1)}">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#" th:href="@{/list/15(page=2)}">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#" th:href="@{/list/15(page=3)}">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#" th:href="@{/list/15(page=4)}">5</a></li>
                                 <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
+                                    <a class="page-link" href="#" th:href="@{/list/15(page=${page.number}+1)}" aria-label="Next">
                                         <span aria-hidden="true">下一页</span>
                                     </a>
                                 </li>

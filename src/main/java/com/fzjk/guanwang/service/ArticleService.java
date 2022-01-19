@@ -15,7 +15,9 @@ public interface ArticleService {
 
     Article findById(Long id);
 
-    List<Article> findTop(Long subTypeId);
+    List<Article> findTop(Long subTypeId,int n);
+
+    List<Article> findTopByTypeId(Long typeId);
 
     Page<Article> listArticlesByTypeId(Pageable pageable, Long id);
 

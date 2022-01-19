@@ -7,14 +7,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../static/images/logo2.png" type="image/png">
-    <title>模板</title>
+    <title>党的建设</title>
     <link href="../../static/lib/bootstrap-3.4.1/css/bootstrap.css" rel="stylesheet" th:href="@{/lib/bootstrap-3.4.1/css/bootstrap.css}">
     <link href="../../static/css/animate.min.css" rel="stylesheet" th:href="@{/css/animate.min.css}">
     <link href="../../static/css/swiper-3.4.0.min.css" rel="stylesheet" th:href="@{/css/swiper-3.4.0.min.css}">
     <link href="../../static/lib/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" th:href="@{/lib/fonts/font-awesome-4.7.0/css/font-awesome.min.css}">
     <link href="../../static/css/jquery.mmenu.all.css" rel="stylesheet" th:href="@{/css/jquery.mmenu.all.css}">
     <link href="../../static/css/style.css" rel="stylesheet" th:href="@{/css/style.css}">
-    <link href="../../static/css/news.css" rel="stylesheet" th:href="@{/css/news.css}">
     <!--[if lt IE 9]>
     <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
@@ -214,32 +213,92 @@
         <!--------- banner-box------------>
         <section class="banner">
             <div class="banner-text w1200">
-                <h2 class="">××××</h2>
-                <h3 class="">ABC</h3>
+                <h2 class="">党的建设</h2>
+                <h3 class="">party building</h3>
             </div>
         </section>
         <!---------banner-box  end--------->
 
         <!-- 页内二级导航条  -->
         <div class="nyNav">
-            <ul class="w1200 clearfix">
-                <li class=''>
-                    <a href="news_1.html" class="tran300">集团动态</a>
+            <ul th:if="${Article.subType.name} == '党建工作'" class="w1200 clearfix">
+                <li class='on'>
+                    <a href="party_1.html" th:href="@{/list/15}" class="tran300">党建工作</a>
                 </li>
                 <li class=''>
-                    <a href="news_2.html" class="tran300">一线快讯</a>
+                    <a href="party_2.html" th:href="@{/list/16}" class="tran300">在线学习</a>
+                </li>
+                <li class=''>
+                    <a href="party_3.html" th:href="@{/list/17}" class="tran300">群团工作</a>
+                </li>
+            </ul>
+            <ul th:if="${Article.subType.name} == '在线学习'" class="w1200 clearfix">
+                <li class=''>
+                    <a href="party_1.html" th:href="@{/list/15}" class="tran300">党建工作</a>
                 </li>
                 <li class='on'>
-                    <a href="news_3.html" class="tran300">行业动态</a>
+                    <a href="party_2.html" th:href="@{/list/16}" class="tran300">在线学习</a>
+                </li>
+                <li class=''>
+                    <a href="party_3.html" th:href="@{/list/17}" class="tran300">群团工作</a>
+                </li>
+            </ul>
+            <ul th:if="${Article.subType.name} == '群团工作'" class="w1200 clearfix">
+                <li class=''>
+                    <a href="party_1.html" th:href="@{/list/15}" class="tran300">党建工作</a>
+                </li>
+                <li class=''>
+                    <a href="party_2.html" th:href="@{/list/16}" class="tran300">在线学习</a>
+                </li>
+                <li class='on'>
+                    <a href="party_3.html" th:href="@{/list/17}" class="tran300">群团工作</a>
                 </li>
             </ul>
         </div>
 
         <!-- 主要内容 -->
         <div class="nyMain w1200">
-            <div class="nyTit">
-                <h3>XXXX</h3>
-                <i></i>
+            <div class="view-passage">
+                <div class="container">
+                    <div class="row">
+                        <h5 class="text-center" th:text="${Article.title}">新闻标题XXXXXXX</h5>
+                        <div class="info clearfix">
+                            <span class="pull-left"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                            <span class="date pull-left mr-30" th:text="${#dates.format(Article.updateTime,'yyyy-MM-dd')}">2021-08-31</span>
+                            <span class="pull-left"><i class="fa fa-eye" aria-hidden="true"></i></span>
+                            <span class="views pull-left mr-30" th:text="${Article.views}"> 362</span>
+                            <span class="share pull-left">
+                                <div class="bdsharebuttonbox" >
+                                    <a href="#" class="bds_more" data-cmd="more">
+                                        <i class="fa fa-share-alt" aria-hidden="true"></i>分享</a>
+                                </div>
+                            </span>
+                            <div class="fontSize pull-left">
+                                [<em class="small">小</em>
+                                <em class="mid">中</em>
+                                <em class="big">大</em>]
+                            </div>
+
+                            <a class="toList btn pull-right" onclick="window.history.go(-1)"> <i class="fa fa-undo" aria-hidden="true"></i>返回列表</a>
+                        </div>
+                        <div class="content" th:utext="${Article.content}">
+                            <p style="text-indent: 4rem">8月30日下午，集团党委书记、董事长谌赞雄接待硚口区区长苏海峰一行，双方就有关项目合作进行座谈交流。</p>
+
+                            <p style="text-indent: 4rem">谌赞雄董事长对苏海峰区长一行的来访表示热烈欢迎，并简要介绍了集团改革发展最新情况。谌董事长表示，硚口区作为武汉市的重要中心城区，近年来在产业升级、招商引资等方面取得显著成绩，集团将充分发挥多金融牌照的综合优势，与硚口区进一步加强沟通对接，深化交流合作，助力硚口区实现高质量发展。</p>
+
+                            <p style="text-indent: 4rem">
+                                苏海峰区长衷心感谢集团的热情接待，感谢集团对硚口区疫情防控与经济社会发展给予的大力支持。苏区长表示，集团作为市属国有龙头企业，有力支持了全市经济发展，硚口区希望与集团深化在总部经济、普惠金融等领域的合作，推动项目尽早落地，实现互惠互利，共同发展。
+                            </p>
+                            <p style="text-indent: 4rem">
+                                硚口区委常委、常务副区长徐盛敏，硚口开发区、硚口区发改局、政府办、蚂蚁集团武汉产业创新中心负责人等陪同; 集团总经理助理唐武，国通信托党委书记、董事长陈建新，集团董事会办公室、资产管理部负责人等参加座谈。
+                            </p>
+                        </div>
+                        <div class="link">
+                            <p class="text_id"><span>上一篇：</span><a th:href="@{/Article/articleShow/{id}(id=${pre.id})}" th:text="${pre.title}">全市经济发展，硚口区希望与集团</a></p>
+                            <p class="text_id"><span>下一篇：</span><a th:href="@{/Article/articleShow/{id}(id=${next.id})}" th:text="${next.title}">全市经济发展，硚口区希望与集团</a></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 

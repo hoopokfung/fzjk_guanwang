@@ -6,7 +6,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../static/images/logo2.png" type="image/png">
+    <link rel="icon" href="../../static/images/logo2.png" type="image/png" th:href="@{/images/logo2.png}">
     <title>集团动态</title>
         <link href="../../static/lib/bootstrap-3.4.1/css/bootstrap.css" rel="stylesheet" th:href="@{/lib/bootstrap-3.4.1/css/bootstrap.css}">
         <link href="../../static/css/animate.min.css" rel="stylesheet" th:href="@{/css/animate.min.css}">
@@ -245,7 +245,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="news-list clearfix">
-                            <div class="news-banner row" th:each="article : ${page.content}">
+                            <div class="news-banner row" th:each="article : ${page.content}" th:if="${article.published}">
                                 <div class="news-pic col-xs-3 col-sm-3 col-md-3">
                                     <div class="post-media">
                                         <a href="news_passage.html" th:href="@{/Article/articleShow/{id}(id=${article.id})}">
